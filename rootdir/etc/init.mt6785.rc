@@ -1266,6 +1266,12 @@ on property:sys.boot_completed="" && property:persist.radio.op.name=UN && proper
 on property:sys.boot_completed=1 && property:persist.radio.op.name=*
    setprop persist.vendor.op.name.last ${persist.radio.op.name}
 
+on property:persist.sys.rosemary.dt2w=0
+    exec /system/bin/sendevent /dev/input/event2 0 1 4
+
+on property:persist.sys.rosemary.dt2w=1
+    exec /system/bin/sendevent /dev/input/event2 0 1 5
+
 on property:sys.boot_completed=1
     # Toggle airplane mode on and off on boot to enable volte.
     # This hack needs ImsInit commit to request ims on boot to work properly
