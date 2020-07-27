@@ -236,7 +236,8 @@ PRODUCT_BOOT_JARS += \
     mediatek-telephony-common
 
 PRODUCT_PACKAGES += \
-    ImsServiceBase
+    ImsServiceBase \
+    ImsInit
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/public.libraries-trustonic.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-trustonic.txt
