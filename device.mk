@@ -347,7 +347,6 @@ PRODUCT_PACKAGES += \
     init.connectivity.rc \
     init.mt6785.usb.rc \
     init.project.rc \
-    init.aee.rc \
     init.stnfc.rc \
     init.modem.rc \
     vendor.ueventd.rc
