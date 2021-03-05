@@ -22,7 +22,6 @@
         manifest_keyinstall.xml
         manifest_log.xml
         manifest_mdmonitor.xml
-        manifest_aee.xml
         manifest_boot.xml
         manifest_netdagent.xml
         manifest_pq.xml
@@ -348,18 +347,6 @@
         </interface>
         <fqname>@2.1::IGoodixFingerprintDaemon/default</fqname>
         <fqname>@2.1::IGoodixFingerprintDaemonExt/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.mediatek.hardware.aee</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IAee</name>
-            <instance>AEE</instance>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IAee/AEE</fqname>
-        <fqname>@1.0::IAee/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.apuware.utils</name>
@@ -719,5 +706,5 @@
     <sepolicy>
         <version>30.0</version>
     </sepolicy>
-    <kernel target-level="5"/>
+    <kernel target-level="5" />
 </manifest>
