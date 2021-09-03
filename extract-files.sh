@@ -24,6 +24,14 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+function blob_fixup() {
+    case "${1}" in
+        lib/libsink.so)
+            "${PATCHELF}" --add-needed "libshim_vtservice.so" "${2}"
+            ;;
+    esac
+}
+
 # Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
 
@@ -57,15 +65,6 @@ function blob_fixup() {
     case "${1}" in
         lib/libsink.so)
             "${PATCHELF}" --add-needed "libshim_vtservice.so" "${2}"
-            ;;
-        vendor/lib64/libwifi-hal-mtk.so)
-            "${PATCHELF}" --set-soname libwifi-hal-mtk.so "${2}"
-            ;;
-        vendor/lib64/hw/consumerir.mt6785.so)
-            "${PATCHELF}" --set-soname consumerir.mt6785.so "${2}"
-            ;;
-        vendor/lib/hw/consumerir.mt6785.so)
-            "${PATCHELF}" --set-soname consumerir.mt6785.so "${2}"
             ;;
     esac
 }
