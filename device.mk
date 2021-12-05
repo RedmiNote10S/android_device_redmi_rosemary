@@ -261,26 +261,26 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    factory_init.connectivity.rc \ 
-    fstab.emmc \     
-    init.aee.rc \          
-    init.modem.rc \      
-    init.project.rc \    
-    meta_init.connectivity.rc \ 
+    factory_init.connectivity.rc \
+    fstab.emmc \
+    init.aee.rc \
+    init.modem.rc \
+    init.project.rc \
+    meta_init.connectivity.rc \
     meta_init.rc \
-    factory_init.project.rc \      
-    fstab.enableswap \ 
-    init.ago.rc \        
-    init.mt6785.rc \   
+    factory_init.project.rc \
+    fstab.enableswap \
+    init.ago.rc \
+    init.mt6785.rc \
     init.sensor_1_0.rc \
-    meta_init.modem.rc \        
+    meta_init.modem.rc \
     multi_init.rc \
-    factory_init.rc \             
-    fstab.mt6785 \     
-    init.connectivity.rc \ 
-    init.mt6785.usb.rc \ 
-    init.stnfc.rc \      
-    meta_init.project.rc \       
+    factory_init.rc \
+    fstab.mt6785 \
+    init.connectivity.rc \
+    init.mt6785.usb.rc \
+    init.stnfc.rc \
+    meta_init.project.rc \
     ueventd.mtk.rc
 
 # Ramdisk For Vendor_boot
