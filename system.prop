@@ -176,27 +176,11 @@ persist.vendor.dc_backlight.enable=false
 #quick charge type detect
 #persist.vendor.quick.charge=1
 
-#
-# ADDITIONAL_BUILD_PROPERTIES
-#
-ro.mi.development=false
-ro.miui.version.code_time=1629648000
-ro.rom.zone=2
-ro.miui.restrict_imei=1
-ro.miui.ui.version.code=11
-ro.miui.ui.version.name=V125
-ro.com.google.ime.themes_dir=/system/etc/gboard_theme
-ro.com.google.ime.theme_file=xiaomi_theme_20171222.zip
+
 ro.com.google.lens.oem_camera_package=com.android.camera
-ro.miui.remove_uri_80_flag=1
-ro.fota.oem=Xiaomi
-ro.vendor.build.software.version=Android11_125
-ro.config.media_vol_default=10
-ro.miui.pm.movedtodata.apps=com.google.android.apps.photos,com.google.android.apps.docs,com.google.android.music,com.google.android.videos,com.google.android.apps.tachyon
+
 persist.vm.stackdump.threshold=0
 ro.malloc.impl=jemalloc
-ro.miui.customized_clientid=2
-setupwizard.feature.baseline_setupwizard_enabled=true
 persist.sys.slab.threshold=256000,358400,460800,665600,819200
 persist.binder.check.enable=true
 persist.binder.check.size=200
@@ -206,11 +190,9 @@ persist.sys.periodic.enable=true
 persist.sys.minfree_def=73728,92160,110592,340000,510000,645120
 persist.sys.minfree_6g=73728,92160,110592,340000,1282868,1677312
 persist.sys.minfree_8g=73728,92160,110592,340000,1677312,2064384
-persist.miui.density_v2=440
-ro.miui.notch=1
+
 debug.sf.disable_backpressure=1
-persist.sys.miui_animator_sched.bigcores=4-7
-ro.miui.support_prune=true
+
 ro.treble.enabled=true
 net.bt.name=Android
 import /system/build_${ro.boot.product.vendor.sku}.prop
