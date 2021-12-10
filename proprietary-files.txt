@@ -30,9 +30,6 @@ vendor/lib64/libnvram_platform.so
 vendor/lib64/libnvram_sec.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 
-# Audio (FX modules)
-vendor/lib/soundfx/libmisoundfx.so
-
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
@@ -1047,8 +1044,6 @@ vendor/etc/elliptic_sensor.xml
 vendor/etc/factory.ini
 vendor/etc/fstb.cfg
 vendor/etc/meow.cfg
-vendor/etc/misound_res_headphone.bin
-vendor/etc/misound_res_spk.bin
 vendor/etc/mpe.conf
 vendor/etc/mtk_omx_core.cfg
 vendor/etc/nhw
@@ -1791,7 +1786,6 @@ vendor/lib/libjpeg-alpha_vendor.so
 vendor/lib/liblogwrap_vendor.so
 vendor/lib/libmfllcore.so
 vendor/lib/libminiui.so
-vendor/lib/libmisound.so
 vendor/lib/libmmprofile.so
 vendor/lib/libmnetlink_v104.so
 vendor/lib/libmnl.so
@@ -2570,7 +2564,6 @@ vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmialgoengine.so
 vendor/lib64/libmibokeh_mt6873.so
 vendor/lib64/libminiui.so
-vendor/lib64/libmisound.so
 vendor/lib64/libmmprofile.so
 vendor/lib64/libmnetlink_v104.so
 vendor/lib64/libmpbase.so
