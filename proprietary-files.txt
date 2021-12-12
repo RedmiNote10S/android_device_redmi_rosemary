@@ -31,9 +31,7 @@ vendor/lib64/libnvram_sec.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 
 # Audio (FX modules)
-vendor/lib/soundfx/libaudiopreprocessing_mtk.so
 vendor/lib/soundfx/libmisoundfx.so
-vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
