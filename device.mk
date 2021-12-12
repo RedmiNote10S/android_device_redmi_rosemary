@@ -74,6 +74,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio.bluetooth.default \
     tinymix \
+    libaudiopreprocessing \
     libtinyxml \
     libalsautils \
     libtinycompress \
