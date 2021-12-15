@@ -25,3 +25,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="rosemary-user 11 RP1A.200720.011 V12.5.13.0.RKLINXM release-keys"
 
 BUILD_FINGERPRINT := Redmi/rosemary/rosemary:11/RP1A.200720.011/V12.5.13.0.RKLMIXM:user/release-keys
+
+PRODUCT_COPY_FILES += \
+    device/xiaomi/rosemary/prebuilt/dtb.img:dtb.img
