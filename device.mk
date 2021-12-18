@@ -280,10 +280,6 @@ PRODUCT_PACKAGES += \
     meta_init.project.rc \
     ueventd.mtk.rc
 
-# Ramdisk For Vendor_boot
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6785:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6785
-
 # Ramdisk For Kernel
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6785:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6785
