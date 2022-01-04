@@ -454,4 +454,7 @@
 
     <!-- Controls whether system buttons use all caps for text -->
     <bool name="config_buttonTextAllCaps">false</bool>
+
+    <!-- Sim cards -->
+    <integer name="config_num_physical_slots">2</integer>
 </resources>
