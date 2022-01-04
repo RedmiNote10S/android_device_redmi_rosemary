@@ -58,6 +58,10 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Light
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.rosemary
+
 # Dynamic partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
