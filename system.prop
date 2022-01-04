@@ -1,0 +1,2 @@
+# Dirty hack for fixing bootloop
+ro.control_privapp_permissions=log
