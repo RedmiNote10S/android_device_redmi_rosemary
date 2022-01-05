@@ -97,13 +97,16 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
 
 # Dynamic Partition
-BOARD_SUPER_PARTITION_SIZE := 9126805504
-BOARD_SUPER_PARTITION_ERROR_LIMIT := 9126805504
-BOARD_SUPER_PARTITION_GROUPS := main
-BOARD_MAIN_SIZE := 4561305600
-BOARD_MAIN_PARTITION_LIST := system product
-
+BOARD_BUILD_SUPER_IMAGE_BY_DEFAULT := true
 TARGET_USES_PREBUILT_DYNAMIC_PARTITIONS := true
+
+BOARD_SUPER_PARTITION_SIZE := 9126805504
+BOARD_SUPER_PARTITION_GROUPS := mtk_dynamic_partitions
+BOARD_MTK_DYNAMIC_PARTITIONS_SIZE := 9122611200 # Ok i guess?
+BOARD_MTK_DYNAMIC_PARTITIONS_PARTITION_LIST := system product vendor
+
+# Prebuilt vendor because AB OTA kills all partition groups
+BOARD_PREBUILT_VENDORIMAGE := device/xiaomi/rosemary/prebuilt/vendor.img
 
 # Partitions (File systems)
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -127,7 +130,3 @@ TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
 
 # VNDK
 BOARD_VNDK_VERSION := current
-
-# Inherit from the proprietary version
-include vendor/xiaomi/rosemary/BoardConfigVendor.mk
-
