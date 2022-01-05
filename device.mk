@@ -21,8 +21,9 @@ AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
     boot \
     dtbo \
-    product \
     system \
+    product \
+    vendor \
     vbmeta \
     vbmeta_system
 
@@ -55,8 +56,8 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
 # Dynamic partitions
+PRODUCT_BUILD_SUPER_PARTITION := true
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Fastbootd
 PRODUCT_PACKAGES += \
@@ -76,6 +77,3 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
-
-# Inherit vendor
-$(call inherit-product, vendor/xiaomi/rosemary/rosemary-vendor.mk)
