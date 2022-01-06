@@ -6,4 +6,4 @@ debug.sf.latch_unsignaled=1
 
 # RIL
 vendor.rild.libargs=-d /dev/ttyC0
-vendor.rild.libpath=mtk-ril.so
+vendor.rild.libpath=libmtk-ril.so
