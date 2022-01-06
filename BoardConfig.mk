@@ -105,7 +105,7 @@ BOARD_SUPER_PARTITION_GROUPS := mtk_dynamic_partitions
 BOARD_MTK_DYNAMIC_PARTITIONS_SIZE := 9122611200 # Ok i guess?
 BOARD_MTK_DYNAMIC_PARTITIONS_PARTITION_LIST := system product vendor
 
-# Prebuilt vendor because AB OTA kills all partition groups
+# Prebuilt vendor because AB OTA kills the entire partition group
 BOARD_PREBUILT_VENDORIMAGE := device/xiaomi/rosemary/prebuilt/vendor.img
 
 # Partitions (File systems)
