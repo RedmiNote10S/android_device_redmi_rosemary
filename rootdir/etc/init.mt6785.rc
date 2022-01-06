@@ -1,0 +1,13 @@
+# Kill stock lights
+on post-fs
+    mount none /dev/null /vendor/bin/hw/android.hardware.lights-service.mediatek bind
+    mount none /dev/null /vendor/etc/vintf/manifest/lights-mtk-default.xml bind
+    mount none /dev/null /vendor/etc/init/lights-mtk-default.rc bind
+
+# Kill serial console warning
+on boot
+    setprop init.svc.console stopped
+
+# Kill AOSP RIL
+on property:vendor.ril.mtk=1
+    stop vendor.ril-daemon
