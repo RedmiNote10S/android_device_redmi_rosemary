@@ -107,6 +107,10 @@ BOARD_MTK_DYNAMIC_PARTITIONS_PARTITION_LIST := system product vendor
 # Prebuilt vendor because AB OTA kills the entire partition group
 BOARD_PREBUILT_VENDORIMAGE := device/xiaomi/rosemary/prebuilt/vendor.img
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_rosemary
+TARGET_RECOVERY_DEVICE_MODULES := libinit_rosemary
+
 # Partitions (File systems)
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
