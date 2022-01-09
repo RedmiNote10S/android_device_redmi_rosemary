@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2020 The Android Open Source Project
+ * Copyright (C) 2020-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,15 +18,10 @@
 #pragma once
 
 #include <aidl/android/hardware/light/BnLights.h>
-#include <android-base/logging.h>
 #include <hardware/hardware.h>
 #include <hardware/lights.h>
-#include <vector>
-
-using ::aidl::android::hardware::light::HwLightState;
-using ::aidl::android::hardware::light::HwLight;
-using ::aidl::android::hardware::light::LightType;
-using ::aidl::android::hardware::light::BnLights;
+#include <map>
+#include <sstream>
 
 namespace aidl {
 namespace android {
@@ -33,8 +29,18 @@ namespace hardware {
 namespace light {
 
 class Lights : public BnLights {
-      ndk::ScopedAStatus setLightState(int id, const HwLightState& state) override;
-      ndk::ScopedAStatus getLights(std::vector<HwLight>* types) override;
+  public:
+    Lights();
+    ndk::ScopedAStatus setLightState(int id, const HwLightState& state) override;
+    ndk::ScopedAStatus getLights(std::vector<HwLight>* types) override;
+
+  private:
+    void setLightBacklight(int id, const HwLightState& state);
+
+    uint32_t max_screen_brightness_;
+
+    std::map<int, std::function<void(int id, const HwLightState&)>> mLights;
+    std::vector<HwLight> mAvailableLights;
 };
 
 }  // namespace light
