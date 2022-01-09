@@ -1,5 +1,6 @@
 /*
- * Copyright (C) 2018-2019 The LineageOS Project
+ * Copyright (C) 2019 The Android Open Source Project
+ * Copyright (C) 2020-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,125 +15,113 @@
  * limitations under the License.
  */
 
+#define LOG_TAG "android.hardware.lights-service.rosemary"
+
 #include "Lights.h"
-
-#include <fstream>
-
-#define LCD_LED         "/sys/class/leds/lcd-backlight/"
-
-#define BRIGHTNESS      "brightness"
-#define MAX_BRIGHTNESS  "max_brightness"
+#include <android-base/file.h>
+#include <android-base/logging.h>
 
 namespace {
-/*
- * Write value to path and close file.
- */
-static void set(std::string path, std::string value) {
-    std::ofstream file(path);
 
-    if (!file.is_open()) {
-        LOG(WARNING) << "failed to write " << value.c_str() << " to " << path.c_str();
-        return;
+/* clang-format off */
+#define PPCAT_NX(A, B) A/B
+#define PPCAT(A, B) PPCAT_NX(A, B)
+#define STRINGIFY_INNER(x) #x
+#define STRINGIFY(x) STRINGIFY_INNER(x)
+
+#define LEDS(x) PPCAT(/sys/class/leds, x)
+#define LCD_ATTR(x) STRINGIFY(PPCAT(LEDS(lcd-backlight), x))
+/* clang-format on */
+
+using ::android::base::ReadFileToString;
+using ::android::base::WriteStringToFile;
+
+// Default max brightness
+constexpr auto kDefaultMaxLedBrightness = 2047;
+
+// Write value to path and close file.
+bool WriteToFile(const std::string& path, uint32_t content) {
+    return WriteStringToFile(std::to_string(content), path);
+}
+
+uint32_t RgbaToBrightness(uint32_t color) {
+    // Extract brightness from AARRGGBB.
+    uint32_t alpha = (color >> 24) & 0xFF;
+
+    // Retrieve each of the RGB colors
+    uint32_t red = (color >> 16) & 0xFF;
+    uint32_t green = (color >> 8) & 0xFF;
+    uint32_t blue = color & 0xFF;
+
+    // Scale RGB colors if a brightness has been applied by the user
+    if (alpha != 0xFF && alpha != 0) {
+        red = red * alpha / 0xFF;
+        green = green * alpha / 0xFF;
+        blue = blue * alpha / 0xFF;
     }
-
-    file << value;
-}
-
-static void set(std::string path, int value) {
-    set(path, std::to_string(value));
-}
-
-/*
- * Read max brightness from path and close file.
- */
-static int getMaxBrightness(std::string path) {
-    std::ifstream file(path);
-    int value;
-
-    if (!file.is_open()) {
-        LOG(WARNING) << "failed to read from " << path.c_str();
-        return 0;
-    }
-
-    file >> value;
-    return value;
-}
-
-static uint32_t getBrightness(const HwLightState& state) {
-    uint32_t alpha, red, green, blue;
-
-    /*
-     * Extract brightness from AARRGGBB.
-     */
-    alpha = (state.color >> 24) & 0xFF;
-    red = (state.color >> 16) & 0xFF;
-    green = (state.color >> 8) & 0xFF;
-    blue = state.color & 0xFF;
-
-    /*
-     * Scale RGB brightness using Alpha brightness.
-     */
-    red = red * alpha / 0xFF;
-    green = green * alpha / 0xFF;
-    blue = blue * alpha / 0xFF;
 
     return (77 * red + 150 * green + 29 * blue) >> 8;
 }
 
-static inline uint32_t scaleBrightness(uint32_t brightness, uint32_t maxBrightness) {
-    if (brightness == 0) {
-        return 0;
-    }
-
-    return (brightness - 1) * (maxBrightness - 1) / (0xFF - 1) + 1;
+inline uint32_t RgbaToBrightness(uint32_t color, uint32_t max_brightness) {
+    return RgbaToBrightness(color) * max_brightness / 0xFF;
 }
-
-static inline uint32_t getScaledBrightness(const HwLightState& state, uint32_t maxBrightness) {
-    return scaleBrightness(getBrightness(state), maxBrightness);
-}
-
-static void handleBacklight(const HwLightState& state) {
-    uint32_t brightness = getScaledBrightness(state, getMaxBrightness(LCD_LED MAX_BRIGHTNESS));
-    set(LCD_LED BRIGHTNESS, brightness);
-}
-
-/* Keep sorted in the order of importance. */
-static std::vector<LightType> backends = {
-    LightType::BACKLIGHT,
-};
 
 }  // anonymous namespace
 
 namespace aidl {
-namespace android{
+namespace android {
 namespace hardware {
 namespace light {
 
-ndk::ScopedAStatus Lights::setLightState(int id, const HwLightState& state) {
-    switch(id) {
-        case (int) LightType::BACKLIGHT:
-            handleBacklight(state);
-            return ndk::ScopedAStatus::ok();
-        default:
-            return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
+Lights::Lights() {
+    std::map<int, std::function<void(int id, const HwLightState&)>> lights_{
+        {(int)LightType::BACKLIGHT, [this](auto&&... args) { setLightBacklight(args...); }}
+    };
+
+    std::vector<HwLight> availableLights;
+    for (auto const& pair : lights_) {
+        int id = pair.first;
+        HwLight hwLight{};
+        hwLight.id = id;
+        availableLights.emplace_back(hwLight);
+    }
+    mAvailableLights = availableLights;
+    mLights = lights_;
+
+    std::string buf;
+
+    if (ReadFileToString(LCD_ATTR(max_brightness), &buf)) {
+        max_screen_brightness_ = std::stoi(buf);
+    } else {
+        max_screen_brightness_ = kDefaultMaxLedBrightness;
+        LOG(ERROR) << "Failed to read max screen brightness, fallback to " << kDefaultMaxLedBrightness;
     }
 }
 
-ndk::ScopedAStatus Lights::getLights(std::vector<HwLight>* lights) {
-    int i = 0;
-
-    for (const LightType& backend : backends) {
-        HwLight hwLight;
-        hwLight.id = (int) backend;
-        hwLight.type = backend;
-        hwLight.ordinal = i;
-        lights->push_back(hwLight);
-        i++;
+ndk::ScopedAStatus Lights::setLightState(int id, const HwLightState& state) {
+    auto it = mLights.find(id);
+    if (it == mLights.end()) {
+        LOG(ERROR) << "Light not supported";
+        return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
     }
+
+    it->second(id, state);
 
     return ndk::ScopedAStatus::ok();
 }
 
+ndk::ScopedAStatus Lights::getLights(std::vector<HwLight>* lights) {
+    for (auto i = mAvailableLights.begin(); i != mAvailableLights.end(); i++) {
+        lights->push_back(*i);
+    }
+    return ndk::ScopedAStatus::ok();
+}
+
+void Lights::setLightBacklight(int /* id */, const HwLightState& state) {
+    int brightness = RgbaToBrightness(state.color, max_screen_brightness_);
+    WriteToFile(LCD_ATTR(brightness), brightness);
+}
 }  // namespace light
 }  // namespace hardware
 }  // namespace android
