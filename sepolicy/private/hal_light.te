@@ -1,0 +1,1 @@
+allow hal_light sys_led_brightness_file:file rw_file_perms;
