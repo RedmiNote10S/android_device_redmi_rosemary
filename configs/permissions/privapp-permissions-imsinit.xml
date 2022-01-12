@@ -2,6 +2,6 @@
 <permissions>
     <privapp-permissions package="org.lineageos.xiaomi.imsinit">
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
-
 </permissions>
