@@ -61,7 +61,7 @@ void vendor_load_properties()
     string region = GetProperty("ro.boot.hwc", "");
 
     // TODO: Add maltose
-    if (region == "India_PA") { // secret
+    if (region == "India_PA" || region == "Global_PA") { // secret, Indian and Global
         device = "secret";
     } else { // Assume its rosemary if ro.boot.hwc didnt match
         device = "rosemary";
