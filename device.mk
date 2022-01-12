@@ -76,6 +76,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.mt6785.rc
 
+# Trust HAL
+PRODUCT_PACKAGES += \
+    lineage.trust@1.0-service
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
