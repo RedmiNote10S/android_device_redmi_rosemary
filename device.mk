@@ -90,6 +90,12 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
