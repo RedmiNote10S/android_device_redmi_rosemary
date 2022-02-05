@@ -1,2 +1,0 @@
-# Lights
-type sys_led_brightness_file, fs_type, sysfs_type;

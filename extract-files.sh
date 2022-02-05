@@ -19,7 +19,7 @@
 set -e
 
 DEVICE=rosemary
-VENDOR=xiaomi
+VENDOR=redmi
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

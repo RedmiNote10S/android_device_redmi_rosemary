@@ -43,8 +43,7 @@ using android::base::GetProperty;
 using android::base::SetProperty;
 using std::string;
 
-void property_override(string prop, string value)
-{
+void property_override(string prop, string value) {
     auto pi = (prop_info*) __system_property_find(prop.c_str());
 
     if (pi != nullptr)
@@ -53,25 +52,39 @@ void property_override(string prop, string value)
         __system_property_add(prop.c_str(), prop.size(), value.c_str(), value.size());
 }
 
-void vendor_load_properties()
-{
-    const string model = "Redmi Note 10S"; // Its always Redmi Note 10S across all revisions
-    const string brand = "Redmi"; // Same with Redmi brand
+void vendor_load_properties() {
+    string sku = GetProperty("ro.boot.product.hardware.sku", "");
     string device;
-    string region = GetProperty("ro.boot.hwc", "");
+    string name;
+    string fingerprint;
 
-    // TODO: Add maltose
-    if (region == "India_PA" || region == "Global_PA") { // secret, Indian and Global
+    if (sku == "secret") {
         device = "secret";
-    } else { // Assume its rosemary if ro.boot.hwc didnt match
+        name = "secret_global";
+        fingerprint = "Redmi/secret_global/secret:11/RP1A.200720.011/V12.5.13.0.RKLMIXM:user/release-keys";
+    } else if (sku == "maltose") {
+        device = "maltose";
+        name = "maltose_global";
+        fingerprint = "Redmi/maltose_global/maltose:11/RP1A.200720.011/V12.5.13.0.RKLMIXM:user/release-keys";
+    } else {
         device = "rosemary";
+        name = "rosemary_global";
+        fingerprint = "Redmi/rosemary_global/rosemary:11/RP1A.200720.011/V12.5.13.0.RKLMIXM:user/release-keys";
     }
 
-    // Override all partitions' props
-    string prop_partitions[] = { "", "odm.", "product.", "system.", "system_ext.", "vendor." };
+    // Debug
+    if (sku == "merlinnfc") {
+        device = "merlinnfc";
+        name = "merlinnfc_global";
+        fingerprint = "Redmi/merlinnfc_global/merlinnfc:11/RP1A.200720.011/V12.5.2.0.RJOMIXM:user/release-keys";
+
+        property_override("ro.build.description", "merlinnfc-user 11 RP1A.200720.011  release-keys");
+    }
+
+    string prop_partitions[] = { "", "odm.", "product.", "system.", "system_ext.", "vendor.", "bootimage." };
     for (const string &prop : prop_partitions) {
-        property_override(string("ro.product.") + prop + string("brand"), brand);
         property_override(string("ro.product.") + prop + string("device"), device);
-        property_override(string("ro.product.") + prop + string("model"), model);
+        property_override(string("ro.product.") + prop + string("name"), name);
+        property_override(string("ro.") + prop + string("build.fingerprint"), fingerprint);
     }
 }
