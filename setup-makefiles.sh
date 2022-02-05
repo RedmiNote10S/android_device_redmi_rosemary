@@ -19,7 +19,7 @@
 set -e
 
 DEVICE=rosemary
-VENDOR=xiaomi
+VENDOR=redmi
 
 INITIAL_COPYRIGHT_YEAR=2019
 
