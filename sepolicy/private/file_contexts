@@ -1,2 +1,20 @@
+# Vendor overlay
+/(product|system/product)/vendor_overlay/[0-9]+/etc(/.*)? u:object_r:vendor_configs_file:s0
+
+# Power Stats
+/(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mediatek u:object_r:hal_power_stats_default_exec:s0
+
 # Lights
-/(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.lights-service\.mediatek u:object_r:hal_light_default_exec:s0
+/sys/devices/platform/leds-mt65xx/leds/lcd-backlight(/.*)? u:object_r:sysfs_leds:s0
+/(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.lights-service\.mediatek u:object_r:mtk_hal_light_exec:s0
+
+# Suspend
+/sys/devices/platform/fingerprint/wakeup/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/10238000.gce/wakeup/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt635x-auxadc/wakeup/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-rtc/wakeup/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-rtc/rtc/rtc0/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/11004000.i2c7/i2c-7/7-0055/power_supply/parallel/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/11004000.i2c7/i2c-7/7-0060/tcpc/type_c_port0/dual-role-type_c_port0/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/mt_charger/wakeup/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/wakeup/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0

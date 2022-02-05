@@ -22,6 +22,8 @@
 using ::aidl::android::hardware::light::Lights;
 
 int main() {
+    LOG(INFO) << "Using a custom lights service.";
+
     ABinderProcess_setThreadPoolMaxThreadCount(0);
     std::shared_ptr<Lights> lights = ndk::SharedRefBase::make<Lights>();
     if (!lights) {
