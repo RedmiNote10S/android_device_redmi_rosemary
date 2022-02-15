@@ -356,6 +356,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.ago.rc \
     init.mt6785.rc \
+    init.logger.rc \
     init.sensor_1_0.rc \
     fstab.mt6785 \
     init.connectivity.rc \
