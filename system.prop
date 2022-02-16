@@ -4,10 +4,6 @@ ro.control_privapp_permissions=log
 # Should improve performance a bit
 debug.sf.latch_unsignaled=1
 
-# RIL
-vendor.rild.libargs=-d /dev/ttyC0
-vendor.rild.libpath=libmtk-ril.so
-
 # Oversharpening
 persist.vendor.sys.pq.adl.idx=0
 persist.vendor.sys.pq.hdr.en=0
