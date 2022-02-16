@@ -1,3 +1,6 @@
+# Device Tree Status
+https://github.com/RedmiNote10S/android_device_redmi_rosemary/issues/1
+
 Device Tree for Redmi Note 10s (rosemary)
 ==========================================
 
@@ -18,4 +21,7 @@ The Redmi Note 10s (codenamed _"rosemary"_) is a high-end, mid-range smartphone 
 | Camera (Front)          | 13MP                                                                                                     |
 
 ## Device picture
-![rosemary](https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note10s.jpg)
+![rosemary](https://i01.appmifile.com/webfile/globalimg/Anna/rn10s_Blue.png)
+
+## Credits
+[@erfanoabdi](https://github.com/erfanoabdi), [@J6idot](https://github.com/J6idot), [@akshat0011](https://github.com/akshat0011), [@Woomymy](https://github.com/Woomymy), [@dgigantino](https://github.com/dgigantino), [@gaganmalvi](https://github.com/gaganmalvi), Aylin, and many more who helped with the development for Redmi Note 10S
