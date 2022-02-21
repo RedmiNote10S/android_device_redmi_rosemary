@@ -73,7 +73,7 @@ PRODUCT_COPY_FILES += \
 
 # Mtkperf
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/vendor/public.libraries.txt:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/public.libraries.txt
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # Common NFC
 PRODUCT_PACKAGES += \
