@@ -14,22 +14,19 @@
 # limitations under the License.
 #
 
-# Inherit from those products. Most specific first.
+# Common AOSP base
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-#
-# All components inherited here go to system_ext image
-#
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
-
-# Inherit from rosemary device
+# Inherit device tree
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+#KASUMI_BUILD_TYPE=gapps
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -42,10 +39,10 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10S
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="rosemary-user 11 RP1A.200720.011 V12.5.16.0.RKLMIXM release-keys"
+    PRIVATE_BUILD_DESC="rosemary-user 11 RP1A.200720.011 V12.5.16.0.RKLMIXM release-keys" \
+    PRODUCT_NAME=rosemary_global
 
 BUILD_FINGERPRINT := Redmi/rosemary/rosemary:11/RP1A.200720.011/V12.5.16.0.RKLMIXM:user/release-keys
 
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

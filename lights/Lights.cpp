@@ -45,24 +45,26 @@ bool WriteToFile(const std::string& path, uint32_t content) {
 }
 
 uint32_t RgbaToBrightness(uint32_t color) {
-    uint32_t alpha, red, green, blue;
+    // Extract brightness from AARRGGBB.
+    uint32_t alpha = (color >> 24) & 0xFF;
 
-    /*
-     * Extract brightness from AARRGGBB.
-     */
-    alpha = (color >> 24) & 0xFF;
-    red = (color >> 16) & 0xFF;
-    green = (color >> 8) & 0xFF;
-    blue = color & 0xFF;
+    // Retrieve each of the RGB colors
+    uint32_t red = (color >> 16) & 0xFF;
+    uint32_t green = (color >> 8) & 0xFF;
+    uint32_t blue = color & 0xFF;
 
-    /*
-     * Scale RGB brightness using Alpha brightness.
-     */
-    red = red * alpha / 0xFF;
-    green = green * alpha / 0xFF;
-    blue = blue * alpha / 0xFF;
+    // Scale RGB colors if a brightness has been applied by the user
+    if (alpha != 0xFF && alpha != 0) {
+        red = red * alpha / 0xFF;
+        green = green * alpha / 0xFF;
+        blue = blue * alpha / 0xFF;
+    }
 
     return (77 * red + 150 * green + 29 * blue) >> 8;
+}
+
+inline uint32_t RgbaToBrightness(uint32_t color, uint32_t max_brightness) {
+    return RgbaToBrightness(color) * max_brightness / 0xFF;
 }
 
 }  // anonymous namespace
@@ -117,12 +119,10 @@ ndk::ScopedAStatus Lights::getLights(std::vector<HwLight>* lights) {
 }
 
 void Lights::setLightBacklight(int /* id */, const HwLightState& state) {
-    int brightness = RgbaToBrightness(state.color);
-    int scaledBrightness = (brightness - 1) * (max_screen_brightness_ - 1) / (0xFF - 1) + 1;
-    LOG(INFO) << "Using non-scaled: " << brightness;
-    LOG(INFO) << "Using scaled: " << scaledBrightness;
-    WriteToFile(LCD_ATTR(brightness), scaledBrightness);
+    int brightness = RgbaToBrightness(state.color, max_screen_brightness_);
+    WriteToFile(LCD_ATTR(brightness), brightness);
 }
+
 }  // namespace light
 }  // namespace hardware
 }  // namespace android
