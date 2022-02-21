@@ -1,0 +1,21 @@
+# Device
+ro.product.system.brand=Redmi
+ro.product.system.manufacturer=Xiaomi
+ro.product.system.model=Redmi Note 9
+ro.product.system.device=merlinnfc
+ro.product.system.name=merlinnfc_global
+ro.product.model=Redmi Note 9
+ro.product.board=merlinnfc
+ro.product.device=merlinnfc
+ro.product.name=merlinnfc_global
+ro.build.flavor=merlinnfc-user
+ro.build.product=merlinnfc
+ro.build.description=merlinnfc-user 11 RP1A.200720.011 V12.5.1.0.RJOMIXM release-keys
+ro.build.fingerprint=Redmi/merlinnfc_global/merlinnfc:11/RP1A.200720.011/V12.5.1.0.RJOMIXM:user/release-keys
+ro.system.build.fingerprint=Redmi/merlinnfc_global/merlinnfc:11/RP1A.200720.011/V12.5.1.0.RJOMIXM:user/release-keys
+
+# Overlays
+ro.mtk.overlay=merlin
+
+# NFC
+ro.mtk.nfc=nq
