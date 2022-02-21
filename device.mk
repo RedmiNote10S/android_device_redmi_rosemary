@@ -79,34 +79,33 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
     $(DEVICE_PATH)/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.kl
 
-# Audio
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio_policy_configuration.xml
-
 # Mtkperf
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/vendor/public.libraries.txt:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/public.libraries.txt
 
-# NFC
+# Common NFC
 PRODUCT_PACKAGES += \
-    NfcNci \
     SecureElement \
     Tag \
     com.android.nfc_extras
 
+# NfcNci
+PRODUCT_PACKAGES += \
+    NfcNci
+
+# NQNfcNci
+#PRODUCT_PACKAGES += \
+#    NQNfcNci \
+#    libnqnfc-nci \
+#    libnqnfc_nci_jni \
+#    libsn100nfc_nci_jni \
+#    libsn100nfc-nci \
+#    com.nxp.nfc.nq \
+#    com.nxp.nfc.nq.xml
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.mediatek
-
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.1-service.mediatek
-
-# Power Stats
-PRODUCT_PACKAGES += \
-    android.hardware.power.stats@1.0-service.mediatek \
-    android.hardware.power.stats@1.0-service.mediatek.xml \
-    android.hardware.power.stats@1.0-service.mediatek.rc
 
 # Init
 PRODUCT_PACKAGES += \
@@ -148,6 +147,17 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/public.libraries-trustonic.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-trustonic.txt
+
+# Overlays
+PRODUCT_PACKAGES += \
+    RosemaryFrameworks \
+    RosemaryTelephony
+
+# Props
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/props/build_rosemary.prop:$(TARGET_COPY_OUT_SYSTEM)/build_rosemary.prop \
+    $(LOCAL_PATH)/props/build_secret.prop:$(TARGET_COPY_OUT_SYSTEM)/build_secret.prop \
+    $(LOCAL_PATH)/props/build_maltose.prop:$(TARGET_COPY_OUT_SYSTEM)/build_maltose.prop
 
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
