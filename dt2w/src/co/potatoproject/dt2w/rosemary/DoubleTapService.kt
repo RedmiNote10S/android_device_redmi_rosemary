@@ -1,3 +1,8 @@
+/*
+ * Copyright (C) 2022 StatiX
+ * SPDX-License-Identifier: GPL-2.0-only
+ */
+
 package co.potatoproject.dt2w.rosemary
 
 import android.app.Service
@@ -13,10 +18,10 @@ import android.os.SystemProperties
 import android.os.UserHandle
 import android.provider.Settings.Secure
 
-class DT2WServiceRosemary : Service() {
-    private var mContext: Context
-    private var mHandler: Handler
-    private var mCustomSettingsObserver: CustomSettingsObserver
+class DoubleTapService : Service() {
+    private lateinit var mContext: Context
+    private lateinit var mHandler: Handler
+    private lateinit var mCustomSettingsObserver: CustomSettingsObserver
 
     override fun onBind(intent: Intent?): IBinder? {
         return null
@@ -53,9 +58,5 @@ class DT2WServiceRosemary : Service() {
                 update()
             }
         }
-    }
-
-    companion object {
-        private const val TAG = "DT2WServiceRosemary"
     }
 }
