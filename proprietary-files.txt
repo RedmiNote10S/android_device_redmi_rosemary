@@ -30,3 +30,4 @@ lib/libsource.so
 lib/libvcodec_cap.so
 lib/libvcodec_capenc.so
 lib/libvt_avsync.so
+lib/vendor.mediatek.hardware.videotelephony@1.0.so
