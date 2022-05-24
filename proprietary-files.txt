@@ -10,6 +10,10 @@
 -framework/mediatek-ims-legacy.jar
 -framework/mediatek-ims-wwop-common.jar
 -priv-app/ImsService/ImsService.apk
+framework/mediatek-wfo-legacy.jar
+framework/mediatek-ims-wwop-common.jar
+framework/mediatek-ims-extension-plugin.jar
+framework/mediatek-ims-legacy.jar
 bin/vtservice
 etc/init/init.vtservice.rc
 lib/libcomutils.so
