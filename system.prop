@@ -21,3 +21,8 @@ persist.vendor.sys.pq.ultrares.strength=0
 vendor.debug.pq.dre.demowin.x=0
 vendor.debug.pq.dshp.en=0
 vendor.debug.pq.shp.en=0
+
+# IMS 
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
