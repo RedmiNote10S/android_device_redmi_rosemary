@@ -1,0 +1,7 @@
+# Kill serial console warning
+on boot
+    setprop init.svc.console stopped
+
+# Kill AOSP RIL
+on property:vendor.ril.mtk=1
+    stop vendor.ril-daemon
