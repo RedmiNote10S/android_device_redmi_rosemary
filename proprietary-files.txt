@@ -39,7 +39,6 @@ lib/libshowlogo.so
 lib/libsysenv_system.so
 
 # MTK
--priv-app/EngineerMode/EngineerMode.apk
 lib/libem_support_jni.so
 lib/libem_usb_jni.so
 lib/libem_wifi_jni.so
