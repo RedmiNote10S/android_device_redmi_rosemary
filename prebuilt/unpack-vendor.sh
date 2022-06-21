@@ -1,7 +1,8 @@
 #!/bin/bash
 ROOT=$(dirname "$(readlink -f "$0")")
-echo "Joining the fragments..."
-cat $ROOT/fragments/vendor.a* > $ROOT/vendor.img.xz
 echo "Unpacking..."
-unxz $ROOT/vendor.img.xz
+if [ ! -f $ROOT/vendor.img ]; then
+    7z e $ROOT/fragments/vendor.img.7z.001 -o"$ROOT" -y
+fi
 echo "Done!"
+

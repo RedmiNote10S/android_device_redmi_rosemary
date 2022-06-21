@@ -61,15 +61,15 @@ void vendor_load_properties() {
     if (sku == "secret") {
         device = "secret";
         name = "secret_global";
-        fingerprint = "Redmi/secret_global/secret:11/RP1A.200720.011/V12.5.13.0.RKLMIXM:user/release-keys";
+        fingerprint = "Redmi/secret_global/secret:11/RP1A.200720.011/V12.5.16.0.RKLMIXM:user/release-keys";
     } else if (sku == "maltose") {
         device = "maltose";
         name = "maltose_global";
-        fingerprint = "Redmi/maltose_global/maltose:11/RP1A.200720.011/V12.5.13.0.RKLMIXM:user/release-keys";
+        fingerprint = "Redmi/maltose_global/maltose:11/RP1A.200720.011/V12.5.16.0.RKLMIXM:user/release-keys";
     } else {
         device = "rosemary";
         name = "rosemary_global";
-        fingerprint = "Redmi/rosemary_global/rosemary:11/RP1A.200720.011/V12.5.13.0.RKLMIXM:user/release-keys";
+        fingerprint = "Redmi/rosemary_global/rosemary:11/RP1A.200720.011/V12.5.16.0.RKLMIXM:user/release-keys";
     }
 
     // Debug
