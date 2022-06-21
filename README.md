@@ -1,5 +1,17 @@
 # Device Tree Status
-https://github.com/RedmiNote10S/android_device_redmi_rosemary/issues/1
+Initial works: https://github.com/RedmiNote10S/android_device_redmi_rosemary/issues/1
+
+Additions by [@akshat0011](https://github.com/akshat0011): IMS stuff
+
+My additions;
+- [x] Done initial Kasumi bringup for further works on a personally pleasing environment.
+- [ ] Fixing bootability...
+- [ ] Will check for basic features and fix existing.
+- [ ] Will test aforementioned TODOs and fix them if any fails.
+- [ ] Will porting GSI workarounds from PHH Treble without patching actual ROM sources.
+- [ ] Will work on making MIUI Camera available on all ROMs regardless - Dirty hack but necessary for all lenses to work.
+- [ ] Will attempt to make OSS vendor instead of prebuilt MIUI one here.
+- [ ] (If previous fails) Will turn current MIUI vendor.img into a regular vendor tree.
 
 Device Tree for Redmi Note 10s (rosemary)
 ==========================================
