@@ -58,6 +58,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# Charger
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0 \
+    libsuspend
+
 # Dynamic partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
