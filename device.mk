@@ -154,6 +154,11 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# HIDL and HW binder
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhwbinder
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.ago.rc \
