@@ -20,6 +20,8 @@ lib/libimsma_socketwrapper.so
 lib/libmtk_vt_service.so
 lib/libmtk_vt_wrapper.so
 lib64/libmtk_vt_wrapper.so
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 lib/libmtkavenhancements.so
 lib64/libmtkavenhancements.so
 lib/libmtkperf_client.so
