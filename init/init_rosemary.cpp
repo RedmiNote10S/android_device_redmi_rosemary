@@ -72,15 +72,6 @@ void vendor_load_properties() {
         fingerprint = "Redmi/rosemary_global/rosemary:11/RP1A.200720.011/V12.5.16.0.RKLMIXM:user/release-keys";
     }
 
-    // Debug
-    if (sku == "merlinnfc") {
-        device = "merlinnfc";
-        name = "merlinnfc_global";
-        fingerprint = "Redmi/merlinnfc_global/merlinnfc:11/RP1A.200720.011/V12.5.2.0.RJOMIXM:user/release-keys";
-
-        property_override("ro.build.description", "merlinnfc-user 11 RP1A.200720.011  release-keys");
-    }
-
     string prop_partitions[] = { "", "odm.", "product.", "system.", "system_ext.", "vendor.", "bootimage." };
     for (const string &prop : prop_partitions) {
         property_override(string("ro.product.") + prop + string("device"), device);
