@@ -10,7 +10,6 @@
 bin/vtservice
 etc/init/init.vtservice.rc
 framework/mediatek-wfo-legacy.jar
-framework/mediatek-ims-extension-plugin.jar
 framework/mediatek-ims-legacy.jar
 lib/libcomutils.so
 lib/libimsma.so
