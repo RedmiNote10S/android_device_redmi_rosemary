@@ -2,6 +2,7 @@
 
 import ${ro.vendor.rc}init.connectivity.rc
 import ${ro.vendor.rc}init.mt6785.usb.rc
+import ${ro.vendor.rc}init.rosemary.incall_fixup.rc
 import /vendor/etc/init/hw/init.project.rc
 import /system_ext/etc/init/hw/init.aee.rc
 import /FWUpgradeInit.rc
