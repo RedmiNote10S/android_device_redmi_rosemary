@@ -5,10 +5,3 @@ on boot
 # Kill AOSP RIL
 on property:vendor.ril.mtk=1
     stop vendor.ril-daemon
-
-# Switch between NFC implementations
-on fs && property:ro.mtk.nfc=nq
-    mount none /vendor/lost+found /system/app/NfcNci bind
-
-on fs && property:ro.mtk.nfc=nci
-    mount none /vendor/lost+found /system_ext/app/NQNfcNci bind
