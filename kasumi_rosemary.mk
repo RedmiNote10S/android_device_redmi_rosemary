@@ -24,14 +24,29 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit device tree
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Gapps
+##### Kasumi Add-ons #####
+# These variables are usually controlled by CI and/or build system if
+# they aren't overridden here.
+
+KASUMI_SHIP_LAWNCHAIR := true
+KASUMI_SHIP_ADAWAY := true
+
+# GApps
 TARGET_GAPPS_ARCH := arm64
-#KASUMI_BUILD_TYPE=gapps
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
+
+# Signing
+TARGET_NO_ENFORCE_SIGNING := true
+
+# These for example will ship Lawnchair and AdAway regardless of what
+# CI sets, tell build system our arch for GApps shipping is ARM64,
+# report build system about screen resolution properties for
+# picking boot animation and won't enforce signing.
+##########################
 
 PRODUCT_NAME := kasumi_rosemary
 PRODUCT_DEVICE := rosemary
