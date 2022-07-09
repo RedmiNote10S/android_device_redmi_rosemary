@@ -12,6 +12,9 @@ LOCAL_SRC_FILES := \
     main.cpp \
     Lights.cpp
 
+LOCAL_C_INCLUDES := \
+    hardware/libhardware/include
+
 LOCAL_SHARED_LIBRARIES := \
     libbinder_ndk \
     libhardware \
