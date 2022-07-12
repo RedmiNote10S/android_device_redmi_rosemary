@@ -1,0 +1,1 @@
+allow proc_ppm proc:filesystem associate;
