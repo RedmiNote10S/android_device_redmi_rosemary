@@ -1,0 +1,1 @@
+allow vpud_native sysfs_boot_mode:file read;
