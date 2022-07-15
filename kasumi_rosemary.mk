@@ -52,11 +52,11 @@ PRODUCT_NAME := kasumi_rosemary
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi Note 10S
+PRODUCT_MODEL := rosemary
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="rosemary-user 11 RP1A.200720.011 V12.5.16.0.RKLMIXM release-keys" \
-    PRODUCT_NAME=rosemary_global
+    PRODUCT_NAME=rosemary
 
 BUILD_FINGERPRINT := Redmi/rosemary/rosemary:11/RP1A.200720.011/V12.5.16.0.RKLMIXM:user/release-keys
 
