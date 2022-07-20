@@ -36,7 +36,6 @@ init.userspace_reboot.is_supported=true
 ro.audio.monitorRotation=true
 aaudio.mmap_policy=2
 aaudio.mmap_exclusive_policy=2
-ro.config.vc_call_vol_steps=11
 ro.vendor.mtk_shutdown_support=0
 ro.vendor.mtk_f2fs_enable=1
 sys.haptic.down.strong=50
