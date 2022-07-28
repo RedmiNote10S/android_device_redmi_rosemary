@@ -175,6 +175,8 @@ PRODUCT_PACKAGES += \
     init.mt6785.rc \
     init.sensor_1_0.rc \
     fstab.mt6785 \
+    init.rosemary.incall_fixup.rc \
+    init.rosemary.incall_fixup.sh
 
 # Ramdisk For Kernel
 PRODUCT_COPY_FILES += \
@@ -200,3 +202,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/xyz.extras.xml \
     $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/xyz.extras.xml 
 
+# TinyMix - Needed for in-call volume
+PRODUCT_PACKAGES += \
+    tinymix
