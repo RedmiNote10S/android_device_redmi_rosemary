@@ -16,9 +16,6 @@ dalvik.vm.heaptargetutilization=0.5
 dalvik.vm.heapminfree=8m
 dalvik.vm.heapmaxfree=64m
 
-# In-call volume
-ro.config.vc_call_vol_steps=7
-
 # Oversharpening
 persist.vendor.sys.pq.adl.idx=0
 persist.vendor.sys.pq.hdr.en=0
