@@ -50,6 +50,13 @@ PRODUCT_PACKAGES_DEBUG += \
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio.effect@5.0-impl \
+    android.hardware.soundtrigger@2.2-impl \
+    audio.a2dp.default \
+    tinymix
+
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-mtkimpl \
@@ -174,7 +181,9 @@ PRODUCT_PACKAGES += \
     init.ago.rc \
     init.mt6785.rc \
     init.sensor_1_0.rc \
-    fstab.mt6785 \
+    fstab.mt6785
+
+# PRODUCT_PACKAGES += \
     init.rosemary.incall_fixup.rc \
     init.rosemary.incall_fixup.sh
 
@@ -201,7 +210,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/xyz.extras.xml \
     $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/xyz.extras.xml 
-
-# TinyMix - Needed for in-call volume
-PRODUCT_PACKAGES += \
-    tinymix
