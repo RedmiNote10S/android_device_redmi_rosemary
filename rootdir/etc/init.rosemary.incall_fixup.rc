@@ -1,0 +1,13 @@
+on boot
+    start incall_fixup
+
+# Fix in-call using a shell script depending on tinymix.
+#
+# I am aware that this workaround is really hacky, but that is
+# the best shot we have as of now. I will be thinking of a more
+# proper fix of this later on.
+service incall_fixup /vendor/bin/init.rosemary.incall_fixup.sh
+	class main
+	user root
+	seclabel u:r:su:s0
+	oneshot
