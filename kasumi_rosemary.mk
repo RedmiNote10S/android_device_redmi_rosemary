@@ -30,6 +30,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 KASUMI_SHIP_LAWNCHAIR := true
 KASUMI_SHIP_ADAWAY := true
+KASUMI_INCLUDE_GCGOP := true
 
 # GApps
 TARGET_GAPPS_ARCH := arm64
@@ -42,9 +43,9 @@ TARGET_SCREEN_WIDTH := 1080
 # Signing
 TARGET_NO_ENFORCE_SIGNING := true
 
-# These for example will ship Lawnchair and AdAway regardless of what
-# CI sets, tell build system our arch for GApps shipping is ARM64,
-# report build system about screen resolution properties for
+# These for example will ship Lawnchair, AdAway and GCamGO regardless
+# of what CI sets, tell build system our arch for GApps shipping is
+# ARM64, report build system about screen resolution properties for
 # picking boot animation and won't enforce signing.
 ##########################
 
