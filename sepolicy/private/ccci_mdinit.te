@@ -1,0 +1,12 @@
+type ccci_mdinit, domain;
+type ccci_mdinit_exec, exec_type, file_type;
+init_daemon_domain(ccci_mdinit)
+
+type sysfs_boot_mode, domain;
+type sysfs_boot_mode_exec, exec_type, file_type;
+init_daemon_domain(sysfs_boot_mode)
+
+allow ccci_mdinit default_prop:file read;
+allow ccci_mdinit sysfs_boot_mode:file read;
+allow ccci_mdinit sysfs_dt_firmware_android:file read;
+allow ccci_mdinit sysfs:file read;

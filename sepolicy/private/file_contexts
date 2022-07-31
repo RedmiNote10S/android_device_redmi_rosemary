@@ -3,7 +3,17 @@
 
 # Power Stats
 /(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mediatek u:object_r:hal_power_stats_default_exec:s0
+/sys/devices/platform/battery/power_supply/battery/charging_enabled	u:object_r:sysfs_input_suspend:s0
 
 # Lights
 /sys/devices/platform/leds-mt65xx/leds/lcd-backlight(/.*)? u:object_r:sysfs_leds:s0
 /(product|system/product)/vendor_overlay/[0-9]+/bin/hw/android\.hardware\.lights-service\.mediatek u:object_r:mtk_hal_light_exec:s0
+
+# Camera
+/(system\/vendor|vendor)/bin/hw/camerahalserver u:object_r:mtk_hal_camera_exec:s0
+
+# NVRAM Daemon
+/(system\/vendor|vendor)/bin/nvram_daemon u:object_r:nvram_daemon_exec:s0
+
+# WLAN Assistant
+/(system\/vendor|vendor)/bin/wlan_assistant u:object_r:wlan_assistant_exec:s0
