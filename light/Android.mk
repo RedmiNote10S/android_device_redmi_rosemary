@@ -9,11 +9,8 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_
 LOCAL_MODULE_RELATIVE_PATH := hw
 
 LOCAL_SRC_FILES := \
-    main.cpp \
-    Lights.cpp
-
-LOCAL_C_INCLUDES := \
-    hardware/libhardware/include
+    service.cpp \
+    Light.cpp
 
 LOCAL_SHARED_LIBRARIES := \
     libbinder_ndk \
