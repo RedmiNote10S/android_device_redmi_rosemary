@@ -7,5 +7,5 @@ if [[ "${SHELLCHK}" == "bash" ]]; then
 else
     DT_ROOT=$(dirname "$0")
 fi
-echo -ne "including ${rosemary_dir}/prebuilt/unpack_vendor.sh\033[0K\r"
+echo -ne "including ${DT_ROOT}/prebuilt/unpack_vendor.sh\033[0K\r"
 bash $DT_ROOT/prebuilt/unpack-vendor.sh > /dev/null 2>&1
