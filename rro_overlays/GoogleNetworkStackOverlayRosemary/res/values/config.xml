@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_dhcp_client_hostname">true</bool>
+    <integer name="config_nud_postroaming_solicit_interval">750</integer>
+    <integer name="config_nud_postroaming_solicit_num">8</integer>
+    <integer name="config_nud_steadystate_solicit_interval">750</integer>
+    <integer name="config_nud_steadystate_solicit_num">8</integer>
+</resources>

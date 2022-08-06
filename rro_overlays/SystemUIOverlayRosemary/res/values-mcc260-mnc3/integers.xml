@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <integer name="status_bar_vowifi_drawable_type">1</integer>
+</resources>
