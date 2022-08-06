@@ -7,6 +7,16 @@
   {
     "repository": "windowz414/android_vendor_redmi_rosemary",
     "target_path": "vendor/redmi/rosemary",
+    "branch": "ossworx/kasumi-v1"
+  },
+  {
+    "repository": "PixelExperience/vendor_mediatek-opensource",
+    "target_path": "vendor/mediatek/opensource",
+    "branch": "eleven"
+  },
+  {
+    "repository": "PixelExperience/vendor_mediatek_interfaces",
+    "target_path": "vendor/mediatek/interfaces",
     "branch": "eleven"
   }
 ]

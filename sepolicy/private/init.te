@@ -7,3 +7,4 @@ allow init sysfs_input_suspend:file setattr;
 allow init sysfs_leds:file setattr;
 allow init sysfs_batteryinfo:file setattr;
 allow init sysfs_devices_block:file setattr;
+allow init sysfs:file write;

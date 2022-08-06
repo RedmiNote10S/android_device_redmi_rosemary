@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="navigation_side_padding">85.0dip</dimen>
+    <dimen name="status_bar_padding_top">7.0dip</dimen>
+    <dimen name="rounded_corner_content_padding">52.0px</dimen>
+    <dimen name="statusbar_padding_end">4.5dip</dimen>
+</resources>

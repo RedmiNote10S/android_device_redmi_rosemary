@@ -40,13 +40,10 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-# Signing
-TARGET_NO_ENFORCE_SIGNING := true
-
 # These for example will ship Lawnchair, AdAway and GCamGO regardless
 # of what CI sets, tell build system our arch for GApps shipping is
-# ARM64, report build system about screen resolution properties for
-# picking boot animation and won't enforce signing.
+# ARM64 and report build system about screen resolution properties for
+# picking boot animation.
 ##########################
 
 PRODUCT_NAME := kasumi_rosemary
