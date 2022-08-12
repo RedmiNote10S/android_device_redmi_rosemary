@@ -62,16 +62,7 @@ vendor/etc/camera/sr_params.xml
 vendor/etc/camera/vidhance_calibration
 
 # Charger (Xiaomi)
-lib/vendor.xiaomi.hardware.micharge@1.0.so
-lib64/vendor.xiaomi.hardware.micharge@1.0.so
-vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
 vendor/bin/batterysecret
-vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc
--vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml
-vendor/lib/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
-vendor/lib/vendor.xiaomi.hardware.micharge@1.0.so
-vendor/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so
-vendor/lib64/vendor.xiaomi.hardware.micharge@1.0.so
 
 # CIT
 vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
@@ -400,7 +391,6 @@ vendor/bin/cal_tool
 vendor/bin/ccci_fsd
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
-vendor/bin/charge_logger
 vendor/bin/charon
 vendor/bin/consumerird
 vendor/bin/dconfig
