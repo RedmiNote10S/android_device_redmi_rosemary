@@ -3,8 +3,8 @@
 # Audio
 vendor/bin/hw/android.hardware.audio.service.mediatek
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
-vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so
+vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.mt6785.so
 vendor/lib/hw/audio.r_submix.default.so
@@ -21,13 +21,13 @@ vendor/lib/libladder.so
 vendor/lib/libnvram.so
 vendor/lib/libnvram_platform.so
 vendor/lib/libnvram_sec.so
-vendor/lib/libtinyxml.so
 vendor/lib/libtinycompress.so
+vendor/lib/libtinyxml.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so
-vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so
+vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.mt6785.so
 vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.r_submix.mt6785.so
@@ -448,9 +448,9 @@ vendor/lib64/wechat.beanpod.so
 # Power
 vendor/lib/hw/power.default.so
 vendor/lib/hw/power.mt6785.so
-vendor/lib64/android.hardware.power-service-mediatek.so
 vendor/lib64/hw/power.default.so
 vendor/lib64/hw/power.mt6785.so
+vendor/lib64/android.hardware.power-service-mediatek.so
 
 # Radio
 system_ext/lib/vendor.mediatek.hardware.mtkradioex@1.0.so
@@ -565,9 +565,9 @@ lib64/vendor.xiaomi.hardware.vibratorfeature@1.0.so
 # Wi-Fi
 vendor/bin/hw/android.hardware.wifi@1.0-service-lazy
 vendor/bin/hw/hostapd
+vendor/bin/hw/wpa_supplicant
 vendor/bin/hostapd_cli
 vendor/bin/wpa_cli
-vendor/bin/hw/wpa_supplicant
 vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc
 -vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
@@ -851,6 +851,14 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
 vendor/etc/gnss/agps_profiles_conf2.xml
+vendor/etc/init/hw/factory_init.connectivity.rc
+vendor/etc/init/hw/factory_init.project.rc
+vendor/etc/init/hw/factory_init.rc
+vendor/etc/init/hw/meta_init.connectivity.rc
+vendor/etc/init/hw/meta_init.modem.rc
+vendor/etc/init/hw/meta_init.project.rc
+vendor/etc/init/hw/meta_init.rc
+vendor/etc/init/hw/multi_init.rc
 vendor/etc/init/aee_aedv.rc
 vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/atcid.rc
@@ -924,14 +932,6 @@ vendor/etc/init/vibrator-mtk-default.rc
 vendor/etc/init/vndservicemanager.rc
 vendor/etc/init/vpud.rc
 vendor/etc/init/wlan_assistant.rc
-vendor/etc/init/hw/factory_init.connectivity.rc
-vendor/etc/init/hw/factory_init.project.rc
-vendor/etc/init/hw/factory_init.rc
-vendor/etc/init/hw/meta_init.connectivity.rc
-vendor/etc/init/hw/meta_init.modem.rc
-vendor/etc/init/hw/meta_init.project.rc
-vendor/etc/init/hw/meta_init.rc
-vendor/etc/init/hw/multi_init.rc
 vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootCA.crt
 vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG2.crt
 vendor/etc/ipsec/ipsec.d/cacerts/DigiCertGlobalRootG3.crt
@@ -2669,12 +2669,12 @@ vendor/lib/vendor.xiaomi.hardware.misys@1.0.so
 vendor/lib/vendor.xiaomi.hardware.misys@2.0.so
 vendor/lib/vendor.xiaomi.hardware.misys@3.0.so
 vendor/lib/vendor.xiaomi.hardware.vsimapp@1.0.so
+vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
 vendor/lib64/hw/audio_policy.stub.so
 vendor/lib64/hw/dfps.mt6785.so
 vendor/lib64/hw/gps.default.so
 vendor/lib64/hw/kmsetkey.beanpod.so
 vendor/lib64/hw/libSoftGatekeeper.so
-vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
@@ -2698,8 +2698,8 @@ vendor/lib64/APUWareUtilsServer.so
 vendor/lib64/APUWareXrpServer.so
 vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
-vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/android.hidl.allocator@1.0.so
+vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/gc02m1bsunny_mipi_mono_IdxMgr.so
 vendor/lib64/gc02m1bsunny_mipi_mono_india_IdxMgr.so
 vendor/lib64/gc02m1bsunny_mipi_mono_india_tuning.so
@@ -3582,18 +3582,17 @@ vendor/fstab.enableswap
 # Unpinned blobs from kasumi_rosemary-userdebug 11 RQ3A.211001.001 eng.beru.20220803.071103 test-keys
 
 # MTK-IMS
+bin/vtservice
+etc/init/init.vtservice.rc
 -framework/mediatek-common.jar
 -framework/mediatek-framework.jar
 -framework/mediatek-ims-base.jar
 -framework/mediatek-ims-common.jar
+-framework/mediatek-ims-legacy.jar
 -framework/mediatek-telecom-common.jar
 -framework/mediatek-telephony-base.jar
 -framework/mediatek-telephony-common.jar
--priv-app/ImsService/ImsService.apk
-bin/vtservice
-etc/init/init.vtservice.rc
 -framework/mediatek-wfo-legacy.jar
--framework/mediatek-ims-legacy.jar
 lib/libcomutils.so
 lib/libimsma.so
 lib/libimsma_adapt.so
@@ -3601,26 +3600,27 @@ lib/libimsma_rtp.so
 lib/libimsma_socketwrapper.so
 lib/libmtk_vt_service.so
 lib/libmtk_vt_wrapper.so
-lib64/libmtk_vt_wrapper.so
-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 lib/libmtkavenhancements.so
-lib64/libmtkavenhancements.so
 lib/libmtkperf_client.so
-lib64/libmtkperf_client.so
 lib/libsignal.so
 lib/libsink.so
 lib/libsource.so
 lib/libvcodec_cap.so
-lib64/libvcodec_cap.so
 lib/libvcodec_capenc.so
-lib64/libvcodec_capenc.so
 lib/libvt_avsync.so
+lib64/libmtk_vt_wrapper.so
+lib64/libmtkavenhancements.so
+lib64/libmtkperf_client.so
+lib64/libvcodec_cap.so
+lib64/libvcodec_capenc.so
+-priv-app/ImsService/ImsService.apk
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Bluetooth
 lib/libldacBT_abr.so
-lib64/libldacBT_abr.so
 lib/libldacBT_enc.so
+lib64/libldacBT_abr.so
 lib64/libldacBT_enc.so
 
 # Kernel Power Off Charging (KPOC)
@@ -3632,8 +3632,8 @@ lib64/libsysenv_system.so
 
 # MTK
 lib/libem_support_jni.so
-lib64/libem_support_jni.so
 lib/libem_usb_jni.so
-lib64/libem_usb_jni.so
 lib/libem_wifi_jni.so
+lib64/libem_support_jni.so
+lib64/libem_usb_jni.so
 lib64/libem_wifi_jni.so
