@@ -125,8 +125,8 @@ BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 
 # Properties
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/props/product.prop
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/common.prop
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/props/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/props/vendor.prop
 
 # Vendor ASB level
 VENDOR_SECURITY_PATCH := 2021-01-05
