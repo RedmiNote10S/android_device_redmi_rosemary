@@ -1,2 +1,0 @@
-allow kernel kernel:capability dac_override;
-allow kernel mnt_vendor_file:dir search;

@@ -1,9 +1,0 @@
-type wlan_assistant, domain;
-type wlan_assistant_exec, exec_type, file_type;
-
-init_daemon_domain(wlan_assistant)
-
-allow wlan_assistant sysfs_boot_mode:file read;
-allow wlan_assistant metadata_file:dir search;
-allow wlan_assistant sysfs_dt_firmware_android:dir search;
-allow wlan_assistant radio_prop:property_service set;
