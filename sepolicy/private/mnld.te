@@ -1,9 +1,0 @@
-type mnld, domain;
-type mnld_exec, exec_type, file_type;
-
-init_daemon_domain(mnld)
-
-net_domain(mnld)
-
-allow mnld default_prop:file read;
-allow mnld sysfs_leds:file read;

@@ -1,7 +1,0 @@
-type mtk_hal_bluetooth, domain;
-type mtk_hal_bluetooth_exec, exec_type, file_type;
-
-init_daemon_domain(mtk_hal_bluetooth)
-
-allow mtk_hal_bluetooth metadata_file:dir search;
-allow mtk_hal_bluetooth default_prop:property_service set;

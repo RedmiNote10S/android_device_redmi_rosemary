@@ -18,5 +18,10 @@
     "repository": "PixelExperience/vendor_mediatek_interfaces",
     "target_path": "vendor/mediatek/interfaces",
     "branch": "eleven"
+  },
+  {
+    "repository": "PixelExperience/device_mediatek_sepolicy_vndr",
+    "target_path": "device/mediatek/sepolicy_vndr",
+    "branch": "eleven"
   }
 ]
