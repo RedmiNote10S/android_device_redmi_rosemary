@@ -387,11 +387,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
 
-# Symbols
-PRODUCT_PACKAGES += \
-    libshim_showlogo \
-    libshim_vtservice
-
 # VNDService
 PRODUCT_PACKAGES += \
     vndservice_manager \
