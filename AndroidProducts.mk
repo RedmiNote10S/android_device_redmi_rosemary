@@ -1,7 +1,5 @@
 PRODUCT_MAKEFILES := \
-    $(wildcard $(LOCAL_DIR)/kasumi_rosemary.mk)
+	$(LOCAL_DIR)/lineage_rosemary.mk
 
 COMMON_LUNCH_CHOICES := \
-    kasumi_rosemary-user \
-    kasumi_rosemary-userdebug \
-    kasumi_rosemary-eng
+    $(foreach variant, user userdebug eng, lineage_rosemary-$(variant))

@@ -19,34 +19,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, $(CUSTOM_VENDOR_DIR)/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit device tree
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
-
-##### Kasumi Add-ons #####
-# These variables are usually controlled by CI and/or build system if
-# they aren't overridden here.
-
-KASUMI_SHIP_LAWNCHAIR := true
-KASUMI_SHIP_ADAWAY := true
-KASUMI_INCLUDE_GCGOP := true
-
-# GApps
-TARGET_GAPPS_ARCH := arm64
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-# These for example will ship Lawnchair, AdAway and GCamGO regardless
-# of what CI sets, tell build system our arch for GApps shipping is
-# ARM64 and report build system about screen resolution properties for
-# picking boot animation.
-##########################
-
-PRODUCT_NAME := kasumi_rosemary
+PRODUCT_NAME := lineage_rosemary
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
@@ -59,3 +42,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := Redmi/rosemary/rosemary:11/RP1A.200720.011/V12.5.16.0.RKLMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
