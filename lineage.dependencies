@@ -5,9 +5,9 @@
     "branch": "android-12-stable"
   },
   {
-    "repository": "windowz414/android_vendor_redmi_rosemary",
+    "repository": "Woomymy/android_vendor_redmi_rosemary",
     "target_path": "vendor/redmi/rosemary",
-    "branch": "kasumi-v1"
+    "branch": "lineage-18.1"
   },
   {
     "repository": "PixelExperience/vendor_mediatek-opensource",
