@@ -57,13 +57,24 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
-    android.hardware.audio.effect@5.0-impl \
+    android.hardware.audio.effect@6.0-impl \
     android.hardware.soundtrigger@2.2-impl \
+    android.hardware.bluetooth.audio@2.0-impl \
     audio.a2dp.default \
     audio.primary.default \
     audio.r_submix.default \
+    audio.usb.default \
+    audio.bluetooth.default \
     tinymix \
-    tinyxml
+    libtinyxml \
+    libalsautils \
+    libtinycompress \
+    libaudiofoundation \
+    libaudiofoundation.vendor \
+    libdynproc \
+    libladder \
+    libbluetooth_audio_session \
+    libbluetooth_audio_session_mediatek
 
 # Boot control HAL
 PRODUCT_PACKAGES += \

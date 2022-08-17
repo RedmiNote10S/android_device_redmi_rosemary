@@ -3,58 +3,39 @@
 # Audio
 vendor/bin/hw/android.hardware.audio.service.mediatek
 vendor/etc/init/android.hardware.audio.service.mediatek.rc
-vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so
 vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
-vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.mt6785.so
-vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/audio.r_submix.mt6785.so
-vendor/lib/hw/audio.usb.default.so
 vendor/lib/hw/audio.usb.mt6785.so
 vendor/lib/libaedv.so
-vendor/lib/libalsautils.so
 vendor/lib/libaudiocustparam_vendor.so
-vendor/lib/libaudiofoundation.so
 vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libcustom_nvram.so
-vendor/lib/libladder.so
 vendor/lib/libnvram.so
 vendor/lib/libnvram_platform.so
 vendor/lib/libnvram_sec.so
-vendor/lib/libtinycompress.so
-vendor/lib/libtinyxml.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so
-vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so
 vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.mt6785.so
-vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.r_submix.mt6785.so
-vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/hw/audio.usb.mt6785.so
 vendor/lib64/libaedv.so
-vendor/lib64/libalsautils.so
 vendor/lib64/libaudiocustparam_vendor.so
-vendor/lib64/libaudiofoundation.so
 vendor/lib64/libaudiotoolkit_vendor.so
 vendor/lib64/libcustom_nvram.so
-vendor/lib64/libladder.so
 vendor/lib64/libnvram.so
 vendor/lib64/libnvram_platform.so
 vendor/lib64/libnvram_sec.so
-vendor/lib64/libtinycompress.so
-vendor/lib64/libtinyxml.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib64/vendor.mediatek.hardware.mtkpower@1.0.so
 
 # Audio (FX modules)
 vendor/lib/soundfx/libaudiopreprocessing_mtk.so
-vendor/lib/soundfx/libdynproc.so
 vendor/lib/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
-vendor/lib64/soundfx/libdynproc.so
 
 # Audio configs
 etc/a2dp_audio_policy_configuration.xml
@@ -89,21 +70,6 @@ vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
-
-# Bluetooth (A2DP)
-vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so
-vendor/lib/hw/audio.bluetooth.default.so
-vendor/lib/libbluetooth_audio_session.so
-vendor/lib/libbluetooth_audio_session_mediatek.so
-vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so
-vendor/lib64/hw/audio.bluetooth.default.so
-vendor/lib64/libbluetooth_audio_session.so
-vendor/lib64/libbluetooth_audio_session_mediatek.so
-
-# Boot
-vendor/bin/hw/android.hardware.boot@1.1-service
-vendor/etc/init/android.hardware.boot@1.1-service.rc
--vendor/etc/vintf/manifest/android.hardware.boot@1.1.xml
 
 # Camera configs
 vendor/etc/camera/model/dof_model/capture_cache
