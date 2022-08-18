@@ -2,7 +2,7 @@
   {
     "repository": "windowz414/android_kernel_redmi_rosemary",
     "target_path": "kernel/redmi/rosemary",
-    "branch": "android-12-stable"
+    "branch": "windowz414/android-12-stable"
   },
   {
     "repository": "windowz414/android_vendor_redmi_rosemary",
