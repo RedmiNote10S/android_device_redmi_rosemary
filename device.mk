@@ -299,11 +299,12 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-ScopedWakelock.vendor
 
 # Telephony
-# We explicitly build this to evade legacy variant,
-# which causes signature failures when a build is
+# We explicitly build these to evade legacy variants,
+# which cause signature failures when a build is
 # signed, from being built.
 PRODUCT_PACKAGES += \
-    CellBroadcastServiceModulePlatform
+    CellBroadcastServiceModulePlatform \
+    InProcessTethering
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
