@@ -349,7 +349,7 @@ on fs
 
 on post-fs
     start logd
-    start light-default
+    start light-mediatek
     start system_suspend
     start vendor.boot-hal-1-1
     start merged_hal_service

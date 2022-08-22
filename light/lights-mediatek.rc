@@ -1,0 +1,6 @@
+service vendor.light-mediatek /vendor/bin/hw/android.hardware.lights-service.mediatek
+    class hal
+    user system
+    group system
+    shutdown critical
+    
