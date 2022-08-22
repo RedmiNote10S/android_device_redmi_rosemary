@@ -119,7 +119,7 @@ on charger
     chown system system /sys/class/leds/red/brightness
     chown system system /sys/class/leds/green/brightness
 
-    start vendor.light-default
+    start vendor.light-mediatek
 
 	# M306 run batterysecret in off-charge mode
     start batterysecret
