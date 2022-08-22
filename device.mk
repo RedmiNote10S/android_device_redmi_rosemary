@@ -14,6 +14,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/redmi/rosemary/rosemary-vendor.mk)
+
 $(call inherit-product, vendor/mediatek/opensource/mtk-builds.mk)
 
 # Include GSI keys
@@ -56,13 +57,15 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio.service.mediatek \
     android.hardware.audio@6.0-impl \
+    android.hardware.audio@6.0-impl-mediatek \
     android.hardware.audio.effect@6.0-impl \
-    android.hardware.soundtrigger@2.2-impl \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.a2dp.default \
     audio.primary.default \
     audio.r_submix.default \
+    audio_policy.stub \
     audio.usb.default \
     audio.bluetooth.default \
     tinymix \
@@ -72,12 +75,25 @@ PRODUCT_PACKAGES += \
     libaudiofoundation \
     libaudiofoundation.vendor \
     libdynproc \
-    libladder \
     libbluetooth_audio_session \
-    libbluetooth_audio_session_mediatek
+    libldacBT_enc \
+    libldacBT_abr
+
+# SoundTrigger
+PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.3-impl
+
+# CAS
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.2-service
+
+# OMX
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
+    android.hardware.boot@1.1-service \
     android.hardware.boot@1.1-mtkimpl \
     android.hardware.boot@1.1-mtkimpl.recovery
 
@@ -95,14 +111,55 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     libsuspend
 
+# Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.graphics.composer@2.1-resources \
+    android.hardware.memtrack@1.0-service \
+    android.hardware.memtrack@1.0-impl
+
 # Display
 PRODUCT_PACKAGES += \
     libhwc2on1adapter \
+    libhwc2onfbadapter \
     libfmq
 
 # DRM
 PRODUCT_PACKAGES += \
     libdrm.vendor
+
+# DRM, but bad
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3-service.clearkey \
+    libclearkeycasplugin.vendor \
+    libdrmclearkeyplugin.vendor \
+    libmockdrmcryptoplugin
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0-impl
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    libkeymaster4.vendor:64
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-service \
+    android.hardware.health@2.1-impl
+
+# Local time
+PRODUCT_PACKAGES += \
+    local_time.default
+
+# Media
+PRODUCT_PACKAGES += \
+    libmedia_codeclist \
+    libstagefright_codecbase \
+    libstagefright_bufferpool@2.0.1 \
+    libstagefright_framecapture_utils \
+    libstagefright_softomx_plugin
 
 # Dynamic partitions
 PRODUCT_BUILD_SUPER_PARTITION := true
@@ -139,21 +196,13 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras \
     libchrome \
-    libchrome.vendor
-
-# NfcNci
-PRODUCT_PACKAGES += \
+    libchrome.vendor \
+    android.hardware.nfc@1.2-service.st \
     NfcNci
 
-# NQNfcNci
-#PRODUCT_PACKAGES += \
-#    NQNfcNci \
-#    libnqnfc-nci \
-#    libnqnfc_nci_jni \
-#    libsn100nfc_nci_jni \
-#    libsn100nfc-nci \
-#    com.nxp.nfc.nq \
-#    com.nxp.nfc.nq.xml
+# RenderScript
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
 
 # Light
 PRODUCT_PACKAGES += \
@@ -329,7 +378,35 @@ PRODUCT_PACKAGES += \
     vndservice_manager \
     vndservice_manager.vendor
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.rosemary
+
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
+# Consumerir
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-service \
+    android.hardware.ir@1.0-impl \
+    consumerir.default
+
 # [DNM] Temp permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/xyz.extras.xml \
     $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/xyz.extras.xml 
+
+# Thermal
+#PRODUCT_PACKAGES += \
+#    android.hardware.thermal@1.0-impl \
+#    android.hardware.thermal@2.0-impl
+
+# Wifi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service-lazy \
+    libkeystore-engine-wifi-hidl \
+    libkeystore-wifi-hidl \
+    hostapd \
+    wpa_supplicant \
+    libwifi-hal

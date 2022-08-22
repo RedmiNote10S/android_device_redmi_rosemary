@@ -431,5 +431,8 @@ ro.surface_flinger.vsync_sf_event_phase_offset_ns=8300000
 persist.vendor.md_c2k_cap_dep_check=0
 vendor.bluetooth.ldac.abr=true
 ro.incremental.enable=yes
+
+ro.hardware.fp.vendor=goodix,fpc
+
 import /vendor/build_${ro.boot.product.vendor.sku}.prop
 
