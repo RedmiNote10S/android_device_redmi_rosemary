@@ -252,6 +252,7 @@ PRODUCT_PACKAGES += \
     SettingsOverlayRosemary \
     SystemUIOverlayRosemary \
     TelephonyOverlayRosemary \
+    TetheringOverlayRosemary \
     WifiOverlayRosemary
 
 # Additional Build Props
