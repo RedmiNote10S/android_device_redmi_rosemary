@@ -303,6 +303,7 @@ PRODUCT_PACKAGES += \
     SettingsOverlayRosemary \
     SystemUIOverlayRosemary \
     TelephonyOverlayRosemary \
+    TetheringOverlayRosemary \
     WifiOverlayRosemary
 
 # Props
@@ -396,11 +397,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/xyz.extras.xml \
     $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/xyz.extras.xml 
-
-# Thermal
-#PRODUCT_PACKAGES += \
-#    android.hardware.thermal@1.0-impl \
-#    android.hardware.thermal@2.0-impl
 
 # Wifi
 PRODUCT_PACKAGES += \
