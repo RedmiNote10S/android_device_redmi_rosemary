@@ -532,4 +532,13 @@
     <dimen name="rounded_corner_radius_top">106.0px</dimen>
     <dimen name="status_bar_height_portrait">93.0px</dimen>
 
+    <!-- Whether the display cutout region of the main built-in display should be forced to
+         black in software (to avoid aliasing or emulate a cutout that is not physically existent).
+         -->
+    <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
+
+    <!-- If true, and there is a cutout on the main built in display, the cutout will be masked
+         by shrinking the display such that it does not overlap the cutout area. -->
+    <bool name="config_maskMainBuiltInDisplayCutout">true</bool>
+
 </resources>
