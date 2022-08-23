@@ -404,9 +404,8 @@ PRODUCT_COPY_FILES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy \
+    android.hardware.wifi@1.0-service-lazy.rosemary \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl \
     hostapd \
-    wpa_supplicant \
-    libwifi-hal
+    wpa_supplicant

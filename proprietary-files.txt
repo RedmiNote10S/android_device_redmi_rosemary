@@ -396,9 +396,7 @@ lib/vendor.xiaomi.hardware.vibratorfeature@1.0.so
 lib64/vendor.xiaomi.hardware.vibratorfeature@1.0.so
 
 # Wi-Fi
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so
-vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.2.so
+-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 
 
 # Wi-Fi configs
@@ -654,7 +652,6 @@ vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/etc/init/getgameserver.rc
 vendor/etc/init/gsm0710muxd.rc
-vendor/etc/init/hostapd.android.rc
 vendor/etc/init/init.bip.rc
 vendor/etc/init/init.bt_drv.rc
 vendor/etc/init/init.cccifsd.rc
@@ -1914,7 +1911,6 @@ vendor/lib/libvpud_vcodec.so
 vendor/lib/libvsim.so
 vendor/lib/libvt_custom.so
 vendor/lib/libwo.so
-vendor/lib/libwpa_client.so
 vendor/lib/libwvkeyboxext.so
 vendor/lib/ov02b1bofilm_mipi_raw_IdxMgr.so
 vendor/lib/ov02b1bofilm_mipi_raw_india_IdxMgr.so
@@ -2736,7 +2732,6 @@ vendor/lib64/libwa_dof.so
 vendor/lib64/libwa_rtdof.so
 vendor/lib64/libwifitest.so
 vendor/lib64/libwo.so
-vendor/lib64/libwpa_client.so
 vendor/lib64/libwvkeyboxext.so
 vendor/lib64/libxmi_high_dynamic_range.so
 vendor/lib64/nwk_opt_imp.so

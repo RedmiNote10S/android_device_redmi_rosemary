@@ -58,6 +58,9 @@ function blob_fixup() {
         lib/libsink.so)
             "${PATCHELF}" --add-needed "libshim_vtservice.so" "${2}"
             ;;
+        vendor/lib64/libwifi-hal-mtk.so)
+            "$PATCHELF" --set-soname libwifi-hal-mtk.so "$2"
+            ;;
     esac
 }
 
