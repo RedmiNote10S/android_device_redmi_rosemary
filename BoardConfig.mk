@@ -159,6 +159,7 @@ BOARD_VNDK_VERSION := current
 # Wifi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_HOSTAPD_DRIVER := NL80211
+WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 ## Copy wpa_supplicant init rc from external/wpa_supplicant
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
