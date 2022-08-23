@@ -182,11 +182,8 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libwvhidl.so
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
--vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
-vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.fpc.default.so:vendor/lib64/hw/fingerprint.fpc.mt6785.so
+vendor/lib64/hw/fingerprint.goodix.default.so:vendor/lib64/hw/fingerprint.goodix.mt6785.so
 vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
@@ -200,8 +197,6 @@ vendor/lib/libimsg_log.so
 vendor/lib64/hw/gatekeeper.beanpod.so
 vendor/lib64/libTEECommon.so
 vendor/lib64/libimsg_log.so
-
-
 
 # GNSS
 # Keymaster
@@ -2855,3 +2850,6 @@ lib/libem_wifi_jni.so
 lib64/libem_support_jni.so
 lib64/libem_usb_jni.so
 lib64/libem_wifi_jni.so
+
+# Kernel modules
+vendor/lib/modules/bt_drv.ko
