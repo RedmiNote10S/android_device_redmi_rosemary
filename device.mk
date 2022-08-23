@@ -19,6 +19,9 @@ $(call inherit-product, vendor/mediatek/opensource/mtk-builds.mk)
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
+# Android Go Networking Stack
+$(call inherit-product, $(DEVICE_PATH)/configs/go_netstack.mk)
+
 # Broken R
 BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 
@@ -297,14 +300,6 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0 \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@2.0-ScopedWakelock.vendor
-
-# Telephony
-# We explicitly build these to evade legacy variants,
-# which cause signature failures when a build is
-# signed, from being built.
-PRODUCT_PACKAGES += \
-    CellBroadcastServiceModulePlatform \
-    InProcessTethering
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
