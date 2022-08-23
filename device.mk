@@ -22,6 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Android Go Networking Stack
 $(call inherit-product, $(DEVICE_PATH)/configs/go_netstack.mk)
 
+# Interchangeable Overlays
+$(call inherit-product, $(DEVICE_PATH)/configs/interchable_overlays.mk)
+
 # Broken R
 BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 
@@ -119,7 +122,8 @@ PRODUCT_COPY_FILES += \
 # Networking
 PRODUCT_PACKAGES += \
     libpcap \
-    libpcap.vendor
+    libpcap.vendor \
+    InProcessTethering
 
 # NeuralNet
 PRODUCT_PACKAGES += \

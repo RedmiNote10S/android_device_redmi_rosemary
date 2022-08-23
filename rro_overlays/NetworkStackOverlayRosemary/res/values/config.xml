@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_no_sim_card_uses_neighbor_mcc">true</bool>
+</resources>
