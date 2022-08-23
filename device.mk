@@ -239,10 +239,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/public.libraries-trustonic.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-trustonic.txt
 
-# Overlays
+# RRO Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayRosemary \
-    GoogleNetworkStackOverlayRosemary \
     SettingsOverlayRosemary \
     SystemUIOverlayRosemary \
     TelephonyOverlayRosemary \
