@@ -142,6 +142,9 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0.vendor \
+    libkeymaster4support.vendor:64 \
+    libsoft_attestation_cert.vendor:64 \
     libkeymaster4.vendor:64
 
 # Health
@@ -405,3 +408,7 @@ PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
     hostapd \
     wpa_supplicant
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.rosemary
