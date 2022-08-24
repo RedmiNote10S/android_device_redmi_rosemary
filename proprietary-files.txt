@@ -1033,9 +1033,6 @@ vendor/etc/smartpa_param/AW_DSP.bin
 -vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml
 -vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml
 -vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml
--vendor/etc/vintf/manifest_maltose.xml
--vendor/etc/vintf/manifest_rosemary.xml
--vendor/etc/vintf/manifest_secret.xml
 vendor/etc/102_SummerDay.png
 vendor/etc/103_Fantasy.png
 vendor/etc/104_Meet.png
