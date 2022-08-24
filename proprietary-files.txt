@@ -35,34 +35,6 @@ vendor/lib/soundfx/libaudiopreprocessing_mtk.so
 vendor/lib/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libaudiopreprocessing_mtk.so
 
-# Audio configs
-etc/a2dp_audio_policy_configuration.xml
-etc/a2dp_in_audio_policy_configuration.xml
-etc/audio_effects.conf
-etc/audio_policy_configuration.xml
-etc/audio_policy_configuration_bluetooth_legacy_hal.xml
-etc/audio_policy_configuration_stub.xml
-etc/audio_policy_engine_configuration.xml
-etc/audio_policy_engine_default_stream_volumes.xml
-etc/audio_policy_engine_product_strategies.xml
-etc/audio_policy_engine_stream_volumes.xml
-etc/audio_policy_volumes.xml
-etc/bluetooth_audio_policy_configuration.xml
-etc/default_volume_tables.xml
-etc/hearing_aid_audio_policy_configuration.xml
-etc/r_submix_audio_policy_configuration.xml
-etc/usb_audio_policy_configuration.xml
-vendor/etc/a2dp_audio_policy_configuration.xml
-vendor/etc/a2dp_in_audio_policy_configuration.xml
-vendor/etc/audio_effects.xml
-vendor/etc/audio_policy_configuration.xml
-vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml
-vendor/etc/audio_policy_volumes.xml
-vendor/etc/bluetooth_audio_policy_configuration.xml
-vendor/etc/default_volume_tables.xml
-vendor/etc/r_submix_audio_policy_configuration.xml
-vendor/etc/usb_audio_policy_configuration.xml
-
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
@@ -1057,9 +1029,6 @@ vendor/etc/FV-SAM-MTK2.dat
 vendor/etc/MNL_Config.xml
 vendor/etc/aee-config
 vendor/etc/armnn_app.config
-vendor/etc/audio_device.xml
-vendor/etc/audio_em.xml
-vendor/etc/audio_policy.conf
 vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_hifi3.xml
 vendor/etc/cit_config.xml
