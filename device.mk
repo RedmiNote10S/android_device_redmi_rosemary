@@ -55,6 +55,11 @@ PRODUCT_PACKAGES_DEBUG += \
 # API level, the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# Audio configs
+PRODUCT_COPY_FILES += \
+    $(foreach file,$(wildcard $(DEVICE_PATH)/configs/audio/*), \
+        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(file))) )
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service.mediatek \
@@ -144,7 +149,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0.vendor \
     libkeymaster4support.vendor:64 \
-    libsoft_attestation_cert.vendor:64 \
+	libkeymaster4_1support.vendor:64 \
+	libsoft_attestation_cert.vendor:64 \
     libkeymaster4.vendor:64
 
 # Health
