@@ -539,6 +539,6 @@
 
     <!-- If true, and there is a cutout on the main built in display, the cutout will be masked
          by shrinking the display such that it does not overlap the cutout area. -->
-    <bool name="config_maskMainBuiltInDisplayCutout">true</bool>
+    <bool name="config_maskMainBuiltInDisplayCutout">false</bool>
 
 </resources>
