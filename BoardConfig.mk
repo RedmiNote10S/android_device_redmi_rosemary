@@ -134,9 +134,8 @@ VENDOR_SECURITY_PATCH := 2021-01-05
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/vintf/manifest.xml
 PRODUCT_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/vintf/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/vintf/framework_compatibility_matrix.xml
-ODM_MANIFEST_SKUS += rosemary
-ODM_MANIFEST_ROSEMARY_FILES := $(DEVICE_PATH)/vintf/manifest_rosemary.xml
-
+DEVICE_MANIFEST_SKUS += rosemary
+DEVICE_MANIFEST_ROSEMARY_FILES := $(DEVICE_PATH)/vintf/manifest_rosemary.xml
 
 # Recovery
 # Display
