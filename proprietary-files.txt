@@ -1024,7 +1024,6 @@ vendor/etc/FV-SAM-MTK2.dat
 vendor/etc/MNL_Config.xml
 vendor/etc/aee-config
 vendor/etc/armnn_app.config
-vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_hifi3.xml
 vendor/etc/cit_config.xml
 vendor/etc/default_pd_calibration.bin
