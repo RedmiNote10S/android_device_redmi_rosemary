@@ -42,10 +42,6 @@ persist.audio.button_jack.switch=0
 persist.vendor.max.brightness=500
 persist.vendor.dc_backlight.enable=false
 
-# RIL
-vendor.rild.libpath=mtk-ril.so
-vendor.rild.libargs=-d /dev/ttyC0
-
 # VoLTE
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
