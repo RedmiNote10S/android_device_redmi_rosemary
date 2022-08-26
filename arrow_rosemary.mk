@@ -18,19 +18,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common LineageOS stuff.
+# Inherit some common ArrowOS stuff.
+CUSTOM_VENDOR_DIR ?= vendor/arrow
 $(call inherit-product, $(CUSTOM_VENDOR_DIR)/config/common_full_phone.mk)
 
 # Inherit device tree
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-##### Kasumi Add-ons #####
-# These variables are usually controlled by CI and/or build system if
-# they aren't overridden here.
-
-KASUMI_SHIP_LAWNCHAIR := true
-KASUMI_SHIP_ADAWAY := true
-KASUMI_INCLUDE_GCGOP := true
+# Ship Google Camera GO by default
+$(call inherit-product, $(GCGOP_VENDOR_DIR)/config.mk)
 
 # GApps
 TARGET_GAPPS_ARCH := arm64
@@ -40,13 +36,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-# These for example will ship Lawnchair, AdAway and GCamGO regardless
-# of what CI sets, tell build system our arch for GApps shipping is
-# ARM64 and report build system about screen resolution properties for
-# picking boot animation.
-##########################
-
-PRODUCT_NAME := kasumi_rosemary
+PRODUCT_NAME := arrow_rosemary
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
