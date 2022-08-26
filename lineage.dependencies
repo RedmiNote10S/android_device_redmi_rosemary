@@ -1,13 +1,13 @@
 [
   {
-    "repository": "windowz414/android_kernel_redmi_rosemary",
+    "repository": "RedmiNote10S/android_kernel_redmi_rosemary",
     "target_path": "kernel/redmi/rosemary",
-    "branch": "windowz414/android-12-stable"
+    "branch": "VoidDev-0/windowz414/android-12-stable"
   },
   {
-    "repository": "windowz414/android_vendor_redmi_rosemary",
+    "repository": "RedmiNote10S/android_vendor_redmi_rosemary",
     "target_path": "vendor/redmi/rosemary",
-    "branch": "kasumi-v1"
+    "branch": "lineage-18.1"
   },
   {
     "repository": "PixelExperience/vendor_mediatek-opensource",
@@ -23,5 +23,10 @@
     "repository": "PixelExperience/device_mediatek_sepolicy_vndr",
     "target_path": "device/mediatek/sepolicy_vndr",
     "branch": "eleven"
+  },
+  {
+    "repository": "ProjectKasumi/vendor_gcgop",
+    "target_path": "vendor/gcgop",
+    "branch": "kasumi-v1"
   }
 ]
