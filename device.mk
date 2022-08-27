@@ -402,8 +402,7 @@ PRODUCT_PACKAGES += \
 # Consumerir
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service \
-    android.hardware.ir@1.0-impl \
-    consumerir.default
+    android.hardware.ir@1.0-impl
 
 # [DNM] Temp permissions
 PRODUCT_COPY_FILES += \
