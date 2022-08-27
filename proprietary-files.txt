@@ -62,6 +62,7 @@ vendor/etc/camera/sr_params.xml
 vendor/etc/camera/vidhance_calibration
 
 # Charger (Xiaomi)
+bin/charger:bin/chargeonlymode
 vendor/bin/batterysecret
 
 # CIT
@@ -2774,11 +2775,3 @@ lib64/libvcodec_capenc.so
 -priv-app/ImsService/ImsService.apk
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
-
-
-# Kernel Power Off Charging (KPOC)
-bin/kpoc_charger
-etc/init/kpoc_charger.rc
-lib/libshowlogo.so
-lib/libsysenv_system.so
-lib64/libsysenv_system.so
