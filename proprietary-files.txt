@@ -2786,12 +2786,3 @@ etc/init/kpoc_charger.rc
 lib/libshowlogo.so
 lib/libsysenv_system.so
 lib64/libsysenv_system.so
-
-# MTK
-lib/libem_support_jni.so
-lib/libem_usb_jni.so
-lib/libem_wifi_jni.so
-lib64/libem_support_jni.so
-lib64/libem_usb_jni.so
-lib64/libem_wifi_jni.so
-
