@@ -134,6 +134,7 @@ vendor/etc/init/android.hardware.cas@1.2-service.rc
 -vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml
 
 # Charger (Xiaomi)
+bin/charger:bin/chargeonlymode
 lib/vendor.xiaomi.hardware.micharge@1.0.so
 lib64/vendor.xiaomi.hardware.micharge@1.0.so
 vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service
@@ -3615,13 +3616,6 @@ lib/libldacBT_abr.so
 lib/libldacBT_enc.so
 lib64/libldacBT_abr.so
 lib64/libldacBT_enc.so
-
-# Kernel Power Off Charging (KPOC)
-bin/kpoc_charger
-etc/init/kpoc_charger.rc
-lib/libshowlogo.so
-lib/libsysenv_system.so
-lib64/libsysenv_system.so
 
 # MTK
 lib/libem_support_jni.so
