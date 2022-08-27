@@ -2805,5 +2805,3 @@ lib64/libem_support_jni.so
 lib64/libem_usb_jni.so
 lib64/libem_wifi_jni.so
 
-# Kernel modules
-vendor/lib/modules/bt_drv.ko
