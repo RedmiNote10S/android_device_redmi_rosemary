@@ -56,6 +56,9 @@ ro.boot.verifiedbootstate=green
 # TODO: Import priv-app permissions
 ro.control_privapp_permissions=log
 
+# Zygote Preforking
+persist.device.config.runtime_native.uasp_pool_enabled=true
+
 # Inherit device specific props
 import /system/build_${ro.boot.hwname}.prop
 import /system/build_${ro.boot.product.hardware.sku}.prop
