@@ -122,7 +122,8 @@ PRODUCT_COPY_FILES += \
 # Networking
 PRODUCT_PACKAGES += \
     libpcap \
-    libpcap.vendor
+    libpcap.vendor \
+    InProcessTethering
 
 # NeuralNet
 PRODUCT_PACKAGES += \

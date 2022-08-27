@@ -29,4 +29,4 @@ PRODUCT_PACKAGES += \
     InProcessNetworkStack \
     CellBroadcastAppPlatform \
     CellBroadcastServiceModulePlatform \
-    InProcessTethering
+    com.android.tethering.inprocess
