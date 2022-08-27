@@ -59,7 +59,13 @@ function blob_fixup() {
             "${PATCHELF}" --add-needed "libshim_vtservice.so" "${2}"
             ;;
         vendor/lib64/libwifi-hal-mtk.so)
-            "$PATCHELF" --set-soname libwifi-hal-mtk.so "$2"
+            "${PATCHELF}" --set-soname libwifi-hal-mtk.so "${2}"
+            ;;
+        vendor/lib64/hw/consumerir.mt6785.so)
+            "${PATCHELF}" --set-soname consumerir.mt6785.so "${2}"
+            ;;
+        vendor/lib/hw/consumerir.mt6785.so)
+            "${PATCHELF}" --set-soname consumerir.mt6785.so "${2}"
             ;;
     esac
 }
