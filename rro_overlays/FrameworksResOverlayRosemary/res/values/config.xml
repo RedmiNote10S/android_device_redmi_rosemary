@@ -45,11 +45,11 @@
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
 
-     <!-- Controls the navigation bar interaction mode:
+    <!-- Controls the navigation bar interaction mode:
         0: 3 button mode (back, home, overview buttons)
         1: 2 button mode (back, home buttons + swipe up for overview)
         2: gestures only for back, home and overview -->
-   <integer name="config_navBarInteractionMode">2</integer>
+    <integer name="config_navBarInteractionMode">2</integer>
 
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
@@ -89,10 +89,21 @@
          states. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
 
+    <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
+    <bool name="config_dozePulsePickup">false</bool>
+
     <!-- Biometric sensors config ID:Modality:Strength -->
-    <string-array name="config_biometric_sensors" translatable="false" >
+    <string-array name="config_biometric_sensors" translatable="false">
         <item>0:2:15</item>
     </string-array>
+
+    <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
+    <integer-array name="config_availableColorModes">
+        <item>0</item> <!-- COLOR_MODE_NATURAL -->
+        <item>1</item> <!-- COLOR_MODE_BOOSTED -->
+        <item>2</item> <!-- COLOR_MODE_SATURATED -->
+        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
+    </integer-array>
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently in hardware. Required for "Night Light" support-->
     <bool name="config_setColorTransformAccelerated">true</bool>
@@ -379,8 +390,8 @@
 
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
-         <item>3.5</item>
-         <item>1000.0</item>
+        <item>3.5</item>
+        <item>1000.0</item>
     </array>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
