@@ -60,16 +60,33 @@ do
           # calculate and write the new channel volume via parabolic function & rewrite max Db for small speaker
           newchvol=$(/system/bin/expr $callcurrent \* $callcurrent \* $interval)
           /system/bin/tinymix "ADDA_DL_GAIN" $newchvol
-	      /system/bin/tinymix "Handset_PGA_GAIN" 8Db
+	        /system/bin/tinymix "Handset_PGA_GAIN" 8Db
           log "Hardware In-Call Volume: $newchvol"
-
-	  callcurrentold=$callcurrent
+          callcurrentold=$callcurrent
+      fi
+      # Aims to fix the mic bug after speaker mode
+      # Todo: Properly detect speaker mode
+      if [ "$(/system/bin/tinymix "ADC_L_Mux" -v)" = "Idle" ]
+      then
+        log "Fixing mic"
+        /system/bin/tinymix "PCM_2_PB_CH4 DL1_CH1" 0
+        /system/bin/tinymix "PCM_2_PB_CH5 DL1_CH2" 0
+        /system/bin/tinymix "Handset Volume" 0
+        /system/bin/tinymix "LineoutR Volume" 31
+        /system/bin/tinymix "Handset_PGA_GAIN" 8Db
+        /system/bin/tinymix "Mic_Type_Mux_0" "DCC"
+        /system/bin/tinymix "Mic_Type_Mux_2" "DCC"
+        /system/bin/tinymix "SPK_AMP_MODE" "SPEAKER_MODE"
+        /system/bin/tinymix "ADC_L_Mux" "Left Preamplifier"
+        /system/bin/tinymix "ADC_R_Mux" "Right Preamplifier"
+        /system/bin/tinymix "PGA_L_Mux" "AIN0"
+        /system/bin/tinymix "PGA_R_Mux" "AIN2"
       fi
 	  callstatus=$(/system/bin/tinymix "Speech_SCP_CALL_STATE" --v)
 	  done
-        #restore $callcurrentold and chcurrent
-       /system/bin/tinymix "ADDA_DL_GAIN" $chcurrent
-       callcurrentold=0
+    # Restore $callcurrentold and chcurrent
+    /system/bin/tinymix "ADDA_DL_GAIN" $chcurrent
+    callcurrentold=0
   fi
 sleep 2
 done
