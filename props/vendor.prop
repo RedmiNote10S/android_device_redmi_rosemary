@@ -459,4 +459,3 @@ ro.hardware.fp.vendor=goodix,fpc
 ro.hardware.fp.sideCap=true
 
 import /vendor/build_${ro.boot.product.vendor.sku}.prop
-

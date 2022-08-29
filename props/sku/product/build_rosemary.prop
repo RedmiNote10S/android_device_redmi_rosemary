@@ -1,0 +1,11 @@
+# Device
+ro.product.product.brand=Redmi
+ro.product.product.manufacturer=Xiaomi
+ro.product.product.model=Redmi Note 10S
+ro.product.product.device=rosemary
+ro.product.product.name=rosemary_global
+ro.product.model=Redmi Note 10S
+ro.product.board=rosemary
+ro.product.device=rosemary
+ro.product.name=rosemary_global
+ro.product.build.fingerprint=Redmi/rosemary_global/rosemary:11/RP1A.200720.011/V12.5.16.0.RKLMIXM:user/release-keys
