@@ -326,8 +326,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndservice_manager \
     vndservice_manager.vendor
-
-# [DNM] Temp permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/xyz.extras.xml \
-    $(LOCAL_PATH)/permissions/xyz.extras.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/xyz.extras.xml 
