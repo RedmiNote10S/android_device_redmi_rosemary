@@ -5,3 +5,6 @@ ro.sf.blurs_are_expensive=1
 
 # Zygote Preforking
 persist.device.config.runtime_native.uasp_pool_enabled=true
+
+# Inherit device specific props
+import /product/build_${ro.boot.hwname}.prop

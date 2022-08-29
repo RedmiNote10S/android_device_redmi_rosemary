@@ -457,4 +457,3 @@ persist.vendor.md_c2k_cap_dep_check=0
 vendor.bluetooth.ldac.abr=true
 ro.incremental.enable=yes
 import /vendor/build_${ro.boot.product.vendor.sku}.prop
-

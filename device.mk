@@ -249,11 +249,24 @@ PRODUCT_PACKAGES += \
     TelephonyOverlayRosemary \
     WifiOverlayRosemary
 
-# Props
+# Additional Build Props
+# Usually fingerprint, codename and hostname changes rolling around here.
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/props/build_rosemary.prop:$(TARGET_COPY_OUT_SYSTEM)/build_rosemary.prop \
-    $(LOCAL_PATH)/props/build_secret.prop:$(TARGET_COPY_OUT_SYSTEM)/build_secret.prop \
-    $(LOCAL_PATH)/props/build_maltose.prop:$(TARGET_COPY_OUT_SYSTEM)/build_maltose.prop
+    $(LOCAL_PATH)/props/sku/system/build_rosemary.prop:$(TARGET_COPY_OUT_SYSTEM)/build_rosemary.prop \
+    $(LOCAL_PATH)/props/sku/system/build_secret.prop:$(TARGET_COPY_OUT_SYSTEM)/build_secret.prop \
+    $(LOCAL_PATH)/props/sku/system/build_maltose.prop:$(TARGET_COPY_OUT_SYSTEM)/build_maltose.prop \
+    $(LOCAL_PATH)/props/sku/product/build_rosemary.prop:$(TARGET_COPY_OUT_PRODUCT)/build_rosemary.prop \
+    $(LOCAL_PATH)/props/sku/product/build_secret.prop:$(TARGET_COPY_OUT_PRODUCT)/build_secret.prop \
+    $(LOCAL_PATH)/props/sku/product/build_maltose.prop:$(TARGET_COPY_OUT_PRODUCT)/build_maltose.prop \
+    $(LOCAL_PATH)/props/sku/vendor/build_rosemary.prop:$(TARGET_COPY_OUT_VENDOR)/build_rosemary.prop \
+    $(LOCAL_PATH)/props/sku/vendor/build_secret.prop:$(TARGET_COPY_OUT_VENODR)/build_secret.prop \
+    $(LOCAL_PATH)/props/sku/vendor/build_maltose.prop:$(TARGET_COPY_OUT_VENDOR)/build_maltose.prop \
+    $(LOCAL_PATH)/props/sku/odm/build_rosemary.prop:$(TARGET_COPY_OUT_VENDOR)/odm/etc/build_rosemary.prop \
+    $(LOCAL_PATH)/props/sku/odm/build_secret.prop:$(TARGET_COPY_OUT_VENODR)/odm/etc/build_secret.prop \
+    $(LOCAL_PATH)/props/sku/odm/build_maltose.prop:$(TARGET_COPY_OUT_VENDOR)/odm/etc/build_maltose.prop \
+    $(LOCAL_PATH)/props/sku/system_ext/build_rosemary.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/build_rosemary.prop \
+    $(LOCAL_PATH)/props/sku/system_ext/build_secret.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/build_secret.prop \
+    $(LOCAL_PATH)/props/sku/system_ext/build_maltose.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/build_maltose.prop
 
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \

@@ -3529,9 +3529,6 @@ vendor/lib64/vendor.xiaomi.hardware.vsimapp@1.0.so
 -vendor/odm/etc/vintf/manifest_ss.xml
 -vendor/odm/etc/vintf/manifest_ss_se.xml
 -vendor/odm/etc/vintf/manifest_tsts.xml
-vendor/odm/etc/build_maltose.prop
-vendor/odm/etc/build_rosemary.prop
-vendor/odm/etc/build_secret.prop
 vendor/res/images/lcd_test_00.png
 vendor/res/images/lcd_test_01.png
 vendor/res/images/lcd_test_02.png
@@ -3568,9 +3565,6 @@ vendor/thh/ta/e5140b3376fa4c63ab18062caab2fb5c.ta
 vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
 vendor/xbin/cameratest
 vendor/xbin/dc_cal
-vendor/build_maltose.prop
-vendor/build_rosemary.prop
-vendor/build_secret.prop
 vendor/fstab.enableswap
 
 # Unpinned blobs from kasumi_rosemary-userdebug 11 RQ3A.211001.001 eng.beru.20220803.071103 test-keys
