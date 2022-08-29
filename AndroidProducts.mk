@@ -1,5 +1,5 @@
 PRODUCT_MAKEFILES := \
-    $(wildcard $(LOCAL_DIR)/lineage_rosemary.mk)
+    $(LOCAL_DIR)/lineage_rosemary.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_rosemary-user \
