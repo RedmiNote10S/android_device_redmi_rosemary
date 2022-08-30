@@ -51,4 +51,14 @@
 
     <bool name="config_wifi_softap_ieee80211ac_supported">true</bool>
 
+    <bool name="config_wifi_batched_scan_supported">true</bool>
+
+    <bool translatable="false" name="config_wifiMinConfirmationDurationSendNetworkScoreEnabled">true</bool>
+
+    <integer name="config_wifi_framework_recovery_timeout_delay">3000</integer>
+
+    <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">32</integer>
+
+    <bool translatable="false" name="config_wifi_only_link_same_credential_configurations">false</bool>
+
 </resources>
