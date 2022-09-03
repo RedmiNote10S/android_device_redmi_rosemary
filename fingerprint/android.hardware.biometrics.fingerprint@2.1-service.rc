@@ -22,5 +22,3 @@ on boot
     chmod 0644 /dev/goodix_fp
     chown system system /dev/goodix_fp
 
-on property:ro.hardware.fp.restartimes=max
-    stop vendor.fps_hal
