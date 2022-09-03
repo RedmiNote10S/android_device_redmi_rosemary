@@ -1,0 +1,16 @@
+# Give full access to fp nodes
+allow hal_fingerprint_default fp_device:chr_file rw_file_perms;
+
+allow hal_fingerprint_default vendor_fp_data_file:dir rw_dir_perms;
+allow hal_fingerprint_default vendor_fp_data_file:file create_file_perms;
+
+allow hal_fingerprint_default hal_fingerprint_default_exec:file entrypoint;
+
+# Allow FP Hal to find fp hwservices
+allow hal_fingerprint_default hal_fingerprint_hwservice:hwservice_manager find;
+
+# Allow to set finterprint props
+get_prop(hal_fingerprint_default, vendor_fpsensor_prop)
+
+get_prop(hal_fingerprint_default, vendor_fp_prop)
+set_prop(hal_fingerprint_default, vendor_fp_prop)

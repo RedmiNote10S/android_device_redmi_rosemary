@@ -1,0 +1,1 @@
+allow vendor_init { incall_fixup_exec }:file execute;

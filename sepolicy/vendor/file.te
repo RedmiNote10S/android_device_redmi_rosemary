@@ -1,0 +1,16 @@
+# Firmware files
+type vendor_firmware_file, vendor_file_type, file_type;
+
+# Battery
+type sysfs_battery_supply, fs_type, sysfs_type;
+
+# FP
+type fp_device, dev_type;
+type fp_data_file, file_type, data_file_type, core_data_file_type;
+type vendor_fp_data_file, file_type, data_file_type;
+
+# Data files
+type thermal_core_data_file, file_type, data_file_type;
+
+# Proc mcdi
+type proc_mcdi, fs_type, proc_type;

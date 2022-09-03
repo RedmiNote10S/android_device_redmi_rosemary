@@ -1,0 +1,14 @@
+allow hal_sensors_default sensor_device:chr_file rw_file_perms;
+hwbinder_use(hal_sensors_default)
+allow mtk_hal_sensors sensor_device:chr_file { ioctl read write getattr lock append map open watch watch_reads };
+
+allow mtk_hal_sensors system_suspend_hwservice:hwservice_manager find;
+binder_call(mtk_hal_sensors, system_suspend_server)
+binder_call(system_suspend_server, mtk_hal_sensors)
+
+binder_call(mtk_hal_sensors, mtk_hal_audio)
+binder_call(mtk_hal_audio, mtk_hal_sensors)
+
+hal_client_domain(mtk_hal_sensors, hal_audio)
+
+allow mtk_hal_sensors hal_audio_hwservice:hwservice_manager find;

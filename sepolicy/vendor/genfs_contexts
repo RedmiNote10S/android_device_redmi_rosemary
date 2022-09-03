@@ -1,0 +1,6 @@
+# Vibrator nodes
+genfscon sysfs /devices/platform/aw8622 u:object_r:sysfs_vibrator:s0
+genfscon sysfs /devices/platform/1000d000.pwrap/1000d000.pwrap:mt6359-pmic/mt6359-rtc/rtc/rtc0/hctosys u:object_r:sysfs_rtc:s0
+
+# MCDI
+genfscon proc /mcdi u:object_r:proc_mcdi:s0

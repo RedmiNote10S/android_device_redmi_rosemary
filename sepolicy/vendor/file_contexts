@@ -1,0 +1,49 @@
+# Thermals
+/vendor/bin/mi_thermald       u:object_r:mi_thermald_exec:s0
+/data/vendor/thermal(/.*)?  u:object_r:thermal_core_data_file:s0
+
+# WiFi
+/(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@1\.0-service-lazy\.rosemary u:object_r:mtk_hal_wifi_exec:s0
+
+# Firmware
+/vendor/firmware(/.*)? u:object_r:vendor_firmware_file:s0
+
+# Sensors
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.1-service\.multihal u:object_r:mtk_hal_sensors_exec:s0
+
+# Secure element
+/(vendor|system/vendor)/bin/hw/android\.hardware\.secure_element@1\.2-service-mediatek u:object_r:mtk_hal_secure_element_exec:s0
+
+# Batterysecret
+/(vendor|system/vendor)/bin/batterysecret u:object_r:batterysecret_exec:s0
+
+# Fingerprint
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.rosemary u:object_r:hal_fingerprint_default_exec:s0
+/dev/goodix_fp u:object_r:fp_device:s0
+
+# Battery
+/sys/devices/platform/1101a000.i2c7/i2c-7/7-0065/power_supply/bq2597x-standalone/ti_bus_current u:object_r:sysfs_batteryinfo:s0
+/sys/devices/platform/battery/power_supply/bms/authentic                             u:object_r:sysfs_batteryinfo:s0
+/sys/devices/platform/battery/power_supply/battery/current_now                   u:object_r:sysfs_batteryinfo:s0
+/sys/devices/platform/mt_charger/power_supply/usb/pd_authentication                  u:object_r:sysfs_batteryinfo:s0
+/sys/devices/platform/mt_charger/power_supply/usb/typec_cc_orientation                   u:object_r:sysfs_batteryinfo:s0
+/sys/devices/platform/maxim_ds28e16/power_supply/batt_verify/authentic               u:object_r:sysfs_batteryinfo:s0
+
+# Sensors devices
+/dev/elliptic0 u:object_r:sensor_device:s0
+/dev/elliptic1 u:object_r:sensor_device:s0
+
+# Incall fixup
+/(vendor|system/vendor)/bin/init\.rosemary\.incall_fixup\.sh u:object_r:incall_fixup_exec:s0
+
+# Trust
+/system/bin/hw/lineage\.trust@1\.0-service      u:object_r:hal_lineage_trust_default_exec:s0
+
+# Payement
+/(vendor|system/vendor)/bin/mlipayd(@1\.1)? u:object_r:hal_mlipay_default_exec:s0
+
+# Vibrator
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.rosemary u:object_r:hal_vibrator_default_exec:s0
+
+# Charger
+/system/bin/chargeonlymode u:object_r:charger_exec:s0

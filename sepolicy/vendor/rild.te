@@ -1,0 +1,7 @@
+get_prop(rild, system_boot_reason_prop)
+get_prop(rild, deviceid_prop)
+set_prop(rild, deviceid_prop)
+set_prop(rild, radio_prop)
+set_prop(rild, vendor_audio_prop)
+
+allow rild nvram_device:blk_file rw_file_perms;
