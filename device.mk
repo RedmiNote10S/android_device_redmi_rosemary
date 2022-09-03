@@ -376,13 +376,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
     android.hardware.sensors@2.1-service.multihal
 
-# Telephony
-# We explicitly build this to evade legacy variant,
-# which causes signature failures when a build is
-# signed, from being built.
-PRODUCT_PACKAGES += \
-    CellBroadcastServiceModulePlatform
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
