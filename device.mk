@@ -184,7 +184,8 @@ PRODUCT_TARGET_VNDK_VERSION := 30
 
 # Fastbootd
 PRODUCT_PACKAGES += \
-    fastbootd
+    fastbootd \
+    android.hardware.fastboot@1.0-impl-mock
 
 # Keylayout
 PRODUCT_COPY_FILES += \
