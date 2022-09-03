@@ -1,0 +1,39 @@
+# Fingerprint properties
+persist.vendor.sys.fp.info          u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.vendor        u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.module        u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.uid           u:object_r:vendor_fp_prop:s0
+vendor.sys.fp              u:object_r:vendor_fp_prop:s0
+ro.hardware.fp.restartimes          u:object_r:vendor_fp_prop:s0
+
+# RO
+ro.boot.fpsensor         u:object_r:vendor_fpsensor_prop:s0
+ro.hardware.fp.sideCap       u:object_r:vendor_fpsensor_prop:s0
+
+# Camera properties
+vendor.mtkcam. u:object_r:mtkcam_prop:s0
+persist.vendor.camera.                     u:object_r:mtk_camera_prop:s0
+vendor.camera.boost.en         u:object_r:mtk_camera_prop:s0
+vendor.debug.appcontrol.name        u:object_r:mtk_camera_prop:s0
+
+# Thermal properties
+vendor.sys.thermal. u:object_r:thermal_engine_prop:s0
+
+# Radio properties
+persist.radio.imei             u:object_r:deviceid_prop:s0
+persist.radio.meid             u:object_r:deviceid_prop:s0
+ro.ril.oem.wifimac u:object_r:deviceid_prop:s0
+ro.ril.oem.btmac u:object_r:deviceid_prop:s0
+persist.ro.ril.oem.btmac u:object_r:deviceid_prop:s0
+
+# Payement properties
+persist.vendor.sys.pay.fido              u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.pay.ifaa              u:object_r:vendor_payment_security_prop:s0
+persist.vendor.sys.pay.soter             u:object_r:vendor_payment_security_prop:s0
+
+# Camera
+ro.mtk_cam_dualzoom_support u:object_r:mtk_camera_prop:s0
+ro.mtk_cam_stereo_camera_support u:object_r:mtk_camera_prop:s0
+
+# USB
+sys.usb.ffs.aio_compat u:object_r:exported_ffs_prop:s0

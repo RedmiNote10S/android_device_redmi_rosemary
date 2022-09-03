@@ -1,0 +1,9 @@
+binder_call(mtk_hal_camera, mtk_hal_neuralnetworks)
+allow mtk_hal_camera proc_stat:file r_file_perms;
+
+get_prop(mtk_hal_camera, mtk_camera_prop)
+get_prop(mtk_hal_camera, vendor_default_prop)
+get_prop(mtk_hal_camera, exported_default_prop)
+
+hal_client_domain(mtk_hal_camera, hal_neuralnetworks)
+allow mtk_hal_camera hal_neuralnetworks_hwservice:hwservice_manager find;

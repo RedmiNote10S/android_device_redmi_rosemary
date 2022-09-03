@@ -1,0 +1,2 @@
+binder_call(hal_sensors_default, system_suspend_server)
+binder_call(system_suspend_server, hal_sensors_default)

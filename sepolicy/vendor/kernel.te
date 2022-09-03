@@ -1,0 +1,2 @@
+# Allow kernel to read firmware files
+r_dir_file(kernel, vendor_firmware_file)

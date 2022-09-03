@@ -1,0 +1,3 @@
+r_dir_file(wlan_assistant, sysfs_dt_firmware_android)
+r_dir_file(wlan_assistant, sysfs_boot_mode)
+set_prop(wlan_assistant, deviceid_prop)
