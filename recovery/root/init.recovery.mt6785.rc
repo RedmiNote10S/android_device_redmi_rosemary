@@ -27,12 +27,11 @@ on fs
     symlink /dev/block/platform/bootdevice/by-name/preloader_b /dev/block/by-name/preloader_ufs_b
 
 on boot
-     start boot-hal-1-1
+    start boot-hal-1-1
 
 on boot
     # TODO: Make this cleaner
     # This is so fucking dirty
-    exec -- /system/bin/sleep 1
+    exec u:r:recovery:s0 root root -- /system/bin/sleep 2
     # Turn backlight on
     write /sys/class/leds/lcd-backlight/brightness "1000"
-
