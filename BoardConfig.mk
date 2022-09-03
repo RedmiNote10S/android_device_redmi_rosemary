@@ -143,14 +143,14 @@ TARGET_SCREEN_DENSITY := 440
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/first_stage_ramdisk/fstab.mt6785
-#TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
+TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Sepolicy
-include device/mediatek/sepolicy_vndr/SEPolicy.mk
-TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+include device/mediatek/sepolicy/sepolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # VNDK
 BOARD_VNDK_VERSION := current
