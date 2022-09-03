@@ -1244,21 +1244,6 @@ on property:init.svc.surfaceflinger=running
 on property:init.svc.surfaceflinger=restarting
     stop displayfeature
 
-on property:sys.boot_completed="" && property:persist.radio.op.name=AT && property:persist.vendor.op.name.last=UN
-   setprop persist.vendor.op.name.last "AT"
-   setprop sys.powerctl "reboot"
-
-on property:sys.boot_completed="" && property:persist.radio.op.name=UN && property:persist.vendor.op.name.last=AT
-   setprop persist.vendor.op.name.last "UN"
-   setprop sys.powerctl "reboot"
-
-on property:sys.boot_completed="" && property:persist.radio.op.name=UN && property:persist.vendor.op.name.last=""
-   setprop persist.vendor.op.name.last "UN"
-   setprop sys.powerctl "reboot"
-
-on property:sys.boot_completed=1 && property:persist.radio.op.name=*
-   setprop persist.vendor.op.name.last ${persist.radio.op.name}
-
 on property:persist.sys.rosemary.dt2w=0
     exec /system/bin/sendevent /dev/input/event2 0 1 4
 
