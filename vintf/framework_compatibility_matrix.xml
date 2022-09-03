@@ -321,22 +321,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.mfidoca</name>
-        <version>1.0</version>
-        <interface>
-            <name>IFidoService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.micharge</name>
-        <version>1.0</version>
-        <interface>
-            <name>IMiCharge</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.xiaomi.hardware.mlipay</name>
         <version>1.0-1</version>
         <interface>
@@ -345,50 +329,10 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.mtdservice</name>
-        <version>1.0-2</version>
-        <interface>
-            <name>IMTService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.tidaservice</name>
-        <version>1.0-1</version>
-        <interface>
-            <name>ITidaService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.vsimapp</name>
-        <version>1.0</version>
-        <interface>
-            <name>IVSIMService</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.microtrust.hardware.soter</name>
         <version>1.0</version>
         <interface>
             <name>ISoter</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.displayfeature</name>
-        <version>1.0</version>
-        <interface>
-            <name>IDisplayFeature</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.xiaomi.hardware.touchfeature</name>
-        <version>1.0</version>
-        <interface>
-            <name>ITouchFeature</name>
             <instance>default</instance>
         </interface>
     </hal>
