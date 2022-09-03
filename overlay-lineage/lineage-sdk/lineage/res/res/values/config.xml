@@ -16,30 +16,30 @@
      limitations under the License.
 -->
 <resources>
-    <!-- Default value for proximity check on screen wake
+     <!-- Default value for proximity check on screen wake
      NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
-    <bool name="config_proximityCheckOnWake">true</bool>
-    <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
+     <bool name="config_proximityCheckOnWake">true</bool>
+     <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
 
-    <!-- Display mode remapping table.
+     <!-- Display mode remapping table.
          If the mode names returned by the backend do not match
          the predefined and translated strings in the Settings
          app, they can be remapped here. The format is
          "oldname:newname", one per entry. -->
-    <string-array name="config_displayModeMappings" translatable="false">
-        <item>A_standard:standard</item>
-        <item>B_warm:Warm</item>
-        <item>C_normal:Normal</item>
-        <item>D_cold:Cold</item>
-        <item>E_increase:adaptive</item>
-        <item>E_increased:adaptive</item>
-        <item>F_default:basic</item>
-    </string-array>
+     <string-array name="config_displayModeMappings" translatable="false">
+          <item>A_standard:standard</item>
+          <item>B_warm:Warm</item>
+          <item>C_normal:Normal</item>
+          <item>D_cold:Cold</item>
+          <item>E_increase:adaptive</item>
+          <item>E_increased:adaptive</item>
+          <item>F_default:basic</item>
+     </string-array>
 
-    <!-- Should we filter any display modes which are unampped? -->
-    <bool name="config_filterDisplayModes">true</bool>
+     <!-- Should we filter any display modes which are unampped? -->
+     <bool name="config_filterDisplayModes">true</bool>
 
-    <!-- All the capabilities of the LEDs on this device, stored as a bit field.
+     <!-- All the capabilities of the LEDs on this device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
          of the following capabilities present:
 
@@ -80,19 +80,19 @@
 
          For example, a device with notification and battery lights that supports
          pulsating and RGB control would set this config to 75. -->
-    <integer name="config_deviceLightCapabilities">0</integer>
+     <integer name="config_deviceLightCapabilities">0</integer>
 
-    <!-- Defines the actions shown in advanced reboot submenu -->
-    <string-array name="config_restartActionsList">
-        <item>restart</item>
-        <item>restart_recovery</item>
-        <item>restart_bootloader</item>
-        <item>restart_fastboot</item>
-    </string-array>
+     <!-- Defines the actions shown in advanced reboot submenu -->
+     <string-array name="config_restartActionsList">
+          <item>restart</item>
+          <item>restart_recovery</item>
+          <item>restart_bootloader</item>
+          <item>restart_fastboot</item>
+     </string-array>
 
-    <!-- Whether device has a screen with a higher aspect ratio -->
-    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+     <!-- Whether device has a screen with a higher aspect ratio -->
+     <bool name="config_haveHigherAspectRatioScreen">true</bool>
 
-    <!-- Whether device has a notch -->
-    <bool name="config_haveNotch">true</bool>
+     <!-- Whether device has a notch -->
+     <bool name="config_haveNotch">true</bool>
 </resources>
