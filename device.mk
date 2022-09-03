@@ -213,7 +213,8 @@ PRODUCT_PACKAGES += \
     libchrome \
     libchrome.vendor \
     android.hardware.nfc@1.2-service.st \
-    NfcNci
+    NfcNci \
+    android.hardware.nfc@1.2-service.st.rc
 
 # RenderScript
 PRODUCT_PACKAGES += \
