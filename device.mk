@@ -20,9 +20,6 @@ $(call inherit-product, vendor/mediatek/opensource/mtk-builds.mk)
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-# Broken R
-BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
-
 # A/B
 AB_OTA_UPDATER := true
 
@@ -59,6 +56,16 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_COPY_FILES += \
     $(foreach file,$(wildcard $(DEVICE_PATH)/configs/audio/*), \
         $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(file))) )
+
+# Media codecs
+PRODUCT_COPY_FILES += \
+    $(foreach file,$(wildcard $(DEVICE_PATH)/configs/media/*), \
+        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(file))) )
+
+# Media codecs (from frameworks)
+PRODUCT_COPY_FILES += \
+    $(foreach xml, google_audio google_video_le, \
+        frameworks/av/media/libstagefright/data/media_codecs_$(xml).xml:$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, media_codecs_$(xml).xml))
 
 # Audio
 PRODUCT_PACKAGES += \
