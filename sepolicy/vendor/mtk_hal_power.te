@@ -1,2 +1,0 @@
-r_dir_file(mtk_hal_power, proc_mcdi)
-allow mtk_hal_power proc_mcdi:file rw_file_perms;
