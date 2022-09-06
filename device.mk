@@ -19,12 +19,6 @@ $(call inherit-product, vendor/mediatek/opensource/mtk-builds.mk)
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-# Android Go Networking Stack
-$(call inherit-product, $(DEVICE_PATH)/configs/go_netstack.mk)
-
-# Interchangeable Overlays
-$(call inherit-product, $(DEVICE_PATH)/configs/interchable_overlays.mk)
-
 # Broken R
 BUILD_BROKEN_VINTF_PRODUCT_COPY_FILES := true
 
