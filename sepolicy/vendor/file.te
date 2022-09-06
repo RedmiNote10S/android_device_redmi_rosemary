@@ -12,5 +12,3 @@ type vendor_fp_data_file, file_type, data_file_type;
 # Data files
 type thermal_core_data_file, file_type, data_file_type;
 
-# Proc mcdi
-type proc_mcdi, fs_type, proc_type;
