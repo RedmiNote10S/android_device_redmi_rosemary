@@ -100,10 +100,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service
 
-# OMX
-PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service
-
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-service \
