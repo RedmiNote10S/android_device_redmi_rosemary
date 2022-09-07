@@ -150,7 +150,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Sepolicy
 include device/mediatek/sepolicy/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # VNDK
 BOARD_VNDK_VERSION := current
