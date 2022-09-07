@@ -328,10 +328,6 @@ PRODUCT_PACKAGES += \
     TetheringOverlayRosemary \
     WifiOverlayRosemary
 
-# Lineage Updater setup
-PRODUCT_PACKAGES += \
-    LineageUpdaterOverlay
-
 # Props
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/props/build_rosemary.prop:$(TARGET_COPY_OUT_SYSTEM)/build_rosemary.prop \
