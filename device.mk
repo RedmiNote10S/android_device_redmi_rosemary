@@ -96,7 +96,8 @@ PRODUCT_PACKAGES += \
     libdynproc \
     libbluetooth_audio_session \
     libldacBT_enc \
-    libldacBT_abr
+    libldacBT_abr \
+    vendor.mediatek.hardware.audio@6.1.vendor
 
 # SoundTrigger
 PRODUCT_PACKAGES += \
@@ -124,7 +125,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4 \
     android.hardware.camera.provider@2.4.vendor \
     android.hardware.camera.provider@2.5.vendor \
-    android.hardware.camera.provider@2.5.vendor
+    android.hardware.camera.provider@2.6.vendor
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -174,7 +175,8 @@ PRODUCT_PACKAGES += \
 
 # GNSS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.0.vendor
+    android.hardware.gnss@2.0.vendor \
+    android.hardware.gnss@2.1.vendor
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -184,7 +186,8 @@ PRODUCT_PACKAGES += \
     libkeymaster4support.vendor:64 \
 	libkeymaster4_1support.vendor:64 \
 	libsoft_attestation_cert.vendor:64 \
-    libkeymaster4.vendor:64
+    libkeymaster4.vendor:64 \
+    vendor.mediatek.hardware.keyinstall@1.0.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -206,6 +209,11 @@ PRODUCT_PACKAGES += \
     libstagefright_bufferpool@2.0.1 \
     libstagefright_framecapture_utils \
     libstagefright_softomx_plugin
+
+# Other MTK Interfaces
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.dfps@1.0.vendor \
+    vendor.mediatek.hardware.nwk_opt@1.0.vendor
 
 # Dynamic partitions
 PRODUCT_BUILD_SUPER_PARTITION := true
@@ -347,10 +355,15 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_PACKAGES += \
     ImsServiceBase \
-    ImsInit
+    ImsInit \
+    vendor.mediatek.hardware.videotelephony@1.0.vendor
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/public.libraries-trustonic.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-trustonic.txt
+
+# NVRAM
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.nvram@1.1.vendor
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -398,12 +411,21 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# LBS HIDL
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.lbs@1.0.vendor
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0.vendor \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor \
-    android.hardware.power@1.3.vendor
+    android.hardware.power@1.3.vendor \
+    vendor.mediatek.hardware.power@1.0.vendor
+
+# PQ
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.pq@2.6.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -435,7 +457,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
     android.hardware.secure_element@1.1.vendor \
-    android.hardware.secure_element@1.0.vendor
+    android.hardware.secure_element@1.0.vendor \
+    vendor.mediatek.hardware.netdagent@1.0.vendor
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -453,10 +476,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0.vendor
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0.vendor \
-    android.hardware.usb@1.1.vendor
+    android.hardware.usb@1.1.vendor \
+    android.hardware.usb.gadget@1.0.vendor
 
 # VNDService
 PRODUCT_PACKAGES += \
