@@ -73,7 +73,13 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio@6.0-impl-mediatek \
     android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio@5.0.vendor \
+    android.hardware.bluetooth.a2dp@1.0.vendor \
     android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.broadcastradio@1.0.vendor \
+    android.hardware.broadcastradio@1.1.vendor \
+    android.hardware.broadcastradio@2.0.vendor \
+    android.hardware.bluetooth@1.0.vendor \
     audio.a2dp.default \
     audio.primary.default \
     audio.r_submix.default \
@@ -111,6 +117,10 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.hardware.camera.device@3.2.vendor \
+    android.hardware.camera.device@3.3.vendor \
+    android.hardware.camera.device@3.4.vendor \
+    android.hardware.camera.device@3.5.vendor \
     android.hardware.camera.provider@2.4 \
     android.hardware.camera.provider@2.4.vendor
 
@@ -129,13 +139,18 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.frameworks.displayservice@1.0.vendor \
     libhwc2on1adapter \
     libhwc2onfbadapter \
     libfmq
 
 # DRM
 PRODUCT_PACKAGES += \
-    libdrm.vendor
+    libdrm.vendor \
+    android.hardware.drm@1.3.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.0.vendor
 
 # DRM, but bad
 PRODUCT_PACKAGES += \
@@ -147,11 +162,18 @@ PRODUCT_PACKAGES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
-    android.hardware.gatekeeper@1.0-impl
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0.vendor
+
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.0.vendor
 
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0.vendor \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.keymaster@4.0.vendor \
     libkeymaster4support.vendor:64 \
 	libkeymaster4_1support.vendor:64 \
 	libsoft_attestation_cert.vendor:64 \
@@ -206,6 +228,10 @@ PRODUCT_PACKAGES += \
 
 # NeuralNet
 PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor \
+    android.hardware.neuralnetworks@1.2.vendor \
+    android.hardware.neuralnetworks@1.1.vendor \
+    android.hardware.neuralnetworks@1.0.vendor \
     libtextclassifier_hash.vendor
 
 # Common NFC
@@ -365,6 +391,13 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0.vendor \
+    android.hardware.power@1.1.vendor \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power@1.3.vendor
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.ago.rc \
@@ -387,6 +420,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6785:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6785
 
+# RIL
+PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1.vendor \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio@1.4.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.0.vendor
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage
@@ -396,11 +440,17 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0 \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
+    android.hardware.sensors@2.0.vendor \
     android.hardware.sensors@2.1-service.multihal
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0.vendor \
+    android.hardware.usb@1.1.vendor
 
 # VNDService
 PRODUCT_PACKAGES += \
@@ -423,6 +473,15 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service-lazy.rosemary \
+    android.hardware.wifi.supplicant@1.0.vendor \
+    android.hardware.wifi.supplicant@1.1.vendor \
+    android.hardware.wifi.supplicant@1.2.vendor \
+    android.hardware.wifi.supplicant@1.3.vendor \
+    android.hardware.wifi.supplicant@1.4.vendor \
+    android.hardware.wifi.hostapd@1.0.vendor \
+    android.hardware.wifi.hostapd@1.1.vendor \
+    android.hardware.wifi.hostapd@1.2.vendor \
+    android.hardware.wifi.hostapd@1.3.vendor \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl \
     hostapd \
