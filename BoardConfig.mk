@@ -150,7 +150,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Sepolicy
-include device/mediatek/sepolicy/SEPolicy.mk
+include device/mediatek/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 

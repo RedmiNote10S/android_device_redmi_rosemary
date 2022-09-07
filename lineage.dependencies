@@ -25,8 +25,8 @@
     "branch": "twelve"
   },
   {
-    "repository": "PotatoProject/device_mediatek_sepolicy",
-    "target_path": "device/mediatek/sepolicy",
-    "branch": "frico_mr1-release"
+    "repository": "PixelExperience/device_mediatek_sepolicy_vndr",
+    "target_path": "device/mediatek/sepolicy_vndr",
+    "branch": "twelve"
   }
 ]
