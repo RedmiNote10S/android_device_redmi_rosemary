@@ -125,7 +125,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4 \
     android.hardware.camera.provider@2.4.vendor \
     android.hardware.camera.provider@2.5.vendor \
-    android.hardware.camera.provider@2.6.vendor
+    android.hardware.camera.provider@2.6.vendor \
+    vendor.mediatek.hardware.camera.frhandler@1.0.vendor
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -421,7 +422,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor \
     android.hardware.power@1.3.vendor \
-    vendor.mediatek.hardware.power@1.0.vendor
+    vendor.mediatek.hardware.power@1.0.vendor \
+    vendor.mediatek.hardware.mtkpower@1.0.vendor
 
 # PQ
 PRODUCT_PACKAGES += \
@@ -484,7 +486,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0.vendor \
     android.hardware.usb@1.1.vendor \
-    android.hardware.usb.gadget@1.0.vendor
+    android.hardware.usb.gadget@1.0.vendor \
+    android.hardware.usb.gadget@1.1.vendor
 
 # VNDService
 PRODUCT_PACKAGES += \
