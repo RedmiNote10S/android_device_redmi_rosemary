@@ -348,6 +348,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/props/sku/system_ext/build_secret.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/build_secret.prop \
     $(LOCAL_PATH)/props/sku/system_ext/build_maltose.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/build_maltose.prop
 
+# Overridden props
+include $(LOCAL_PATH)/props/overrides.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
