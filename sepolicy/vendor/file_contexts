@@ -1,6 +1,5 @@
 # Thermals
 /vendor/bin/mi_thermald       u:object_r:mi_thermald_exec:s0
-/data/vendor/thermal(/.*)?  u:object_r:thermal_core_data_file:s0
 
 # WiFi
 /(vendor|system/vendor)/bin/hw/android\.hardware\.wifi@1\.0-service-lazy\.rosemary u:object_r:mtk_hal_wifi_exec:s0
@@ -11,15 +10,11 @@
 # Sensors
 /(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@2\.1-service\.multihal u:object_r:mtk_hal_sensors_exec:s0
 
-# Secure element
-/(vendor|system/vendor)/bin/hw/android\.hardware\.secure_element@1\.2-service-mediatek u:object_r:mtk_hal_secure_element_exec:s0
-
 # Batterysecret
 /(vendor|system/vendor)/bin/batterysecret u:object_r:batterysecret_exec:s0
 
 # Fingerprint
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.rosemary u:object_r:hal_fingerprint_default_exec:s0
-/dev/goodix_fp u:object_r:fp_device:s0
 
 # Battery
 /sys/devices/platform/1101a000.i2c7/i2c-7/7-0065/power_supply/bq2597x-standalone/ti_bus_current u:object_r:sysfs_batteryinfo:s0
