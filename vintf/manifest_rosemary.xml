@@ -684,7 +684,7 @@
         <fqname>@1.0::ISoter/default</fqname>
     </hal>
     <sepolicy>
-        <version>30.0</version>
+        <version>32.0</version>
     </sepolicy>
     <kernel target-level="5" />
 </manifest>
