@@ -12,16 +12,21 @@
   {
     "repository": "PixelExperience/vendor_mediatek-opensource",
     "target_path": "vendor/mediatek/opensource",
-    "branch": "eleven"
+    "branch": "twelve"
   },
   {
     "repository": "PixelExperience/vendor_mediatek_interfaces",
     "target_path": "vendor/mediatek/interfaces",
-    "branch": "eleven"
+    "branch": "twelve"
+  },
+  {
+    "repository": "PixelExperience/device_mediatek_common",
+    "target_path": "device/mediatek/common",
+    "branch": "twelve"
   },
   {
     "repository": "PotatoProject/device_mediatek_sepolicy",
     "target_path": "device/mediatek/sepolicy",
-    "branch": "dumaloo-release"
+    "branch": "frico_mr1-release"
   }
 ]
