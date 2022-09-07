@@ -11,7 +11,6 @@ import /vendor/etc/init/hw/init.sensor_1_0.rc
 import /vendor/etc/init/hw/init.stnfc.rc
 import /system/etc/init/hw/init.stnfc.rc
 import init.mishow.ctl.rc
-import /vendor/etc/init/hw/init.logger.rc
 
 # init.modem.rc must be the LAST rc file because vold.post_fs_data_done is set in it
 import /vendor/etc/init/hw/init.modem.rc
