@@ -141,7 +141,8 @@ PRODUCT_PACKAGES += \
 
 # MTK Graphics
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.gpu@1.0.so.vendor
+    vendor.mediatek.hardware.gpu@1.0.vendor \
+    vendor.mediatek.hardware.mms@1.5.vendor
 
 # Display
 PRODUCT_PACKAGES += \
