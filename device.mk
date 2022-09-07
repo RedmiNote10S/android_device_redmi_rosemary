@@ -138,6 +138,10 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl
 
+# MTK Graphics
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.gpu@1.0.so.vendor
+
 # Display
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
