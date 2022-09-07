@@ -43,6 +43,7 @@ LOCAL_SHARED_LIBRARIES := \
     libutils \
     libwifi-hal-mtk \
     libwifi-system-iface \
+    libxml2 \
     android.hardware.wifi@1.0 \
     android.hardware.wifi@1.1 \
     android.hardware.wifi@1.2 \
