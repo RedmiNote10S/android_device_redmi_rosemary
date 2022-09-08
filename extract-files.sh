@@ -32,6 +32,9 @@ function blob_fixup() {
 	vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod)
             "${PATCHELF}" --add-needed "libshim_beanpod.so" "${2}"
             ;;
+        lib/libmtk_vt_service.so)
+            "${PATCHELF}" --add-needed "libshim_vtservice.so" "${2}"
+            ;;
     esac
 }
 
