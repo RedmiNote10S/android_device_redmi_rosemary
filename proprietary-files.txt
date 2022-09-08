@@ -2689,8 +2689,3 @@ system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 # Media (OMX)
 vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/etc/init/android.hardware.media.omx@1.0-service.rc
-
-# Vibrator - from Ronin_00WW-user 11 RP1A.200720.011 00WW_1_100 release-keys
-vendor/bin/hw/android.hardware.vibrator-service.mediatek|6a99b17250dae08eeeb4a720df65ef61b0542021
-vendor/etc/init/vibrator-mtk-default.rc|63f7577081fc8aca1d3cae9a32a77021ff041796
--vendor/etc/vintf/manifest/vibrator-mtk-default.xml|1a42ecd34f950e3737c61247b2d1d85039643729
