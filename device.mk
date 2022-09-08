@@ -126,6 +126,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4.vendor \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor \
+    vendor.mediatek.hardware.camera.atms@1.0.vendor \
     vendor.mediatek.hardware.camera.bgservice@1.0.vendor \
     vendor.mediatek.hardware.camera.bgservice@1.1.vendor \
     vendor.mediatek.hardware.camera.frhandler@1.0.vendor \
