@@ -43,12 +43,6 @@ cc_library_shared {
     include_dirs: [ "system/keymaster/include" ],
 }
 
-cc_library_shared {
-    name: "libshim_audio",
-    srcs: ["libshim_audio.cpp"],
-    vendor: true,
-}
-
 java_library {
     name: "ImsServiceBase",
     installable: true,

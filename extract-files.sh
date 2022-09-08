@@ -35,12 +35,6 @@ function blob_fixup() {
         lib/libmtk_vt_service.so)
             "${PATCHELF}" --add-needed "libshim_vtservice.so" "${2}"
             ;;
-        vendor/lib64/hw/audio.primary.mt6785.so)
-            "${PATCHELF}" --add-needed "libshim_audio.so" "${2}"
-            ;;
-        vendor/lib/hw/audio.primary.mt6785.so)
-            "${PATCHELF}" --add-needed "libshim_audio.so" "${2}"
-            ;;
     esac
 }
 

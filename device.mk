@@ -537,5 +537,4 @@ PRODUCT_PACKAGES += \
 # Symbols
 PRODUCT_PACKAGES += \
     libshim_vtservice \
-    libshim_beanpod.vendor \
-    libshim_audio
+    libshim_beanpod.vendor
