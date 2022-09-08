@@ -99,6 +99,10 @@ PRODUCT_PACKAGES += \
     libldacBT_abr \
     vendor.mediatek.hardware.audio@6.1.vendor
 
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v30/arm64/arch-arm-armv8-a/shared/vndk-core/libmedia_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmedia_helper-v30.so \
+    prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-core/libmedia_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmedia_helper-v30.so
+
 # SoundTrigger
 PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
