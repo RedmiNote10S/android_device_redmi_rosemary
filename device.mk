@@ -137,6 +137,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.isphal@1.0.vendor \
     vendor.mediatek.hardware.camera.postproc@1.0.vendor
 
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-sp/libunwindstack.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libunwindstack-v30.so \
+    prebuilts/vndk/v30/arm64/arch-arm-armv8-a/shared/vndk-sp/libunwindstack.so:$(TARGET_COPY_OUT_VENDOR)/lib/libunwindstack-v30.so \
+
 # Charger
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0 \
