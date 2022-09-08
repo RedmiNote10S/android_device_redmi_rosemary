@@ -1,8 +1,6 @@
 # Should improve performance a bit
 debug.renderengine.backend=skiaglthreaded
 debug.sf.latch_unsignaled=1
-debug.hwui.use_hint_manager=true
-debug.hwui.target_cpu_time_percent=30
 
 # Camera
 ro.camera.highres.packagelist=org.lineageos.snap,com.google.android.apps.cameralite
