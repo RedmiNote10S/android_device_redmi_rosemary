@@ -1,4 +1,4 @@
 service vibrator-rosemary /vendor/bin/hw/android.hardware.vibrator-service.rosemary
     class hal
-    user system
-    group system
+    user root
+    group root
