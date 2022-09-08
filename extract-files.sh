@@ -44,8 +44,14 @@ function blob_fixup() {
         vendor/lib/libudf.so)
             "${PATCHELF}" --replace-needed "libunwindstack.so" "libunwindstack-v30.so" "${2}"
             ;;
-        venodr/lib64/libudf.so)
+        vendor/lib64/libudf.so)
             "${PATCHELF}" --replace-needed "libunwindstack.so" "libunwindstack-v30.so" "${2}"
+            ;;
+        vendor/lib/libmtkcam_stdutils.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
+            ;;
+        vendor/lib64/libmtkcam_stdutils.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
             ;;
     esac
 }
