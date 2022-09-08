@@ -1,5 +1,6 @@
 cc_library_static {
     name: "libvibratorrosemary",
+    vendor: true,
     shared_libs: [
         "libbase",
         "libbinder_ndk",
@@ -16,6 +17,7 @@ cc_library_static {
 cc_binary {
     name: "android.hardware.vibrator-service.rosemary",
     relative_install_path: "hw",
+    vendor: true,
     init_rc: ["vibrator-rosemary.rc"],
     vintf_fragments: ["vibrator-rosemary.xml"],
     shared_libs: [
