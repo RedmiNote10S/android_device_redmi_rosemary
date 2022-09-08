@@ -500,10 +500,6 @@ PRODUCT_PACKAGES += \
     vndservice_manager \
     vndservice_manager.vendor
 
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.rosemary
-
 # Sensors
 PRODUCT_PACKAGES += \
     libsensorndkbridge
