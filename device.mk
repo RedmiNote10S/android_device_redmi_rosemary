@@ -127,6 +127,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5.vendor \
     android.hardware.camera.provider@2.6.vendor \
     vendor.mediatek.hardware.camera.frhandler@1.0.vendor \
+    vendor.mediatek.hardware.camera.isphal@1.0.vendor \
     vendor.mediatek.hardware.camera.postproc@1.0.vendor
 
 # Charger
