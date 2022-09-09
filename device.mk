@@ -459,10 +459,6 @@ PRODUCT_PACKAGES += \
     init.modem.rc \
     vendor.ueventd.rc
 
-PRODUCT_PACKAGES += \
-    init.rosemary.incall_fixup.rc \
-    init.rosemary.incall_fixup.sh
-
 # Ramdisk For Kernel
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.mt6785:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6785
