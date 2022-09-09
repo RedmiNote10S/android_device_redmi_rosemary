@@ -29,23 +29,14 @@ persist.vendor.dc_backlight.enable=false
 # Imported from MIUI 12.5.16.0.RKLMIXM
 drm.service.enabled=true
 ro.vendor.mtk_modem_monitor_support=1
-ro.virtual_ab.enabled=true
 debug.mtk_tflite.target_nnapi=29
 ro.vendor.mtk_nn.option=A,B,C,D,E,F,G,Z
 ro.vendor.mtk_nn_quant_preferred=1
 init.userspace_reboot.is_supported=true
-ro.carrier=unknown
 ro.audio.monitorRotation=true
 aaudio.mmap_policy=2
 aaudio.mmap_exclusive_policy=2
 ro.config.vc_call_vol_steps=11
-ro.vendor.audio.voice.change.support=flase
-ro.vendor.audio.scenario.support=flase
-ro.vendor.audio.sfx.earadj=false
-ro.vendor.audio.sfx.scenario=flase
-ro.vendor.audio.surround.support=flase
-ro.vendor.audio.spk.stereo=true
-ro.vendor.audio.vocal.support=flase
 ro.vendor.mtk_shutdown_support=0
 ro.vendor.mtk_f2fs_enable=1
 sys.haptic.down.strong=50
@@ -56,8 +47,6 @@ ro.hardware.egl=meow
 vendor.camera.mdp.dre.enable=1
 vendor.camera.mdp.cz.enable=1
 ro.opengles.version=196610
-persist.vendor.op.name.last
-persist.vendor.mishow
 persist.vendor.radio.fd.counter=150
 persist.vendor.radio.fd.off.counter=50
 persist.vendor.radio.fd.r8.counter=150
@@ -129,7 +118,6 @@ ro.vendor.mtk_ufs_support=1
 persist.vendor.radio.flashless.fsm=0
 persist.vendor.radio.flashless.fsm_cst=0
 persist.vendor.radio.flashless.fsm_rw=0
-telephony.lteOnCdmaDevice=1
 ro.vendor.mtk_ril_mode=c6m_1rild
 ro.vendor.md_prop_ver=1
 ro.vendor.mtk_aal_support=1
@@ -174,7 +162,6 @@ ro.vendor.mtk_sec_video_path_support=1
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.patch.version=-1
 persist.vendor.connsys.dynamic.dump=0
-vendor.connsys.driver.ready=no
 persist.vendor.connsys.fm_chipid=mt6631
 ro.vendor.wlan.gen=gen4m
 persist.vendor.radio.mtk_dsbp_support=2
@@ -452,10 +439,8 @@ ro.surface_flinger.vsync_event_phase_offset_ns=8300000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=8300000
 persist.vendor.md_c2k_cap_dep_check=0
 vendor.bluetooth.ldac.abr=true
-ro.incremental.enable=yes
 
 # Fingerprint
 ro.hardware.fp.vendor=goodix,fpc
-ro.hardware.fp.sideCap=true
 
 import /vendor/build_${ro.boot.product.vendor.sku}.prop
