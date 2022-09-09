@@ -4,4 +4,6 @@
     <dimen name="status_bar_height_portrait">@dimen/status_bar_height</dimen>
     <dimen name="status_bar_height_landscape">@dimen/status_bar_height</dimen>
     <dimen name="rounded_corner_radius">100.0px</dimen>
+    <dimen name="rounded_corner_radius_bottom">@dimen/rounded_corner_radius</dimen>
+    <dimen name="rounded_corner_radius_top">@dimen/rounded_corner_radius</dimen>
 </resources>

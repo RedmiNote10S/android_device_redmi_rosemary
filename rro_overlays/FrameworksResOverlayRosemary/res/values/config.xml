@@ -556,9 +556,6 @@
     <bool name="config_enableWifiDisplay">true</bool>
 
     <string name="config_mainBuiltInDisplayCutout">M 0,0 H -37 V 93 H 37 V 0 H 0 Z</string>
-    <dimen name="rounded_corner_radius_bottom">106.0px</dimen>
-    <dimen name="rounded_corner_radius_top">106.0px</dimen>
-    <dimen name="status_bar_height_portrait">93.0px</dimen>
 
     <!-- An array of arrays of side fingerprint sensor properties relative to each display.
          Note: this value is temporary and is expected to be queried directly
