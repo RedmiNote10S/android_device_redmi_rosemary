@@ -126,6 +126,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.3.vendor \
     android.hardware.camera.device@3.4.vendor \
     android.hardware.camera.device@3.5.vendor \
+    android.hardware.camera.device@3.6.vendor \
     android.hardware.camera.provider@2.4 \
     android.hardware.camera.provider@2.4.vendor \
     android.hardware.camera.provider@2.5.vendor \
@@ -444,7 +445,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.3.vendor \
     android.hardware.power-V1-ndk_platform.vendor \
     vendor.mediatek.hardware.power@1.0.vendor \
-    vendor.mediatek.hardware.power@2.0 \
+    vendor.mediatek.hardware.power@2.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.0.vendor
 
 # PQ
