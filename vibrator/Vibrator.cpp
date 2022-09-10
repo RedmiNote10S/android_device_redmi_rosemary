@@ -40,7 +40,7 @@ static void write_sysfs_node(const std::string& path, const T& val) {
 
 ndk::ScopedAStatus Vibrator::getCapabilities(int32_t* _aidl_return) {
     LOG(INFO) << "Vibrator reporting capabilities";
-    *_aidl_return = IVibrator::CAP_PERFORM_CALLBACK;
+    *_aidl_return = 0;
     return ndk::ScopedAStatus::ok();
 }
 
@@ -56,7 +56,6 @@ ndk::ScopedAStatus Vibrator::off() {
 ndk::ScopedAStatus Vibrator::on(int32_t timeoutMs,
                                 __attribute__((unused)) const std::shared_ptr<IVibratorCallback>& callback) {
     LOG(INFO) << "Vibrator on for timeoutMs: " << timeoutMs;
-    LOG(INFO) << VIBRA_NODE(duration);
     write_sysfs_node(VIBRA_NODE(duration), timeoutMs);
     write_sysfs_node(VIBRA_NODE(activate), 1);
 
