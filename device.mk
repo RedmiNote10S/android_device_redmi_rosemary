@@ -17,8 +17,8 @@ $(call inherit-product, vendor/redmi/rosemary/rosemary-vendor.mk)
 
 $(call inherit-product, vendor/mediatek/opensource/mtk-builds.mk)
 
-# Include GSI keys
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+# Include Dev GSI Keys
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # A/B
 AB_OTA_UPDATER := true
