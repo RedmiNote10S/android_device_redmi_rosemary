@@ -57,37 +57,4 @@ service conninfra_loader /vendor/bin/conninfra_loader
 # Connectivity related services (End)
 #
 
-#
-# Connectivity related kernel objects (Begin)
-#
-
-# load wmt_drv
-on boot
-    insmod /vendor/lib/modules/wmt_drv.ko
-
-# load conninfra driver
-on boot
-    insmod /vendor/lib/modules/conninfra.ko
-
-# load bt_drv
-on property:vendor.connsys.driver.ready=yes
-    insmod /vendor/lib/modules/bt_drv.ko
-
-# load wifi chrdev driver and wlan driver after wmt_loader finish
-on property:vendor.connsys.driver.ready=yes
-    insmod /vendor/lib/modules/wmt_chrdev_wifi.ko
-    insmod /vendor/lib/modules/wlan_drv_${ro.vendor.wlan.gen}.ko
-
-# load fmradio_drv
-on property:vendor.connsys.driver.ready=yes
-    insmod /vendor/lib/modules/fmradio_drv.ko
-
-# load gps_drv
-on property:vendor.connsys.driver.ready=yes
-  insmod /vendor/lib/modules/gps_drv.ko
-
-#
-# Connectivity related kernel objects (End)
-#
-
 #INTERNAL_END

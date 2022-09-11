@@ -1203,11 +1203,6 @@ service mi_thermald /system/vendor/bin/mi_thermald
     group system
     seclabel u:r:mi_thermald:s0
 	
-# FPSGO FBT Game
-on boot
-    insmod /vendor/lib/modules/fpsgo.ko
-	insmod /vendor/lib/modules/mi_memory.ko
-
 # add this link for cust mount
 on init
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
