@@ -166,6 +166,16 @@ PRODUCT_PACKAGES += \
     libhwc2onfbadapter \
     libfmq
 
+# DisplayFeature/TouchFeature Interfaces
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.displayfeature@1.0 \
+    vendor.xiaomi.hardware.touchfeature@1.0
+
+# MLIPay
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.mlipay@1.0.vendor \
+    vendor.xiaomi.hardware.mlipay@1.1.vendor
+
 # DRM
 PRODUCT_PACKAGES += \
     libdrm.vendor \
