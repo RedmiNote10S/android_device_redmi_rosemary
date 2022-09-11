@@ -133,7 +133,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.bgservice@1.1.vendor \
     vendor.mediatek.hardware.camera.frhandler@1.0.vendor \
     vendor.mediatek.hardware.camera.isphal@1.0.vendor \
-    vendor.mediatek.hardware.camera.postproc@1.0.vendor
+    vendor.mediatek.hardware.camera.postproc@1.0.vendor \
+    vendor.mediatek.hardware.camera.lomoeffect@1.0.vendor
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v30/arm64/arch-arm64-armv8-a/shared/vndk-sp/libunwindstack.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libunwindstack-v30.so \
@@ -211,7 +212,9 @@ PRODUCT_PACKAGES += \
 	libkeymaster4_1support.vendor:64 \
 	libsoft_attestation_cert.vendor:64 \
     libkeymaster4.vendor:64 \
-    vendor.mediatek.hardware.keyinstall@1.0.vendor
+    vendor.mediatek.hardware.keyinstall@1.0.vendor \
+    vendor.mediatek.hardware.keymaster_attestation@1.0.vendor \
+    vendor.mediatek.hardware.keymaster_attestation@1.1.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -232,7 +235,8 @@ PRODUCT_PACKAGES += \
     libstagefright_codecbase \
     libstagefright_bufferpool@2.0.1 \
     libstagefright_framecapture_utils \
-    libstagefright_softomx_plugin
+    libstagefright_softomx_plugin \
+    vendor.mediatek.hardware.mtkcodecservice@1.1.vendor
 
 # Other MTK Interfaces
 PRODUCT_PACKAGES += \
