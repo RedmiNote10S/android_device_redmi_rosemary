@@ -343,7 +343,7 @@ on fs
 #INTERNAL_START
     write /proc/bootprof "INIT:Mount_START"
     wait_for_prop hwservicemanager.ready "true"
-    start vendor.boot-hal-1-1
+    start vendor.boot-hal-1-2
     mount_all --early
     write /proc/bootprof "INIT:Mount_END"
 #INTERNAL_END
@@ -352,7 +352,7 @@ on post-fs
     start logd
     start keyinstall-1-0
     start light-hal-2-0
-    start vendor.boot-hal-1-1
+    start vendor.boot-hal-1-2
     start merged_hal_service
     start system_suspend
     # Once everything is setup, no need to modify /.

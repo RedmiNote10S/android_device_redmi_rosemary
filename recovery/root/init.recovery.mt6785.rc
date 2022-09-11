@@ -27,7 +27,7 @@ on fs
     symlink /dev/block/platform/bootdevice/by-name/preloader_b /dev/block/by-name/preloader_ufs_b
 
 on boot
-    start boot-hal-1-1
+    start boot-hal-1-2
 
 on boot
     # TODO: Make this cleaner

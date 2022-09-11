@@ -339,7 +339,7 @@ on fs
 #INTERNAL_START
     write /proc/bootprof "INIT:Mount_START"
     wait_for_prop hwservicemanager.ready "true"
-    start vendor.boot-hal-1-1
+    start vendor.boot-hal-1-2
     mount_all --early
     write /proc/bootprof "INIT:Mount_END"
 #INTERNAL_END
@@ -349,7 +349,7 @@ on post-fs
     start logd
     start light-mediatek
     start system_suspend
-    start vendor.boot-hal-1-1
+    start vendor.boot-hal-1-2
     start merged_hal_service
     start capi-2-0
     start power-hal-1-0
