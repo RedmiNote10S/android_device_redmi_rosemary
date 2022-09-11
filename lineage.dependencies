@@ -15,7 +15,7 @@
     "branch": "twelve"
   },
   {
-    "repository": "PixelExperience/vendor_mediatek_interfaces",
+    "repository": "Woomymy/vendor_mediatek_interfaces",
     "target_path": "vendor/mediatek/interfaces",
     "branch": "twelve"
   },
