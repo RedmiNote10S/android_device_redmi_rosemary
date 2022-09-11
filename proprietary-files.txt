@@ -65,12 +65,6 @@ vendor/etc/camera/vidhance_calibration
 bin/charger:bin/chargeonlymode
 vendor/bin/batterysecret
 
-# CIT
-vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so
-vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.1.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
-vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
-
 # IR
 vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.mt6785.so
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.mt6785.so
