@@ -26,10 +26,6 @@ ro.vendor.cabc.enable=true
 persist.vendor.max.brightness=500
 persist.vendor.dc_backlight.enable=false
 
-# HWUI
-debug.hwui.use_hint_manager=true
-debug.hwui.target_cpu_time_percent=30
-
 # Imported from MIUI 12.5.16.0.RKLMIXM
 drm.service.enabled=true
 ro.vendor.mtk_modem_monitor_support=1
