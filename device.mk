@@ -94,7 +94,8 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session \
     libldacBT_enc \
     libldacBT_abr \
-    vendor.mediatek.hardware.audio@6.1.vendor
+    vendor.mediatek.hardware.audio@6.1.vendor \
+    vendor.mediatek.hardware.bluetooth.audio@2.1.vendor
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v30/arm64/arch-arm-armv8-a/shared/vndk-core/libmedia_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmedia_helper-v30.so \
@@ -384,7 +385,8 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     ImsServiceBase \
     ImsInit \
-    vendor.mediatek.hardware.videotelephony@1.0.vendor
+    vendor.mediatek.hardware.videotelephony@1.0.vendor \
+    vendor.mediatek.hardware.videotelephony@1.0
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/public.libraries-trustonic.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-trustonic.txt
@@ -458,7 +460,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.power@1.0.vendor \
     vendor.mediatek.hardware.power@1.1.vendor \
     vendor.mediatek.hardware.power@2.0.vendor \
-    vendor.mediatek.hardware.mtkpower@1.0.vendor
+    vendor.mediatek.hardware.mtkpower@1.0.vendor \
+    vendor.mediatek.hardware.mtkpower@1.1.vendor
 
 # PQ
 PRODUCT_PACKAGES += \
@@ -491,7 +494,8 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.0.vendor \
-    vendor.mediatek.hardware.netdagent@1.0.vendor
+    vendor.mediatek.hardware.netdagent@1.0.vendor \
+    vendor.mediatek.hardware.mtkradioex@2.0.vendor
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \

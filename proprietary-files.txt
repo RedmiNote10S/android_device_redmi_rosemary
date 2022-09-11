@@ -15,7 +15,6 @@ vendor/lib/libladder.so
 vendor/lib/libnvram.so
 vendor/lib/libnvram_platform.so
 vendor/lib/libnvram_sec.so
-vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
 vendor/lib64/hw/audio.primary.mt6785.so
 vendor/lib64/hw/audio.r_submix.mt6785.so
@@ -28,7 +27,6 @@ vendor/lib64/libladder.so
 vendor/lib64/libnvram.so
 vendor/lib64/libnvram_platform.so
 vendor/lib64/libnvram_sec.so
-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
@@ -216,7 +214,6 @@ vendor/lib64/libmtkutils.so
 vendor/lib64/libratconfig.so
 vendor/lib64/librilfusion.so
 vendor/lib64/libsysenv.so
-vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 
 # Secure element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
@@ -1775,7 +1772,6 @@ vendor/lib/ov64b40semco_mipi_raw_IdxMgr.so
 vendor/lib/ov64b40semco_mipi_raw_india_IdxMgr.so
 vendor/lib/ov64b40semco_mipi_raw_india_tuning.so
 vendor/lib/ov64b40semco_mipi_raw_tuning.so
-vendor/lib/vendor.mediatek.hardware.mtkpower@1.1.so
 vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so
 vendor/lib64/hw/dfps.mt6785.so
 vendor/lib64/hw/gps.default.so
@@ -2590,7 +2586,6 @@ vendor/lib64/ov64b40semco_mipi_raw_india_tuning.so
 vendor/lib64/ov64b40semco_mipi_raw_tuning.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so
-vendor/lib64/vendor.mediatek.hardware.mtkpower@1.1.so
 vendor/lib64/vendor.microtrust.hardware.soter@1.0.so
 -vendor/odm/etc/vintf/manifest_dsds.xml
 -vendor/odm/etc/vintf/manifest_dsds_se.xml
@@ -2665,8 +2660,6 @@ lib64/libmtkperf_client.so
 lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
 -priv-app/ImsService/ImsService.apk
-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Media (OMX)
 vendor/bin/hw/android.hardware.media.omx@1.0-service
