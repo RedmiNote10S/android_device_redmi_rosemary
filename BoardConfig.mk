@@ -5,6 +5,7 @@
 #
 
 DEVICE_PATH := device/redmi/rosemary
+BOARD_VENDOR := xiaomi
 
 # Architecture
 TARGET_ARCH := arm64

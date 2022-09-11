@@ -482,6 +482,9 @@ on post-fs-data
 
     #Fingerprint
     chmod 0666 /dev/goodix_fp
+	mkdir /data/vendor/fpc 0777 system system
+	mkdir /data/vendor/goodix 0777 system system
+
 
     #VideoCodec
     chmod 0660 /dev/vcu
@@ -1014,6 +1017,15 @@ on boot
     chown system radio /dev/ttyGS0
     chmod 660 /dev/ttyGS1
     chown system radio /dev/ttyGS1
+
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/irq
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/wakeup_enable
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/modalias
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/clk_enable
+    chown system system /sys/devices/platform/1100a000.spi0/spi_master/spi0/spi0.0/authen_fd/performance
+    
+    chmod 0644 /dev/goodix_fp
+    chown system system /dev/goodix_fp
 
 #on boot
     chown system system /sys/bus/platform/devices/aw8622/activate
