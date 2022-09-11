@@ -214,6 +214,7 @@ vendor/lib64/libmtkutils.so
 vendor/lib64/libratconfig.so
 vendor/lib64/librilfusion.so
 vendor/lib64/libsysenv.so
+vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 
 # Secure element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek

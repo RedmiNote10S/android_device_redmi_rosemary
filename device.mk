@@ -494,8 +494,7 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.0.vendor \
-    vendor.mediatek.hardware.netdagent@1.0.vendor \
-    vendor.mediatek.hardware.mtkradioex@2.0.vendor
+    vendor.mediatek.hardware.netdagent@1.0.vendor
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
