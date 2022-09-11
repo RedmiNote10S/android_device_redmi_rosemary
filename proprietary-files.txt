@@ -950,12 +950,10 @@ vendor/etc/qc_Global_2.xml
 vendor/etc/qc_Global_3.xml
 vendor/etc/qc_India_1.xml
 vendor/etc/qc_Japan_1.xml
-vendor/etc/rcv_pb.wav
 vendor/etc/screen_light.xml
 vendor/etc/slp_conf
 vendor/etc/smsdbvisitor.xml
 vendor/etc/special_pws_channel.xml
-vendor/etc/spk_pb.wav
 vendor/etc/spn-conf-op09.xml
 vendor/etc/st21nfc_conf.txt
 vendor/etc/throttle.sh
