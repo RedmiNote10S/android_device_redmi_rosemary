@@ -454,6 +454,12 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.1.vendor
 
+# Perf configs
+PRODUCT_COPY_FILES += \
+    $(foreach file,$(wildcard $(DEVICE_PATH)/configs/perf/*), \
+        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(file))) )
+
+
 # PQ
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.6.vendor
