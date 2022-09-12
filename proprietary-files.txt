@@ -149,10 +149,6 @@ vendor/etc/init/android.hardware.gnss@2.1-service-mediatek.rc
 vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 
-# Light
-vendor/lib/hw/lights.mt6785.so
-vendor/lib64/hw/lights.mt6785.so
-
 # Media (OMX)
 lib/libstagefright_wfd_mtk.so
 vendor/etc/seccomp_policy/mediacodec.policy
@@ -288,8 +284,6 @@ vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # Miscellaneous
 vendor/bin/hw/camerahalserver
-vendor/bin/hw/power_native_test_v_1_0
-vendor/bin/hw/power_native_test_v_1_1
 vendor/bin/hw/vendor.mediatek.hardware.dfps@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.dplanner@2.0-service
 vendor/bin/hw/vendor.mediatek.hardware.gpu@1.0-service
@@ -321,7 +315,6 @@ vendor/bin/dexecutor
 vendor/bin/doeapp-memtester
 vendor/bin/doeapp-sat
 vendor/bin/dtc_vendor
-vendor/bin/em_hidl
 vendor/bin/epdg_wod
 vendor/bin/factory
 vendor/bin/fuelgauged
@@ -382,7 +375,6 @@ vendor/bin/wlan_assistant
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
 vendor/bin/xcap
-vendor/data/misc/pdc.txt
 vendor/etc/.tp/.ht120.mtc
 vendor/etc/.tp/.thermal_policy_08
 vendor/etc/.tp/thermal.conf
@@ -491,9 +483,6 @@ vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
 vendor/etc/aurisys_param/FV-SAM-MTKXX.dat
 vendor/etc/aurisys_param/Speech_AudioParam.xml
-vendor/etc/device_features/maltose.xml
-vendor/etc/device_features/rosemary.xml
-vendor/etc/device_features/secret.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_US.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_CT.xml
@@ -508,14 +497,10 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
 vendor/etc/gnss/agps_profiles_conf2.xml
-vendor/etc/init/hw/factory_init.connectivity.rc
-vendor/etc/init/hw/factory_init.project.rc
-vendor/etc/init/hw/factory_init.rc
 vendor/etc/init/atcid.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/bootperf.rc
 vendor/etc/init/camerahalserver.rc
-vendor/etc/init/em_hidl_user.rc
 vendor/etc/init/fuelgauged_init.rc
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/etc/init/gsm0710muxd.rc
@@ -937,7 +922,6 @@ vendor/etc/meow.cfg
 vendor/etc/mpe.conf
 vendor/etc/mtk_omx_core.cfg
 vendor/etc/nhw
-vendor/etc/partition_permission.sh
 vendor/etc/power_app_cfg.xml
 vendor/etc/powercontable.xml
 vendor/etc/powerscntbl.xml
@@ -952,7 +936,6 @@ vendor/etc/smsdbvisitor.xml
 vendor/etc/special_pws_channel.xml
 vendor/etc/spn-conf-op09.xml
 vendor/etc/st21nfc_conf.txt
-vendor/etc/throttle.sh
 vendor/etc/usb_audio_accessory_only_policy_configuration.xml
 vendor/etc/vendor-apns-conf.xml
 vendor/etc/virtual-spn-conf-by-efgid1.xml
