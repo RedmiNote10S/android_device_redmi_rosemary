@@ -1235,10 +1235,3 @@ on  property:vendor.elliptic.sensor.test=1
     start ellipticSensorTest
 on  property:vendor.elliptic.sensor.test=0
     stop ellipticSensorTest
-
-on property:persist.sys.rosemary.dt2w=0
-    exec /system/bin/sendevent /dev/input/event2 0 1 4
-
-on property:persist.sys.rosemary.dt2w=1
-    exec /system/bin/sendevent /dev/input/event2 0 1 5
-
