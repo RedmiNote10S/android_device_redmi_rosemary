@@ -10,7 +10,7 @@ import android.content.Context
 import android.content.Intent
 import android.util.Log
 
-public class BootCompleteReceiver : BroadcastReceiver() {
+class BootCompletedReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {
         Log.d(TAG, "Starting")
         DoubleTapUtils.startService(context)
