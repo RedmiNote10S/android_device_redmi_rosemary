@@ -9,7 +9,7 @@
 android_app {
     name: "DT2W-Service-Rosemary",
 
-    srcs: ["src/**/*.kt"],
+    srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
 
     certificate: "platform",
