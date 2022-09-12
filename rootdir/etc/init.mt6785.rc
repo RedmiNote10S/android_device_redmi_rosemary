@@ -3,13 +3,10 @@
 import /vendor/etc/init/hw/init.connectivity.rc
 import /vendor/etc/init/hw/init.mt6785.usb.rc
 import /vendor/etc/init/hw/init.project.rc
-import /FWUpgradeInit.rc
 import /vendor/etc/init/hw/init.volte.rc
 import /vendor/etc/init/hw/init.mal.rc
 import /vendor/etc/init/hw/init.sensor_1_0.rc
 import /vendor/etc/init/hw/init.stnfc.rc
-import /system/etc/init/hw/init.stnfc.rc
-import init.mishow.ctl.rc
 
 # init.modem.rc must be the LAST rc file because vold.post_fs_data_done is set in it
 import /vendor/etc/init/hw/init.modem.rc
@@ -160,9 +157,6 @@ on fs
     mkdir /data/vendor/.tp/ 0775 system system
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
-
-on fs
-   mount iso9660 loop@/vendor/etc/iAmCdRom.iso /mnt/cd-rom ro
 
 on late-fs
     write /proc/bootprof "INIT:late-fs"
@@ -1120,39 +1114,9 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor "schedplus"
     write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor "schedplus"
 
-#service dpfd /vendor/bin/dpfd
-#	user root
-#	group system media
-
 #
 #  External Modme control related services
 #
-
-#
-#  Modem related services (Begin)
-#
-##Add by T.Zh for ppp daemon
-#service pppd /system/bin/pppd file /data/misc/ppp/ppp_options
-#    user root
-#    disabled
-#    oneshot
-#
-##
-#
-#  Modem related services (End)
-#
-
-#add for power-off alarm
-#service poad /vendor/bin/poad
-#    class main
-#    user system
-#    group system
-#    oneshot
-
-#service BGW /vendor/xbin/BGW
-#	user system
-#	group gps system radio
-#	class main
 
 # Battery info
 on property:persist.vendor.mediatek.fg.disable=1
@@ -1207,31 +1171,9 @@ service mi_thermald /system/vendor/bin/mi_thermald
 on init
     symlink /dev/block/platform/bootdevice /dev/block/bootdevice
 
-# VSIM service (vendor OSI)
-service osi /system/bin/osi
-    class main
-    user root
-    disabled
-    oneshot
-    #seclabel u:r:osi:s0
+on property:persist.sys.rosemary.dt2w=0
+    exec /system/bin/sendevent /dev/input/event2 0 1 4
 
-# Ultrasound SQT test
-service ellipticEngineRecord /system/bin/elliptic_engine_record -s /dev/elliptic1:device -f binpayload -p /sdcard/elliptic/
-    class main
-    user root
-    oneshot
-    disabled
-on  property:vendor.elliptic.engine.record=1
-    start ellipticEngineRecord
-on  property:vendor.elliptic.engine.record=0
-    stop ellipticEngineRecord
+on property:persist.sys.rosemary.dt2w=1
+    exec /system/bin/sendevent /dev/input/event2 0 1 5
 
-service ellipticSensorTest /system/bin/elliptic_sensor_test
-    class main
-    user root
-    oneshot
-    disabled
-on  property:vendor.elliptic.sensor.test=1
-    start ellipticSensorTest
-on  property:vendor.elliptic.sensor.test=0
-    stop ellipticSensorTest
