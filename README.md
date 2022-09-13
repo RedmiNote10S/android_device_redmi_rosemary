@@ -1,25 +1,4 @@
-# Device Tree Status
-Initial works: https://github.com/RedmiNote10S/android_device_redmi_rosemary/issues/1
-
-Additions by [@akshat0011](https://github.com/akshat0011): IMS stuff
-
-My additions;
-- [x] Done initial Kasumi bringup for further works on a personally pleasing environment.
-- [x] Fixed bootability. Last commit: https://github.com/windowz414/android_device_redmi_rosemary/commit/e2ad72b7bccc70287230d7c39aef8dd3343bc6f7
-- [x] Checked for basic features and determined full list of bugs.
-- [x] Fixed offline charging. First and last commit: https://github.com/windowz414/android_device_redmi_rosemary/commit/731b5afaf11b2f179d50bc6894e6182f5e3c10f1
-- [x] Fixed headphone and Bluetooth audio. Possible commit: https://github.com/windowz414/android_device_redmi_rosemary/commit/a819a19c2faf1f2c8712f7b978ba91ad53deefdb
-- [x] Fixed IMS.
-- [x] Enabled AOD without hacks.
-- [x] Fixed DT2W regardless of AOD status.
-- [x] **BLINDLY** fixed NFC. Regular rosemary users are happy now.
-- [x] Ported IMS workaround from PHH Treble without patching actual ROM sources.
-- [ ] ~~Won't work on making MIUI Camera available on all ROMs regardless. Simply no need to.~~
-- [ ] Attempting to make OSS vendor instead of prebuilt MIUI one here...
-- [ ] (If previous fails) Will turn current MIUI vendor.img into a regular vendor tree.
-
-Device Tree for Redmi Note 10s (rosemary)
-==========================================
+# Device Tree for Redmi Note 10s (rosemary)
 
 The Redmi Note 10s (codenamed _"rosemary"_) is a high-end, mid-range smartphone from Xiaomi.
 
@@ -41,4 +20,16 @@ The Redmi Note 10s (codenamed _"rosemary"_) is a high-end, mid-range smartphone 
 ![rosemary](https://i01.appmifile.com/webfile/globalimg/Anna/rn10s_Blue.png)
 
 ## Credits
-[@erfanoabdi](https://github.com/erfanoabdi), [@J6idot](https://github.com/J6idot), [@akshat0011](https://github.com/akshat0011), [@Woomymy](https://github.com/Woomymy), [@dgigantino](https://github.com/dgigantino), [@gaganmalvi](https://github.com/gaganmalvi), Aylin, and many more who helped with the development for Redmi Note 10S
+
+* [All contributors](https://github.com/RedmiNote10S/android_device_redmi_rosemary/graphs/contributors)
+
+### Special thanks
+
+* [@akshat0011](https://github.com/akshat0011)
+* [@dgigantino](https://github.com/dgigantino)
+* [@erfanoabdi](https://github.com/erfanoabdi)
+* [@gaganmalvi](https://github.com/gaganmalvi)
+* [@J6idot](https://github.com/J6idot)
+* [@myst33d](https://github.com/notmyst33d)
+* [@windowz414](https://github.com/windowz414)
+* Aylin, and many more who helped with the development for Redmi Note 10S
