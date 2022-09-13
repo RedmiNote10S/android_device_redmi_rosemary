@@ -33,5 +33,10 @@
     "repository": "LineageOS/android_hardware_xiaomi",
     "target_path": "hardware/xiaomi",
     "branch": "lineage-19.1"
+  },
+  {
+    "repository": "ProjectKasumi/vendor_gcgop",
+    "target_path": "vendor/gcgop",
+    "branch": "kasumi-v1"
   }
 ]

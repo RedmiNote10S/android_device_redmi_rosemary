@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common KScope stuff.
 $(call inherit-product, vendor/kscope/target/product/mobile.mk)
 
+# Inherit Kasumi Google Camera Go (From v1).
+$(call inherit-product, $(GCGOP_VENDOR_DIR)/config.mk)
+
 # Inherit device tree
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
