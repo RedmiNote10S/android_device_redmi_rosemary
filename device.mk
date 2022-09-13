@@ -295,10 +295,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.mediatek.rc
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
-
+# APNs
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
 

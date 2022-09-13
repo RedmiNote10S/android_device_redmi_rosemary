@@ -28,9 +28,6 @@
 /dev/elliptic0 u:object_r:sensor_device:s0
 /dev/elliptic1 u:object_r:sensor_device:s0
 
-# Trust
-/system/bin/hw/lineage\.trust@1\.0-service      u:object_r:hal_lineage_trust_default_exec:s0
-
 # Payement
 /(vendor|system/vendor)/bin/mlipayd(@1\.1)? u:object_r:hal_mlipay_default_exec:s0
 
