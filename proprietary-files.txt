@@ -342,7 +342,6 @@ vendor/bin/libccu_ov64b40semco_mipi_raw.ddr
 vendor/bin/loghidlvendorservice
 vendor/bin/md_monitor
 vendor/bin/md_monitor_ctrl
-vendor/bin/meta_tst
 vendor/bin/mnld
 vendor/bin/mrdump_tool
 vendor/bin/mtk_agpsd
