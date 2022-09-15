@@ -399,21 +399,21 @@ PRODUCT_PACKAGES += \
 # Additional Build Props
 # Usually fingerprint, codename and hostname changes rolling around here.
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/props/sku/system/build_rosemary.prop:$(TARGET_COPY_OUT_SYSTEM)/build_rosemary.prop \
-    $(LOCAL_PATH)/props/sku/system/build_secret.prop:$(TARGET_COPY_OUT_SYSTEM)/build_secret.prop \
-    $(LOCAL_PATH)/props/sku/system/build_maltose.prop:$(TARGET_COPY_OUT_SYSTEM)/build_maltose.prop \
-    $(LOCAL_PATH)/props/sku/product/build_rosemary.prop:$(TARGET_COPY_OUT_PRODUCT)/build_rosemary.prop \
-    $(LOCAL_PATH)/props/sku/product/build_secret.prop:$(TARGET_COPY_OUT_PRODUCT)/build_secret.prop \
-    $(LOCAL_PATH)/props/sku/product/build_maltose.prop:$(TARGET_COPY_OUT_PRODUCT)/build_maltose.prop \
-    $(LOCAL_PATH)/props/sku/vendor/build_rosemary.prop:$(TARGET_COPY_OUT_VENDOR)/build_rosemary.prop \
-    $(LOCAL_PATH)/props/sku/vendor/build_secret.prop:$(TARGET_COPY_OUT_VENODR)/build_secret.prop \
-    $(LOCAL_PATH)/props/sku/vendor/build_maltose.prop:$(TARGET_COPY_OUT_VENDOR)/build_maltose.prop \
-    $(LOCAL_PATH)/props/sku/odm/build_rosemary.prop:$(TARGET_COPY_OUT_VENDOR)/odm/etc/build_rosemary.prop \
-    $(LOCAL_PATH)/props/sku/odm/build_secret.prop:$(TARGET_COPY_OUT_VENODR)/odm/etc/build_secret.prop \
-    $(LOCAL_PATH)/props/sku/odm/build_maltose.prop:$(TARGET_COPY_OUT_VENDOR)/odm/etc/build_maltose.prop \
-    $(LOCAL_PATH)/props/sku/system_ext/build_rosemary.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/build_rosemary.prop \
-    $(LOCAL_PATH)/props/sku/system_ext/build_secret.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/build_secret.prop \
-    $(LOCAL_PATH)/props/sku/system_ext/build_maltose.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/build_maltose.prop
+    $(LOCAL_PATH)/props/sku/system/rosemary.build.prop:$(TARGET_COPY_OUT_SYSTEM)/rosemary.build.prop \
+    $(LOCAL_PATH)/props/sku/system/secret.build.prop:$(TARGET_COPY_OUT_SYSTEM)/secret.build.prop \
+    $(LOCAL_PATH)/props/sku/system/maltose.build.prop:$(TARGET_COPY_OUT_SYSTEM)/maltose.build.prop \
+    $(LOCAL_PATH)/props/sku/product/rosemary.build.prop:$(TARGET_COPY_OUT_PRODUCT)/rosemary.build.prop \
+    $(LOCAL_PATH)/props/sku/product/secret.build.prop:$(TARGET_COPY_OUT_PRODUCT)/secret.build.prop \
+    $(LOCAL_PATH)/props/sku/product/maltose.build.prop:$(TARGET_COPY_OUT_PRODUCT)/maltose.build.prop \
+    $(LOCAL_PATH)/props/sku/vendor/rosemary.build.prop:$(TARGET_COPY_OUT_VENDOR)/rosemary.build.prop \
+    $(LOCAL_PATH)/props/sku/vendor/secret.build.prop:$(TARGET_COPY_OUT_VENODR)/secret.build.prop \
+    $(LOCAL_PATH)/props/sku/vendor/maltose.build.prop:$(TARGET_COPY_OUT_VENDOR)/maltose.build.prop \
+    $(LOCAL_PATH)/props/sku/odm/rosemary.build.prop:$(TARGET_COPY_OUT_VENDOR)/odm/etc/rosemary.build.prop \
+    $(LOCAL_PATH)/props/sku/odm/secret.build.prop:$(TARGET_COPY_OUT_VENODR)/odm/etc/secret.build.prop \
+    $(LOCAL_PATH)/props/sku/odm/maltose.build.prop:$(TARGET_COPY_OUT_VENDOR)/odm/etc/maltose.build.prop \
+    $(LOCAL_PATH)/props/sku/system_ext/rosemary.build.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/rosemary.build.prop \
+    $(LOCAL_PATH)/props/sku/system_ext/secret.build.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/secret.build.prop \
+    $(LOCAL_PATH)/props/sku/system_ext/maltose.build.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/maltose.build.prop
 
 # Overridden props
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true

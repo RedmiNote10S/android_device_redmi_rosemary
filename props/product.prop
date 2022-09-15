@@ -1,2 +1,2 @@
 # Inherit device specific props
-import /product/build_${ro.boot.hwname}.prop
+import /product/${ro.boot.hwname}.build.prop

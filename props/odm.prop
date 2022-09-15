@@ -1,2 +1,2 @@
 # Inherit device specific props
-import /vendor/odm/etc/build_${ro.boot.hwname}.prop
+import /vendor/odm/etc/${ro.boot.hwname}.build.prop
