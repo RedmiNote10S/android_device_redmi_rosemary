@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- Copyright (C) 2012 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -82,7 +82,4 @@ Only the three quirks included above are recognized at this point:
     </Settings>
     <Include href="media_codecs_mediatek_audio.xml" />
     <Include href="media_codecs_google_audio.xml" />
-    <Include href="media_codecs_mediatek_video.xml" />
-    <Include href="media_codecs_google_video_le.xml" />
-    <Include href="media_codecs_c2.xml" />
 </MediaCodecs>
