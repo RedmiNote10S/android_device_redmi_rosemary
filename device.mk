@@ -64,7 +64,7 @@ PRODUCT_COPY_FILES += \
 
 # Media codecs (from frameworks)
 PRODUCT_COPY_FILES += \
-    $(foreach xml, google_audio, \
+    $(foreach xml, google_audio google_video_le, \
         frameworks/av/media/libstagefright/data/media_codecs_$(xml).xml:$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, media_codecs_$(xml).xml))
 
 # Audio
