@@ -154,10 +154,20 @@ PRODUCT_PACKAGES += \
 
 # Graphics
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.common@1.2.vendor \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.composer@2.1-resources \
     android.hardware.memtrack@1.0-service \
-    android.hardware.memtrack@1.0-impl
+    android.hardware.memtrack@1.0-impl \
+    libc++.vendor \
+    libc.vendor \
+    libdl.vendor \
+    libdmabufheap.vendor \
+    libged.vendor \
+    libion.vendor \
+    libm.vendor \
+    libutilscallstack.vendor
+
 
 # MTK Graphics
 PRODUCT_PACKAGES += \
