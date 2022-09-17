@@ -28,9 +28,6 @@
 /dev/elliptic0 u:object_r:sensor_device:s0
 /dev/elliptic1 u:object_r:sensor_device:s0
 
-# Incall fixup
-/(vendor|system/vendor)/bin/init\.rosemary\.incall_fixup\.sh u:object_r:incall_fixup_exec:s0
-
 # Trust
 /system/bin/hw/lineage\.trust@1\.0-service      u:object_r:hal_lineage_trust_default_exec:s0
 
