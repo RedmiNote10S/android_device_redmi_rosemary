@@ -452,7 +452,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.power@1.1.vendor \
     vendor.mediatek.hardware.power@2.0.vendor \
     vendor.mediatek.hardware.mtkpower@1.0.vendor \
-    vendor.mediatek.hardware.mtkpower@1.1.vendor
+    vendor.mediatek.hardware.mtkpower@1.1.vendor \
+    android.hardware.power.stats-service.example
 
 # Perf configs
 PRODUCT_COPY_FILES += \
