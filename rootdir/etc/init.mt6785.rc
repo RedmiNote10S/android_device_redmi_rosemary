@@ -406,7 +406,6 @@ on post-fs-data
     #chown system graphics /dev/mali
 
 
-
     # Touch Panel
     # chmod 0664 /dev/touch
     chown root diag /sys/module/tpd_setting/parameters/tpd_calmat

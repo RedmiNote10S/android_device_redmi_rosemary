@@ -297,7 +297,6 @@ vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service
 vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
 vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service
 vendor/bin/hw/vtservice_hidl
-vendor/bin/STFlashTool
 vendor/bin/SoterProvisioningTool
 vendor/bin/atcid
 vendor/bin/audiocmdservice_atci
@@ -316,7 +315,6 @@ vendor/bin/doeapp-memtester
 vendor/bin/doeapp-sat
 vendor/bin/dtc_vendor
 vendor/bin/epdg_wod
-vendor/bin/factory
 vendor/bin/fuelgauged
 vendor/bin/fuelgauged_nvram
 vendor/bin/gsm0710muxd
@@ -348,7 +346,6 @@ vendor/bin/mtk_agpsd
 vendor/bin/muxreport
 vendor/bin/netdagent
 vendor/bin/netdc
-vendor/bin/nfcstackp-vendor
 vendor/bin/nv_routing
 vendor/bin/nvram_daemon
 vendor/bin/recordevent
