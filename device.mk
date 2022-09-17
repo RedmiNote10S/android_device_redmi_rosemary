@@ -154,6 +154,7 @@ PRODUCT_PACKAGES += \
 
 # Graphics
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0.vendor \
     android.hardware.graphics.common@1.0.vendor \
     android.hardware.graphics.common@1.1.vendor \
     android.hardware.graphics.common@1.2.vendor \
@@ -450,6 +451,7 @@ PRODUCT_PACKAGES += \
 # HIDL and HW binder
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
+    libbinder_ndk.vendor \
     libhidlmemory.vendor \
     libhidltransport \
     libhidltransport.vendor \
