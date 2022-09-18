@@ -9,15 +9,6 @@ ro.config.vc_call_vol_steps=7
 # Camera
 ro.camera.highres.packagelist=org.lineageos.snap,com.google.android.apps.cameralite
 
-# Dalvik
-dalvik.vm.dex2oat64.enabled=true
-dalvik.vm.heapstartsize=32m
-dalvik.vm.heapgrowthlimit=512m
-dalvik.vm.heapsize=768m
-dalvik.vm.heaptargetutilization=0.5
-dalvik.vm.heapminfree=8m
-dalvik.vm.heapmaxfree=64m
-
 # Misc
 ro.display.type=oled
 persist.audio.button_jack.profile=volume
