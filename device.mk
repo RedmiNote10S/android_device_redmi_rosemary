@@ -419,7 +419,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/props/sku/system_ext/build_maltose.prop:$(TARGET_COPY_OUT_SYSTEM_EXT)/build_maltose.prop
 
 # Overridden props
-include $(LOCAL_PATH)/props/overrides.mk
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # MTK In-Call volumes adjusting service
