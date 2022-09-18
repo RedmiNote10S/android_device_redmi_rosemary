@@ -8,4 +8,4 @@ ro.product.model=Redmi Note 10S
 ro.product.board=maltose
 ro.product.device=maltose
 ro.product.name=maltose_global
-ro.product.build.fingerprint=Redmi/maltose_global/maltose:11/RP1A.200720.011/V12.5.16.0.RKLMIXM:user/release-keys
+ro.product.build.fingerprint=Redmi/maltose_global/maltose:12/SP1A.210812.016/V13.0.8.0.SKLMIXM:user/release-keys

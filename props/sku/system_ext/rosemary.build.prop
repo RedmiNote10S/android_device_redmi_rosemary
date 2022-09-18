@@ -8,4 +8,4 @@ ro.system_ext.model=Redmi Note 10S
 ro.system_ext.board=rosemary
 ro.system_ext.device=rosemary
 ro.system_ext.name=rosemary_global
-ro.system_ext.build.fingerprint=Redmi/rosemary_global/rosemary:11/RP1A.200720.011/V12.5.16.0.RKLMIXM:user/release-keys
+ro.system_ext.build.fingerprint=Redmi/rosemary_global/rosemary:12/SP1A.210812.016/V13.0.8.0.SKLMIXM:user/release-keys

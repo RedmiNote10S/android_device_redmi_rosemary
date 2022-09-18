@@ -8,4 +8,4 @@ ro.odm.model=Redmi Note 10S
 ro.odm.board=maltose
 ro.odm.device=maltose
 ro.odm.name=maltose_global
-ro.odm.build.fingerprint=Redmi/maltose_global/maltose:11/RP1A.200720.011/V12.5.16.0.RKLMIXM:user/release-keys
+ro.odm.build.fingerprint=Redmi/maltose_global/maltose:12/SP1A.210812.016/V13.0.8.0.SKLMIXM:user/release-keys

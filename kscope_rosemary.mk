@@ -39,10 +39,10 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := rosemary
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="rosemary-user 11 RP1A.200720.011 V12.5.16.0.RKLMIXM release-keys" \
+    PRIVATE_BUILD_DESC="rosemary-user 12 SP1A.210812.016 V13.0.8.0.SKLMIXM release-keys" \
     PRODUCT_NAME=rosemary
 
-BUILD_FINGERPRINT := Redmi/rosemary/rosemary:11/RP1A.200720.011/V12.5.16.0.RKLMIXM:user/release-keys
+BUILD_FINGERPRINT := Redmi/rosemary_global/rosemary:12/SP1A.210812.016/V13.0.8.0.SKLMIXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
