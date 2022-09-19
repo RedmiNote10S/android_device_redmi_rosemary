@@ -30,9 +30,9 @@
     "branch": "twelve"
   },
   {
-    "repository": "LineageOS/android_hardware_xiaomi",
+    "repository": "windowz414/kscope_hardware_xiaomi",
     "target_path": "hardware/xiaomi",
-    "branch": "lineage-19.1"
+    "branch": "sunflowerleaf"
   },
   {
     "repository": "ProjectKasumi/vendor_gcgop",
