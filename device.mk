@@ -246,6 +246,10 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0 \
+    android.hardware.media.omx@1.0-service \
+    android.hardware.media.omx@1.0.vendor \
+    android.hardware.media.omx@1.0-service.vendor \
     libmedia_codeclist \
     libstagefright_codecbase \
     libstagefright_bufferpool@2.0.1 \

@@ -2598,10 +2598,6 @@ lib64/libvcodec_cap.so
 lib64/libvcodec_capenc.so
 -priv-app/ImsService/ImsService.apk
 
-# Media (OMX)
-vendor/bin/hw/android.hardware.media.omx@1.0-service
-vendor/etc/init/android.hardware.media.omx@1.0-service.rc
-
 # Unpinned blobs from rosemary-user 12 SP1A.210812.016 V13.0.6.0.SKLMIXM release-keys
 
 # Display
