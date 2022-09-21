@@ -54,7 +54,13 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
             ;;
         vendor/lib64/libwifi-hal-mtk.so)
-            "${PATCHELF}" --set-soname libwifi-hal-mtk.so "${2}"
+            "${PATCHELF}" --set-soname "libwifi-hal-mtk.so" "${2}"
+            ;;
+        vendor/lib/hw/vendor.mediatek.hardware.pq@2.6-impl.so )
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
+            ;;
+        vendor/lib64/hw/vendor.mediatek.hardware.pq@2.6-impl.so )
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
             ;;
     esac
 }
