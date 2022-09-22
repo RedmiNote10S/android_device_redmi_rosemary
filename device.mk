@@ -153,7 +153,7 @@ PRODUCT_PACKAGES += \
     libsuspend
 
 # Build KScope charge control conditionally
-ifeq ($(TARGET_PRODUCT),rosemary)
+ifeq ($(TARGET_PRODUCT),kscope_rosemary)
     PRODUCT_PACKAGES += vendor.kscope.chgctrl@1.0-service
 endif
 
