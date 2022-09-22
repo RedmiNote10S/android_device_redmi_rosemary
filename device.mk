@@ -154,7 +154,9 @@ PRODUCT_PACKAGES += \
 
 # Build KScope charge control conditionally
 ifeq ($(TARGET_PRODUCT),kscope_rosemary)
-    PRODUCT_PACKAGES += vendor.kscope.chgctrl@1.0-service
+    PRODUCT_PACKAGES += \
+        vendor.kscope.chgctrl@1.0 \
+        vendor.kscope.chgctrl@1.0-service
 endif
 
 # Graphics
