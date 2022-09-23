@@ -161,15 +161,9 @@ endif
 
 # Graphics
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.common@1.0.vendor \
-    android.hardware.graphics.common@1.1.vendor \
     android.hardware.graphics.common@1.2.vendor \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.composer@2.1-resources \
-    android.hardware.graphics.mapper@2.0.vendor \
-    android.hardware.graphics.mapper@2.1.vendor \
-    android.hardware.graphics.mapper@3.0.vendor \
-    android.hardware.graphics.mapper@4.0.vendor \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl \
     libc++.vendor \
@@ -177,11 +171,8 @@ PRODUCT_PACKAGES += \
     libdl.vendor \
     libdmabufheap.vendor \
     libged.vendor \
-    libgralloctypes.vendor \
     libion.vendor \
     libm.vendor \
-    libnativewindow.vendor \
-    libsync.vendor \
     libutilscallstack.vendor
 
 
@@ -457,7 +448,6 @@ PRODUCT_PACKAGES += \
 # HIDL and HW binder
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
-    libhidlmemory.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -489,7 +479,6 @@ PRODUCT_COPY_FILES += \
 
 # PQ
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.pq@2.0.vendor \
     vendor.mediatek.hardware.pq@2.6.vendor
 
 # Ramdisk
