@@ -68,14 +68,19 @@ vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.mt6785.so
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.mt6785.so
 
 # Display
+vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
+vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
+vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.graphics.composer@2.1-impl.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib/hw/memtrack.mt6785.so
 vendor/lib/libDefaultFpsActor.so
 vendor/lib/libFrameRecord.so
 vendor/lib/libNoFpsActor.so
+vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
 vendor/lib/libpixelflinger.so
+vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/hwcomposer.mt6785.so
@@ -83,6 +88,7 @@ vendor/lib64/hw/memtrack.mt6785.so
 vendor/lib64/libDefaultFpsActor.so
 vendor/lib64/libFrameRecord.so
 vendor/lib64/libNoFpsActor.so
+vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
 vendor/lib64/libpixelflinger.so
 
@@ -1011,6 +1017,7 @@ vendor/lib/hw/vendor.mediatek.hardware.pq@2.6-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib/AVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
+vendor/lib/arm.graphics-V1-ndk_platform.so
 vendor/lib/gc02m1bsunny_mipi_mono_IdxMgr.so
 vendor/lib/gc02m1bsunny_mipi_mono_india_IdxMgr.so
 vendor/lib/gc02m1bsunny_mipi_mono_india_tuning.so
@@ -1596,6 +1603,8 @@ vendor/lib/libfgauge_gm30.so
 vendor/lib/libfile_op.so
 vendor/lib/libfpspolicy.so
 vendor/lib/libfvaudio.so
+vendor/lib/libgralloc_metadata.so
+vendor/lib/libgralloctypes_mtk.so
 vendor/lib/libgz_gp_client.so
 vendor/lib/libgz_uree.so
 vendor/lib/libh264dec_customize.so
@@ -1738,6 +1747,7 @@ vendor/lib64/APUWareXrpServer.so
 vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/android.hidl.allocator@1.0.so
+vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/gc02m1bsunny_mipi_mono_IdxMgr.so
 vendor/lib64/gc02m1bsunny_mipi_mono_india_IdxMgr.so
 vendor/lib64/gc02m1bsunny_mipi_mono_india_tuning.so
@@ -2356,6 +2366,8 @@ vendor/lib64/libfile_op.so
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/libfpspolicy.so
 vendor/lib64/libfvaudio.so
+vendor/lib64/libgralloc_metadata.so
+vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libgwsd-ril.so
 vendor/lib64/libgz_gp_client.so
 vendor/lib64/libgz_uree.so
@@ -2601,9 +2613,6 @@ lib64/libvcodec_capenc.so
 # Unpinned blobs from rosemary-user 12 SP1A.210812.016 V13.0.6.0.SKLMIXM release-keys
 
 # Display
-vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
-vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
-vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib/egl/egl.cfg
 vendor/lib/egl/libGLES_mali.so
 vendor/lib/egl/libGLES_meow.so
@@ -2614,13 +2623,9 @@ vendor/lib/egl/libMEOW_trace.so
 vendor/lib/libdpframework.so
 vendor/lib/libged.so
 vendor/lib/libgralloc_extra.so
-vendor/lib/libgralloc_metadata.so
-vendor/lib/libgralloctypes_mtk.so
 vendor/lib/libgpu_aux.so
 vendor/lib/libgpud.so
-vendor/lib/libion_mtk.so
 vendor/lib/libpq_prot.so
-vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/egl/libGLES_meow.so
 vendor/lib64/egl/libMEOW_data.so
@@ -2630,13 +2635,6 @@ vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/libdpframework.so
 vendor/lib64/libged.so
 vendor/lib64/libgralloc_extra.so
-vendor/lib64/libgralloc_metadata.so
-vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libgpu_aux.so
 vendor/lib64/libgpud.so
-vendor/lib64/libion_mtk.so
 vendor/lib64/libpq_prot.so
-
-# Platform
-vendor/lib/arm.graphics-V1-ndk_platform.so
-vendor/lib64/arm.graphics-V1-ndk_platform.so
