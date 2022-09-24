@@ -25,6 +25,25 @@ TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 # Assert
 TARGET_OTA_ASSERT_DEVICE := rosemary,secret,maltose
 
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS := \
+    boot \
+    dtbo \
+    system \
+    product \
+    vendor \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor
+
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_system=true \
+    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    FILESYSTEM_TYPE_system=ext4 \
+    POSTINSTALL_OPTIONAL_system=true
+
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
 AUDIO_FEATURE_ENABLED_EXTN_FORMATS := true
@@ -177,4 +196,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 -include vendor/redmi/rosemary/BoardConfigVendor.mk
-include vendor/redmi/rosemary-firmware/BoardConfigVendor.mk
+include device/redmi/rosemary-firmware/BoardConfigVendor.mk

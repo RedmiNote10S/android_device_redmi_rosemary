@@ -21,23 +21,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 
 # A/B
-AB_OTA_UPDATER := true
-
-AB_OTA_PARTITIONS := \
-    boot \
-    dtbo \
-    system \
-    product \
-    vendor \
-    vbmeta \
-    vbmeta_system
-
-AB_OTA_POSTINSTALL_CONFIG += \
-    RUN_POSTINSTALL_system=true \
-    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=ext4 \
-    POSTINSTALL_OPTIONAL_system=true
-
 PRODUCT_PACKAGES += \
     otapreopt_script
 
