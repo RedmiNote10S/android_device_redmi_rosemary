@@ -2411,7 +2411,7 @@ vendor/lib64/libmpbase.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libmsnr.so
 vendor/lib64/libmtcloader.so
-vendor/lib64/libmtk-ril.so
+vendor/lib64/libmtk-ril.so|cc42a7983464bbd1adee3f1b1ca29b802f4d9153e6a48f08b0ec2fd3bba58fa5
 vendor/lib64/libmtk_drvb.so
 vendor/lib64/libmtkares.so
 vendor/lib64/libmtkcam.atmseventmgr.so
