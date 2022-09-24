@@ -10,6 +10,11 @@
     "branch": "lineage-19.1"
   },
   {
+    "repository": "windowz414/android_vendor_redmi_rosemary-firmware",
+    "target_path": "vendor/redmi/rosemary-firmware",
+    "branch": "eleven"
+  },
+  {
     "repository": "PixelExperience/vendor_mediatek-opensource",
     "target_path": "vendor/mediatek/opensource",
     "branch": "twelve"

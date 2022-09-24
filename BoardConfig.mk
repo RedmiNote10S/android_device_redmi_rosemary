@@ -175,3 +175,6 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 ## Copy wpa_supplicant init rc from external/wpa_supplicant
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+
+-include vendor/redmi/rosemary/BoardConfigVendor.mk
+include vendor/redmi/rosemary-firmware/BoardConfigVendor.mk
