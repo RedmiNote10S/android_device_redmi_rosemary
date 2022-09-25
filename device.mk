@@ -135,11 +135,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     libsuspend
 
-# Build KScope charge control conditionally
-ifeq ($(TARGET_PRODUCT),rosemary)
-    PRODUCT_PACKAGES += vendor.kscope.chgctrl@1.0-service
-endif
-
 # Graphics
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
