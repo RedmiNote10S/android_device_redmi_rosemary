@@ -1,6 +1,7 @@
-# Should improve performance a bit
+# SkiaGL Threaded
 debug.renderengine.backend=skiaglthreaded
-debug.sf.enable_enable_hwc_vds=0
+debug.hwui.renderer=skiagl
+renderthread.skia.reduceopstasksplitting=true
 
 # Audio
 audio.deep_buffer.media=false
