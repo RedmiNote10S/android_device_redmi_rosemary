@@ -10,8 +10,8 @@
     "branch": "lineage-19.1"
   },
   {
-    "repository": "windowz414/android_vendor_redmi_rosemary-firmware",
-    "target_path": "vendor/redmi/rosemary-firmware",
+    "repository": "windowz414/android_device_redmi_rosemary-firmware",
+    "target_path": "device/redmi/rosemary-firmware",
     "branch": "eleven"
   },
   {
