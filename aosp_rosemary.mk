@@ -18,18 +18,20 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common KScope stuff.
-$(call inherit-product, vendor/kscope/target/product/mobile.mk)
-
 # Inherit device tree
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+# Common PE configs
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_USES_AOSP_RECOVERY := true
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_NAME := kscope_rosemary
+PRODUCT_NAME := aosp_rosemary
 PRODUCT_DEVICE := rosemary
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

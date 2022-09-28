@@ -483,7 +483,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(DEVICE_PATH)/overlay-kscope
+    $(DEVICE_PATH)/overlay-aosp
 
 # Sensors
 PRODUCT_PACKAGES += \

@@ -1,0 +1,16 @@
+<!--
+    Copyright (C) 2022 Beru Hinode. All Rights Reserved.
+
+    SPDX-License-Identifier: GPL-2.0-only
+-->
+
+<resources>
+    <!-- StatusBar burn-in protection -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
+
+    <!-- Should we listen for fingerprints when the screen is off?  Devices
+         with a rear-mounted sensor want this, but certain devices have
+         the sensor embedded in the power key and listening all the time
+         causes a poor experience. -->
+    <bool name="config_fingerprintWakeAndUnlock">false</bool>
+</resources>
