@@ -352,7 +352,6 @@ PRODUCT_COPY_FILES += \
 
 # IMS
 PRODUCT_BOOT_JARS += \
-    ImsServiceBase \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \

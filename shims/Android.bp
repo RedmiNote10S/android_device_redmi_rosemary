@@ -42,9 +42,3 @@ cc_library_shared {
     ],
     include_dirs: [ "system/keymaster/include" ],
 }
-
-java_library {
-    name: "ImsServiceBase",
-    installable: true,
-    srcs: ["ImsServiceBase.java"],
-}
