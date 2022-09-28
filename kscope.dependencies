@@ -38,10 +38,5 @@
     "repository": "windowz414/kscope_hardware_xiaomi",
     "target_path": "hardware/xiaomi",
     "branch": "sunflowerleaf"
-  },
-  {
-    "repository": "ProjectKasumi/vendor_gcgop",
-    "target_path": "vendor/gcgop",
-    "branch": "kasumi-v1"
   }
 ]
