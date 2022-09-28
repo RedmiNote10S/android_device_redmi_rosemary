@@ -14,3 +14,6 @@ get_prop(hal_fingerprint_default, vendor_fpsensor_prop)
 
 get_prop(hal_fingerprint_default, vendor_fp_prop)
 set_prop(hal_fingerprint_default, vendor_fp_prop)
+
+# Allow to write to sysfs
+allow hal_fingerprint_default sysfs:file write;

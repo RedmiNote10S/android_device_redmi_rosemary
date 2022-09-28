@@ -1,0 +1,2 @@
+get_prop(radio, vendor_mtk_cdma_prop)
+get_prop(radio, vendor_mtk_telephony_addon_prop)

@@ -1,3 +1,6 @@
 r_dir_file(wlan_assistant, sysfs_dt_firmware_android)
 r_dir_file(wlan_assistant, sysfs_boot_mode)
 set_prop(wlan_assistant, deviceid_prop)
+get_prop(wlan_assistant, vendor_mtk_service_nvram_init_prop)
+
+allow wlan_assistant gsi_metadata_file:dir search;

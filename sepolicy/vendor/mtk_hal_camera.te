@@ -1,0 +1,3 @@
+get_prop(mtk_hal_camera, vendor_mtk_libudf_prop)
+
+allow mtk_hal_camera proc_stat:file r_file_perms;
