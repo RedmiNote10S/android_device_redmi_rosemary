@@ -38,5 +38,11 @@
     "repository": "windowz414/kscope_hardware_xiaomi",
     "target_path": "hardware/xiaomi",
     "branch": "sunflowerleaf"
+  },
+  {
+    "repository": "PixelBoot/android_prebuilts_clang_host_linux-x86_clang-r416183b1",
+    "target_path": "prebuilts/clang/host/linux-x86/clang-r416183b1",
+    "branch": "arrow-11.0",
+    "clone_depth": "1"
   }
 ]
