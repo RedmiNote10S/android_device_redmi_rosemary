@@ -29,12 +29,9 @@ public class VolumeChangeService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startid) {
         mContext = this;
-
-        AudioManager audioManager = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
-        mVolumeChangeReceiver = new VolumeChangeReceiver(audioManager);
+        mVolumeChangeReceiver = new VolumeChangeReceiver(mContext);
 
         Log.i(LOG_TAG, "Service is starting...");
-
         this.registerReceiver(mVolumeChangeReceiver,
                                new IntentFilter(AudioManager.VOLUME_CHANGED_ACTION));
         return START_STICKY;
