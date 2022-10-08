@@ -2586,7 +2586,7 @@ vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
 vendor/xbin/cameratest
 vendor/xbin/dc_cal
 
-# Unpinned blobs from kasumi_rosemary-userdebug 11 RQ3A.211001.001 eng.beru.20220803.071103 test-keys
+# Unpinned blobs - from Project Kasumi v1 build
 
 # MTK-IMS
 bin/vtservice
@@ -2626,7 +2626,7 @@ lib64/libvcodec_capenc.so
 vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 
-# Unpinned blobs from rosemary-user 12 SP1A.210812.016 V13.0.6.0.SKLMIXM release-keys
+# Unpinned blobs - from MIUI 13.0.6.0.SKLMIXM
 
 # Display
 vendor/lib/egl/egl.cfg
