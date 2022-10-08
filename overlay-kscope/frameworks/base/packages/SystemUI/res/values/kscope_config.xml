@@ -15,6 +15,15 @@
      limitations under the License.
 -->
 <resources>
+    <!-- Should we listen for fingerprints when the screen is off?  Devices
+         with a rear-mounted sensor want this, but certain devices have
+         the sensor embedded in the power key and listening all the time
+         causes a poor experience. -->
+    <bool name="config_fingerprintWakeAndUnlock">false</bool>
+
+    <!-- StatusBar burn-in protection -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
+
     <!-- If true, recorder will use AVCLevel42 for encoding-->
     <bool name="config_screenrecord_codec_profile_avc42">true</bool>
 </resources>
