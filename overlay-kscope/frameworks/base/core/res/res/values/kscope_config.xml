@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2022 Beru "Stella" Hinode. All Rights Reserved.
+
+    SPDX-License-Identifier: GPL-2.0-only
+-->
 <resources>
 
     <!-- Defines the actions shown in advanced reboot submenu -->
