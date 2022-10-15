@@ -154,6 +154,11 @@ PRODUCT_PACKAGES += \
     libhwc2onfbadapter \
     libfmq
 
+# Display Configuration
+PRODUCT_COPY_FILES += \
+    $(foreach file,$(wildcard $(DEVICE_PATH)/configs/display/*), \
+        $(file):$(addprefix $(TARGET_COPY_OUT_VENDOR)/etc/, $(notdir $(file))) )
+
 # MLIPay
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mlipay@1.0.vendor \
