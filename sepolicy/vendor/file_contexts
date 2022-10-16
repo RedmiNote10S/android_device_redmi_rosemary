@@ -16,6 +16,9 @@
 # Fingerprint
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
 
+# IR
+/dev/spidev3.0                      u:object_r:lirc_device:s0
+
 # Battery
 /sys/devices/platform/1101a000.i2c7/i2c-7/7-0065/power_supply/bq2597x-standalone/ti_bus_current u:object_r:sysfs_batteryinfo:s0
 /sys/devices/platform/battery/power_supply/bms/authentic                             u:object_r:sysfs_batteryinfo:s0

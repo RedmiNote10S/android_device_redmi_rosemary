@@ -6,6 +6,9 @@ persist.vendor.sys.fp.uid           u:object_r:vendor_fp_prop:s0
 vendor.sys.fp              u:object_r:vendor_fp_prop:s0
 ro.hardware.fp.restartimes          u:object_r:vendor_fp_prop:s0
 
+# IR
+ro.lirc.dev                    u:object_r:lirc_prop:s0
+
 # RO
 ro.boot.fpsensor         u:object_r:vendor_fpsensor_prop:s0
 ro.hardware.fp.sideCap       u:object_r:vendor_fpsensor_prop:s0
