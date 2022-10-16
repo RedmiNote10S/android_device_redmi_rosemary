@@ -11,3 +11,6 @@ com.fingerprints.extension::IFingerprintSenseTouch           u:object_r:hal_fing
 
 # Pay services
 vendor.xiaomi.hardware.mlipay::IMlipayService       u:object_r:hal_mlipay_hwservice:s0
+
+# DRM Key Installation HIDL
+vendor.mediatek.hardware.keyinstall::IKeyinstall u:object_r:mtk_hal_keyinstall_hwservice:s0

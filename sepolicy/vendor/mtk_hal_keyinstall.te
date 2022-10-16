@@ -1,0 +1,5 @@
+# Associate mtk_hal_keyinstall_hwservice with all server domain
+add_hwservice(hal_keymaster_server, mtk_hal_keyinstall_hwservice)
+
+# Give permission for hal_keymaster_client to find mtk_hal_keyinstall_hwservice via hwservice_manager
+allow hal_keymaster_client mtk_hal_keyinstall_hwservice:hwservice_manager find;

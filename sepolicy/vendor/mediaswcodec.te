@@ -1,0 +1,1 @@
+allow mediaswcodec vendor_mtk_gpu_prop:file read;

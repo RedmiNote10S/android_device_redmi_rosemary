@@ -4,3 +4,4 @@ set_prop(wlan_assistant, deviceid_prop)
 get_prop(wlan_assistant, vendor_mtk_service_nvram_init_prop)
 
 allow wlan_assistant gsi_metadata_file:dir search;
+allow wlan_assistant metadata_file:dir search;

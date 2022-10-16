@@ -1,0 +1,1 @@
+allow vtservice vendor_mtk_radio_prop:file read;

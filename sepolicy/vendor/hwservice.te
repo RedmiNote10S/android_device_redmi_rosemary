@@ -1,2 +1,2 @@
 type hal_mlipay_hwservice, hwservice_manager_type;
-
+type mtk_hal_keyinstall_hwservice, hwservice_manager_type;

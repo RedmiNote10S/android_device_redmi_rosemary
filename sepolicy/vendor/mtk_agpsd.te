@@ -1,0 +1,1 @@
+allow mtk_agpsd vendor_mtk_cdma_prop:file read;

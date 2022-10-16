@@ -1,6 +1,8 @@
 get_prop(rild, system_boot_reason_prop)
 get_prop(rild, deviceid_prop)
 get_prop(rild, vendor_mtk_telephony_addon_prop)
+get_prop(rild, vendor_mtk_logmuch_prop)
+set_prop(rild, sms_md_ready_prop)
 set_prop(rild, deviceid_prop)
 set_prop(rild, radio_prop)
 set_prop(rild, vendor_audio_prop)

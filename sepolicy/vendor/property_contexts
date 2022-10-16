@@ -1,3 +1,9 @@
+# Camera
+persist.vendor.camera.mi.module.info                  u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.mi.module.infoext               u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.mi.dualcal.state                u:object_r:vendor_camera_prop:s0
+persist.vendor.camera.mi.dualcal.detail               u:object_r:vendor_camera_prop:s0
+
 # Fingerprint properties
 persist.vendor.sys.fp.info          u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.vendor        u:object_r:vendor_fp_prop:s0
@@ -27,3 +33,6 @@ persist.ro.ril.oem.btmac u:object_r:deviceid_prop:s0
 persist.vendor.sys.pay.fido              u:object_r:vendor_payment_security_prop:s0
 persist.vendor.sys.pay.ifaa              u:object_r:vendor_payment_security_prop:s0
 persist.vendor.sys.pay.soter             u:object_r:vendor_payment_security_prop:s0
+
+# SMS
+vendor.sms.md.ready         u:object_r:sms_md_ready_prop:s0

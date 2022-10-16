@@ -1,3 +1,9 @@
+# We have UFS storage medium, data corruption is very unlikely.
+dontaudit fsck block_device:blk_file rw_file_perms;
+
+# Kernel doesn't need to search vendor unless it's module loading.
+dontaudit kernel mnt_vendor_file:dir search;
+
 # Apps are no longer allowed open access to /dev/ashmem, unless they
 # target API level < Q.
 dontaudit untrusted_app ashmem_device:chr_file open;
