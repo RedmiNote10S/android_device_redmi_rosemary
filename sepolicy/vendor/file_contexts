@@ -18,6 +18,7 @@
 
 # IR
 /dev/spidev3.0                      u:object_r:lirc_device:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.ir@1\.00service\.xiaomi      u:object_r:hal_ir_default_exec:s0
 
 # Battery
 /sys/devices/platform/1101a000.i2c7/i2c-7/7-0065/power_supply/bq2597x-standalone/ti_bus_current u:object_r:sysfs_batteryinfo:s0

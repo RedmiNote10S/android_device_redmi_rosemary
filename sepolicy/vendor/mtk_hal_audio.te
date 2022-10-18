@@ -1,1 +1,1 @@
-allow mtk_hal_audio vendor_mtk_wmt_prop:file read;
+allow mtk_hal_audio vendor_mtk_wmt_prop:file { read getattr };
