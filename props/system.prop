@@ -1,8 +1,3 @@
-# SkiaGL Threaded
-debug.renderengine.backend=skiaglthreaded
-debug.hwui.renderer=skiagl
-renderthread.skia.reduceopstasksplitting=true
-
 # Audio
 audio.deep_buffer.media=false
 ro.config.vc_call_vol_steps=7
