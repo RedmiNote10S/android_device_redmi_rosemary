@@ -13,6 +13,6 @@ cc_binary {
         "libbinder_ndk",
         "liblog",
         "libhardware",
-        "android.hardware.light-V1-ndk_platform"
+        "android.hardware.light-V1-ndk"
     ]
 }
