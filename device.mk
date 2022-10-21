@@ -63,7 +63,6 @@ PRODUCT_PACKAGES += \
     android.hardware.broadcastradio@1.1.vendor \
     android.hardware.broadcastradio@2.0.vendor \
     android.hardware.bluetooth@1.0.vendor \
-    audio.a2dp.default \
     audio.primary.default \
     audio.r_submix.default \
     audio_policy.stub \
