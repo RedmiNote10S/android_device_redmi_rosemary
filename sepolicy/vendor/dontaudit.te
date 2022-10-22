@@ -4,6 +4,16 @@ dontaudit fsck block_device:blk_file rw_file_perms;
 # Kernel doesn't need to search vendor unless it's module loading.
 dontaudit kernel mnt_vendor_file:dir search;
 
+# Apps don't need to read files in the storage unless the permission
+# was granted by the user (Noticed with Instagram).
+dontaudit untrusted_app mnt_sdcard_file:lnk_file read;
+
+# Apps don't need to open vmstat (Noticed with Instagram and Facebook).
+dontaudit untrusted_app proc_vmstat:file open;
+
+# Apps don't need RO perms on proc (Noticed with Facebook).
+dontaudit untrusted_app proc:file r_file_perms;
+
 # Apps are no longer allowed open access to /dev/ashmem, unless they
 # target API level < Q.
 dontaudit untrusted_app ashmem_device:chr_file open;

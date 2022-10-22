@@ -18,7 +18,7 @@
 
 # IR
 /dev/spidev3.0                      u:object_r:lirc_device:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.ir@1\.00service\.xiaomi      u:object_r:hal_ir_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.ir@1\.0-service\.xiaomi      u:object_r:hal_ir_default_exec:s0
 
 # Battery
 /sys/devices/platform/1101a000.i2c7/i2c-7/7-0065/power_supply/bq2597x-standalone/ti_bus_current u:object_r:sysfs_batteryinfo:s0
@@ -43,3 +43,6 @@
 
 # NFC
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.2-service.st      u:object_r:hal_nfc_default_exec:s0
+
+# Extcon
+/sys/devices/platform/extcon_usb/extcon/extcon0/cable.1/name u:object_r:sysfs_extcon:s0

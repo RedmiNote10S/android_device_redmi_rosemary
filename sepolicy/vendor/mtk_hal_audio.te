@@ -1,1 +1,3 @@
 get_prop(mtk_hal_audio, vendor_mtk_wmt_prop);
+
+allow mtk_hal_audio hal_sensors_default:binder transfer;
