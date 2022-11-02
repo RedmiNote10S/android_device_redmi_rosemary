@@ -19,6 +19,12 @@ ro.lirc.dev                    u:object_r:lirc_prop:s0
 ro.boot.fpsensor         u:object_r:vendor_fpsensor_prop:s0
 ro.hardware.fp.sideCap       u:object_r:vendor_fpsensor_prop:s0
 
+# Camera properties
+vendor.mtkcam. u:object_r:mtkcam_prop:s0
+persist.vendor.camera.                     u:object_r:mtk_camera_prop:s0
+vendor.camera.boost.en         u:object_r:mtk_camera_prop:s0
+vendor.debug.appcontrol.name        u:object_r:mtk_camera_prop:s0
+
 # Thermal properties
 vendor.sys.thermal. u:object_r:thermal_engine_prop:s0
 
@@ -36,3 +42,10 @@ persist.vendor.sys.pay.soter             u:object_r:vendor_payment_security_prop
 
 # SMS
 vendor.sms.md.ready         u:object_r:sms_md_ready_prop:s0
+
+# Camera
+ro.mtk_cam_dualzoom_support u:object_r:mtk_camera_prop:s0
+ro.mtk_cam_stereo_camera_support u:object_r:mtk_camera_prop:s0
+
+# USB
+sys.usb.ffs.aio_compat u:object_r:exported_ffs_prop:s0
