@@ -1,4 +1,5 @@
 get_prop(mtk_hal_camera, vendor_mtk_libudf_prop)
+get_prop(mtk_hal_camera, mtk_camera_prop)
 set_prop(mtk_hal_camera, vendor_camera_prop)
 
 allow mtk_hal_camera proc_stat:file r_file_perms;
