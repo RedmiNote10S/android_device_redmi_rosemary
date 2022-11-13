@@ -57,7 +57,7 @@
 /dev/fm                   0660   media     media
 
 # NFC
-/dev/st21nfc              0660   nfc        radio
+/dev/st21nfc              0660   nfc        nfc
 /dev/st54spi              0660   secure_element        secure_element
 
 # MTK BTIF driver
