@@ -1,16 +1,16 @@
 [
   {
-    "repository": "windowz414/android_kernel_redmi_rosemary",
+    "repository": "windowz414-archive/android_kernel_redmi_rosemary",
     "target_path": "kernel/redmi/rosemary",
     "branch": "lineage-20.0"
   },
   {
-    "repository": "windowz414/android_vendor_redmi_rosemary",
+    "repository": "windowz414-archive/android_vendor_redmi_rosemary",
     "target_path": "vendor/redmi/rosemary",
     "branch": "lineage-19.1"
   },
   {
-    "repository": "windowz414/android_device_redmi_rosemary-firmware",
+    "repository": "windowz414-archive/android_device_redmi_rosemary-firmware",
     "target_path": "device/redmi/rosemary-firmware",
     "branch": "eleven"
   },
@@ -20,9 +20,9 @@
     "branch": "thirteen"
   },
   {
-    "repository": "Woomymy/vendor_mediatek_interfaces",
+    "repository": "PixelExperience/vendor_mediatek_interfaces",
     "target_path": "vendor/mediatek/interfaces",
-    "branch": "twelve"
+    "branch": "thirteen"
   },
   {
     "repository": "PixelExperience/device_mediatek_common",
@@ -35,8 +35,8 @@
     "branch": "thirteen"
   },
   {
-    "repository": "windowz414/lineage_hardware_xiaomi",
+    "repository": "PixelExperience/hardware_xiaomi",
     "target_path": "hardware/xiaomi",
-    "branch": "lineage-20.0"
+    "branch": "thirteen"
   }
 ]
