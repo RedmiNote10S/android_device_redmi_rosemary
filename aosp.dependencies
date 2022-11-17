@@ -1,18 +1,20 @@
 [
   {
-    "repository": "windowz414-archive/android_kernel_redmi_rosemary",
+    "repository": "kernel_redmi_rosemary",
     "target_path": "kernel/redmi/rosemary",
-    "branch": "lineage-20.0"
+    "branch": "thirteen"
   },
   {
-    "repository": "windowz414-archive/android_vendor_redmi_rosemary",
+    "repository": "vendor_redmi_rosemary",
     "target_path": "vendor/redmi/rosemary",
-    "branch": "lineage-19.1"
+    "branch": "thirteen",
+    "remote": "pixel-devices-blobs"
   },
   {
-    "repository": "windowz414-archive/android_device_redmi_rosemary-firmware",
-    "target_path": "device/redmi/rosemary-firmware",
-    "branch": "eleven"
+    "repository": "vendor_redmi_rosemary-firmware",
+    "target_path": "vendor/redmi/rosemary-firmware",
+    "branch": "thirteen",
+    "remote": "pixel-devices-blobs"
   },
   {
     "repository": "PixelExperience/vendor_mediatek-opensource",
