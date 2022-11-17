@@ -17,3 +17,6 @@ dontaudit untrusted_app proc:file r_file_perms;
 # Apps are no longer allowed open access to /dev/ashmem, unless they
 # target API level < Q.
 dontaudit untrusted_app ashmem_device:chr_file open;
+
+# b/199987074
+dontaudit system_server sysfs:dir read;
