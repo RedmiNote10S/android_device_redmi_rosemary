@@ -199,4 +199,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 -include vendor/redmi/rosemary/BoardConfigVendor.mk
-include device/redmi/rosemary-firmware/BoardConfigVendor.mk
+include vendor/redmi/rosemary-firmware/BoardConfigVendor.mk
