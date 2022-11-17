@@ -1,8 +1,7 @@
 [
   {
     "repository": "kernel_redmi_rosemary",
-    "target_path": "kernel/redmi/rosemary",
-    "branch": "thirteen"
+    "target_path": "kernel/redmi/rosemary"
   },
   {
     "repository": "vendor_redmi_rosemary",
