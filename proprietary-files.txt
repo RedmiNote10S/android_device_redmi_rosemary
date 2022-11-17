@@ -1744,6 +1744,7 @@ vendor/lib/ov64b40semco_mipi_raw_IdxMgr.so|ce91edc330885bd81fd3aa576b61211eabd3e
 vendor/lib/ov64b40semco_mipi_raw_india_IdxMgr.so|ddd337d8da974bc805d477903626b16d9fd0281a
 vendor/lib/ov64b40semco_mipi_raw_india_tuning.so|47729f7f9ec82a5ea490ef0459602f1ed0a478ab
 vendor/lib/ov64b40semco_mipi_raw_tuning.so|6b2389850656ad80e61add893933a2abc7ed1484
+vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so|7ebb43d6c2408c0e4df2230a06218fff24f57f7c
 vendor/lib64/hw/dfps.mt6785.so|0ff8897999a2e568ae08a171dafb935996f76707
 vendor/lib64/hw/gps.default.so|27b4c3c7e88008b3a9ccede5c1267fc2acdc485c
@@ -2559,6 +2560,7 @@ vendor/lib64/ov64b40semco_mipi_raw_tuning.so|24d8867ed1719b02a57d8f1db1dde8cba0f
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so|9f82b45c2f1b3a5dfdd43a8ded044301c8b7e812
 vendor/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so|b3ddc313018cfaa0549c50a33c7f82e25ddb9856
 vendor/lib64/vendor.microtrust.hardware.soter@1.0.so|09ac2e7f14f121add4dd72d561453dcaa5306375
+vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 -vendor/odm/etc/vintf/manifest_dsds.xml|d435d401e1164c7548c62d5297120265cbf96043
 -vendor/odm/etc/vintf/manifest_dsds_se.xml|7dec558a99c78e4d6ed2498624ee330945182d17
 -vendor/odm/etc/vintf/manifest_qsqs.xml|456d73e16b292dc10d9c73d32fe0491bc22dcd3e

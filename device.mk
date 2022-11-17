@@ -79,8 +79,7 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session \
     libldacBT_enc \
     libldacBT_abr \
-    vendor.mediatek.hardware.audio@6.1.vendor \
-    vendor.mediatek.hardware.bluetooth.audio@2.1.vendor
+    vendor.mediatek.hardware.audio@6.1.vendor
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v30/arm64/arch-arm-armv8-a/shared/vndk-core/libmedia_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmedia_helper-v30.so \
