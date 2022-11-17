@@ -47,3 +47,13 @@
 # Extcon
 /sys/devices/platform/extcon_usb/extcon/extcon0/cable.0/name u:object_r:sysfs_extcon:s0
 /sys/devices/platform/extcon_usb/extcon/extcon0/cable.1/name u:object_r:sysfs_extcon:s0
+
+# Camera devices
+/dev/camera-dip                                    u:object_r:camera_device:s0
+/dev/camera-dpe                                    u:object_r:camera_device:s0
+/dev/camera-fdvt                                   u:object_r:camera_device:s0
+/dev/camera-isp                                    u:object_r:camera_device:s0
+/dev/camera-mfb                                    u:object_r:camera_device:s0
+/dev/camera-owe                                    u:object_r:camera_device:s0
+/dev/camera-rsc                                    u:object_r:camera_device:s0
+/dev/camera-wpe                                    u:object_r:camera_device:s0
