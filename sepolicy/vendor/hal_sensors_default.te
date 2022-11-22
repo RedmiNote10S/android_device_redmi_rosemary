@@ -1,3 +1,7 @@
+binder_call(hal_sensors_default, mtk_hal_audio)
+unix_socket_connect(hal_sensors_default, audio, hal_audio_default)
+hal_client_domain(hal_sensors_default, hal_audio)
+
 allow hal_sensors_default sensorlist_device:chr_file rw_file_perms;
 allow hal_sensors_default m_acc_misc_device:chr_file { read open };
 allow hal_sensors_default sysfs_sensor:dir search;
@@ -18,3 +22,4 @@ allow hal_sensors_default m_situ_misc_device:chr_file { read open };
 allow hal_sensors_default m_fusion_misc_device:chr_file { read open };
 allow hal_sensors_default mtk_hal_audio:binder call;
 allow hal_sensors_default mnt_vendor_file:dir search;
+allow hal_sensors_default hal_audio_hwservice:hwservice_manager find;
