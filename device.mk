@@ -381,6 +381,12 @@ PRODUCT_PACKAGES += \
     TetheringOverlayRosemary \
     WifiOverlayRosemary
 
+# Some ROMs might not ship Aperture. Let's make it a special case so we
+# save at least a little bit of partition space.
+ifneq ($(filter Aperture,$(PRODUCT_PACKAGES)),)
+    PRODUCT_PACKAGES += ApertureOverlayRosemary
+endif
+
 # Additional Build Props
 # Usually fingerprint, codename and hostname changes rolling around here.
 PRODUCT_COPY_FILES += \
