@@ -316,4 +316,24 @@
     <string name="config_systemAudioIntelligence" translatable="false">com.mediatek.ims</string>
     <!-- Determines whether the shell features all run on another thread.  --> 
     <bool name="config_enableShellMainThread">true</bool>
+
+    <!-- The list of package IDs that are allowed to use aux cameras.
+         NOTE: If this list is empty then all apps will be able to use aux cameras. -->
+    <string-array name="config_cameraAuxPackageAllowList" translatable="false">
+        <!-- Qualcomm Snap -->
+        <item>org.codeaurora.snapcam</item>
+        <!-- AOSP Camera -->
+        <item>com.android.camera</item>
+        <!-- AOSP Camera2 -->
+        <item>com.android.camera2</item>
+        <!-- Google Camera (Original) -->
+        <item>com.google.camera</item>
+        <!-- Google Camera Go -->
+        <item>com.google.android.apps.cameralite</item>
+        <!-- SGCAM (Preferred GCam mod) -->
+        <item>com.shamim.cam</item>
+        <!-- PixelExperience face unlock feature -->
+        <item>org.pixelexperience.faceunlock</item>
+    </string-array>
+
 </resources>
