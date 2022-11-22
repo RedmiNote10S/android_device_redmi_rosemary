@@ -20,3 +20,9 @@ dontaudit untrusted_app ashmem_device:chr_file open;
 
 # b/199987074
 dontaudit system_server sysfs:dir read;
+
+# Why is init trying to administrate its capabilities?
+dontaudit init self:capability2 mac_admin;
+
+# Camera HAL tries to read God knows what property.
+dontaudit mtk_hal_camera default_prop:file read;
