@@ -336,4 +336,32 @@
         <item>org.pixelexperience.faceunlock</item>
     </string-array>
 
+    <!-- The list of package IDs that are not allowed to use aux cameras. -->
+    <string-array name="config_cameraAuxPackageExcludeList" translatable="false">
+        <!-- Telegram -->
+        <item>org.telegram.messenger</item>
+        <!-- OwlGram -->
+        <item>it.owlgram.android</item>
+        <!-- Nekogram -->
+        <item>tw.nekomimi.nekogram</item>
+        <!-- Telegram X -->
+        <item>org.thunderdog.challegram</item>
+        <!-- Plus Messenger -->
+        <item>org.telegram.plus</item>
+        <!-- MdGramYou -->
+        <item>org.telegram.mdgram</item>
+        <!-- BGram -->
+        <item>org.telegram.BifToGram</item>
+        <!-- Graph Messenger -->
+        <item>ir.ilmili.telegraph</item>
+        <!-- Microsoft Teams -->
+        <item>com.microsoft.teams</item>
+        <!-- Discord -->
+        <item>com.discord</item>
+        <!-- Bluecord -->
+        <item>com.bluecord</item>
+        <!-- Aliucord -->
+        <item>com.aliucord</item>
+        </string-array>
+
 </resources>
