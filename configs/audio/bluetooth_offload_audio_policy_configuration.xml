@@ -13,17 +13,17 @@
     </mixPorts>
     <devicePorts>
         <!-- A2DP Audio Ports -->
-        <devicePort tagName="BT A2DP Out" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP" role="sink">
+        <devicePort tagName="BT A2DP Out" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP" role="sink" encodedFormats="AUDIO_FORMAT_LDAC AUDIO_FORMAT_LHDC AUDIO_FORMAT_LHDC_LL">
             <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                      samplingRates="44100 48000 88200 96000"
                      channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
         </devicePort>
-        <devicePort tagName="BT A2DP Headphones" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES" role="sink">
+        <devicePort tagName="BT A2DP Headphones" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES" role="sink" encodedFormats="AUDIO_FORMAT_LDAC AUDIO_FORMAT_LHDC AUDIO_FORMAT_LHDC_LL">
             <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                      samplingRates="44100 48000 88200 96000"
                      channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
         </devicePort>
-        <devicePort tagName="BT A2DP Speaker" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_SPEAKER" role="sink">
+        <devicePort tagName="BT A2DP Speaker" type="AUDIO_DEVICE_OUT_BLUETOOTH_A2DP_SPEAKER" role="sink" encodedFormats="AUDIO_FORMAT_LDAC AUDIO_FORMAT_LHDC AUDIO_FORMAT_LHDC_LL">
             <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                      samplingRates="44100 48000 88200 96000"
                      channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>

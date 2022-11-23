@@ -881,7 +881,6 @@ vendor/etc/128_Carmen.png
 vendor/etc/FV-SAM-MTK2.dat
 vendor/etc/MNL_Config.xml
 vendor/etc/armnn_app.config
-vendor/etc/aurisys_config_hifi3.xml
 vendor/etc/cit_config.xml
 vendor/etc/default_pd_calibration.bin
 vendor/etc/ecc_list.xml
@@ -911,7 +910,6 @@ vendor/etc/smsdbvisitor.xml
 vendor/etc/special_pws_channel.xml
 vendor/etc/spn-conf-op09.xml
 vendor/etc/st21nfc_conf.txt
-vendor/etc/usb_audio_accessory_only_policy_configuration.xml
 vendor/etc/vendor-apns-conf.xml
 vendor/etc/virtual-spn-conf-by-efgid1.xml
 vendor/etc/virtual-spn-conf-by-efpnn.xml
