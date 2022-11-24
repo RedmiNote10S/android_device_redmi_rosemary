@@ -1,23 +1,3 @@
-# IMPORTANT!
-
-Before you begin, you need to pull some changes that are still in Gerrit/other repos.
-
-Replace `frameworks/opt/net/ims` with the patched repo;
-```
-rm -rf frameworks/opt/net/ims && git clone https://github.com/windowz414-archive/kscope_frameworks_opt_net_ims -b sunflowerleaf --depth=1 --no-tags frameworks/opt/net/ims
-```
-
-Pick some feature extensions for all overlays to be utilized (REMEMBER, YOU NEED AN ACCOUNT IN KALEIDOSCOPE GERRIT AND TO UPLOAD YOUR SSH KEY ON IT FOR THIS STEP!);
-```
-repopick -g ssh://username@review.kaleidoscope.ink -t wider-device-quality
-```
-
-Pick fixes for some bugs;
-```
-repopick -g ssh://username@review.kaleidoscope.ink -t basic-mtk-fixups
-```
-> There will be some picks skipped for abandonment. They're fixed in the device tree and you shouldn't bother picking those.
-
 # Device Tree for Redmi Note 10s (rosemary)
 
 The Redmi Note 10s (codenamed _"rosemary"_) is a high-end, mid-range smartphone from Xiaomi.
