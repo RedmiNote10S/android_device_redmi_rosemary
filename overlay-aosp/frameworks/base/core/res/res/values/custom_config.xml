@@ -1,0 +1,10 @@
+<!--
+    Copyright (C) Beru "Stella" Hinode. All Rights Reserved.
+
+    SPDX-License-Identifier: GPL-2.0-only
+-->
+
+<resources>
+    <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/bms/fastcharge_mode</string>
+</resources>
