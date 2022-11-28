@@ -59,7 +59,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@5.0.vendor \
     android.hardware.audio@7.0.vendor \
     android.hardware.audio@7.0-impl \
-    android.hardware.bluetooth.a2dp@1.0.vendor \
     android.hardware.bluetooth.audio-impl \
     android.hardware.broadcastradio@1.0.vendor \
     android.hardware.broadcastradio@1.1.vendor \
