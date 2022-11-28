@@ -1058,9 +1058,6 @@ on property:vold.decrypt=trigger_shutdown_framework
 on property:sys.boot_completed=1
     write /proc/bootprof "0"
 
-#bluetooth property parameters
-    setprop persist.bluetooth.a2dp_offload.disabled false
-
 # bugreport is triggered by holding down volume down, volume up and power
 service bugreport /system/bin/dumpstate -d -p -B -z \
         -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
