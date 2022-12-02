@@ -2601,6 +2601,9 @@ vendor/lib64/egl/libMEOW_trace.so|fd857c813ec06b5a62e3ff16d959d789bf7d41c9
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so|20290857ee049b423dd1a8e493bf85a8653c4fea
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so|54b3be407037e4ac1f64c51ba4d0b96aba75d393
 
+# MTK-IMS - from PHH Treble
+-priv-app/ImsService/ImsService.apk|d4b9679a64e72d8fed80156f4276013969ae3354
+
 # MTK-IMS - from Project Kasumi v1 build
 bin/vtservice|aa7eaa951940ed33c80a0df6db30cb92be673c0c
 etc/init/init.vtservice.rc|abcbc3ffc316b8f1cedffa949aac3b46670d64bc
@@ -2633,7 +2636,6 @@ lib64/libmtkavenhancements.so|cc59759db0ed80489c6202b50f64a65725417084
 lib64/libmtkperf_client.so|395e4da19bac624e4c04fd6302941464d1a56b9a
 lib64/libvcodec_cap.so|71d3741396fa7d73ed4d042c56deba860e3476f5
 lib64/libvcodec_capenc.so|01b8c4b442d0928c99529f0b76e38782e866980b
--priv-app/ImsService/ImsService.apk|de98b83c764a772a2a3bca8b373b60e39723a063
 
 # Media (OMX) - from Project Kasumi v1 build
 vendor/bin/hw/android.hardware.media.omx@1.0-service|0d53f4462ce63112821512b84994a6acab1e4cf6
