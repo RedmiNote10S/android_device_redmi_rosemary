@@ -202,6 +202,10 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.keymaster_attestation@1.0.vendor \
     vendor.mediatek.hardware.keymaster_attestation@1.1.vendor
 
+# Keystore
+PRODUCT_PACKAGES += \
+    android.system.keystore2
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
