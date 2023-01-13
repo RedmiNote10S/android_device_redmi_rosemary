@@ -456,6 +456,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor \
     android.hardware.power@1.3.vendor \
+    android.hardware.power-service-mediatek \
     android.hardware.power-V1-ndk_platform.vendor \
     vendor.mediatek.hardware.power@1.0.vendor \
     vendor.mediatek.hardware.power@1.1.vendor \
