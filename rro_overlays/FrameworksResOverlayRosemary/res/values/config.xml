@@ -73,7 +73,7 @@
     <integer name="config_screenBrightnessDoze">17</integer>
 
     <!-- Disable AOD by default -->
-    <bool name="config_dozeAlwaysOnEnabled">true</bool>
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
     <!-- True if Unprocessed audio source supports the required frequency range and level -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
