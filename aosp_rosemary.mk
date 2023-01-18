@@ -29,6 +29,9 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_USES_AOSP_RECOVERY := true
 
+# Kasumi's GCam GO
+$(call inherit-product-if-exists, $(GCGOP_VENDOR_DIR)/config.mk)
+
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
