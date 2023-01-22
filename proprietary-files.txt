@@ -58,7 +58,6 @@ vendor/etc/camera/sr_params.xml
 vendor/etc/camera/vidhance_calibration
 
 # Charger (Xiaomi)
-bin/charger:bin/chargeonlymode
 vendor/bin/batterysecret
 
 # IR
@@ -2597,6 +2596,13 @@ vendor/lib64/egl/libMEOW_qt.so|daba4c711795d802687a7be0c2cfc37b6c1066cb
 vendor/lib64/egl/libMEOW_trace.so|fd857c813ec06b5a62e3ff16d959d789bf7d41c9
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so|20290857ee049b423dd1a8e493bf85a8653c4fea
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so|54b3be407037e4ac1f64c51ba4d0b96aba75d393
+
+# Kernel Power Off Charging (KPOC) - from Project Kasumi v1 build
+bin/kpoc_charger|4f687f205f04ee0ad02a5dcf10e5d21125e62646
+etc/init/kpoc_charger.rc|78e5ceefcbd35490f3959853a07bb3eb6c99f616
+lib/libshowlogo.so|7ad568eea2d206190da233c40ee2fbd186c63d62
+lib/libsysenv_system.so|23264918218eff8b88b18603cce96e021ce50f93
+lib64/libsysenv_system.so|92b261121259794d53aefed8dabed2eb6f25038e
 
 # MTK-IMS - from Project Kasumi v1 build
 bin/vtservice|aa7eaa951940ed33c80a0df6db30cb92be673c0c
