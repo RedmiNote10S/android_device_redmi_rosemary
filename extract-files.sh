@@ -68,6 +68,9 @@ function blob_fixup() {
         vendor/lib64/hw/dfps.mt6785.so )
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v30.so" "${2}"
             ;;
+        lib/libshowlogo.so)
+            "${PATCHELF}" --add-needed "libshim_showlogo.so" "${2}"
+            ;;
     esac
 }
 
