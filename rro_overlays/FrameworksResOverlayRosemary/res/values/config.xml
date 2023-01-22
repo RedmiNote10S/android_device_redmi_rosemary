@@ -308,6 +308,9 @@
     <!-- Indicates whether device has a power button fingerprint sensor. -->
     <bool name="config_is_powerbutton_fps" translatable="false" >true</bool>
 
+    <!-- Whether device has fingerprint on power button -->
+    <bool name="config_powerButtonFingerprint">true</bool>
+
     <!-- Package name of the on-device intelligent processor for audio. The
          difference of 'ambient audio' and 'audio' is that in 'audio', the
          user intentionally and consciously aware that the device is recording
