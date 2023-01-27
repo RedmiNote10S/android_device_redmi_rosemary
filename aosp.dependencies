@@ -41,11 +41,6 @@
     "branch": "thirteen"
   },
   {
-    "repository": "PixelExperience/hardware_mediatek",
-    "target_path": "hardware/mediatek",
-    "branch": "thirteen"
-  },
-  {
     "repository": "ProjectKasumi/vendor_gcgop",
     "target_path": "vendor/gcgop",
     "branch": "kasumi-v2"
