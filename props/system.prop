@@ -20,3 +20,4 @@ ro.boot.verifiedbootstate=green
 
 # Inherit device specific props
 import /system/build_${ro.boot.hwname}.build.prop
+import /system/${ro.boot.product.hardware.sku}.build.prop

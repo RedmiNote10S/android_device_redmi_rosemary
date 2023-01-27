@@ -1,0 +1,11 @@
+# Device
+ro.product.product.brand=POCO
+ro.product.product.manufacturer=Xiaomi
+ro.product.product.model=POCO M5s
+ro.product.product.device=rosemary
+ro.product.product.name=rosemary_p_global
+ro.product.model=POCO M5s
+ro.product.board=rosemary
+ro.product.device=rosemary
+ro.product.name=rosemary_p_global
+ro.product.build.fingerprint=POCO/rosemary_p_global/rosemary:12/SP1A.210812.016/V13.0.5.0.SFFMIXM:user/release-keys

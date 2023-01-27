@@ -203,3 +203,4 @@ debug.sf.hwc.min.duration=17000000
 ro.hardware.fp.vendor=goodix,fpc
 
 import /vendor/${ro.boot.hwname}.build.prop
+import /vendor/${ro.boot.product.hardware.sku}.build.prop
