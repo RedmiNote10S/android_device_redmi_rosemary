@@ -2600,7 +2600,7 @@ vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so|54b3be4070
 # Kernel Power Off Charging (KPOC) - from Project Kasumi v1 build
 bin/kpoc_charger|4f687f205f04ee0ad02a5dcf10e5d21125e62646
 etc/init/kpoc_charger.rc|78e5ceefcbd35490f3959853a07bb3eb6c99f616
-lib/libshowlogo.so|7ad568eea2d206190da233c40ee2fbd186c63d62
+lib/libshowlogo.so|4adbe3d352b08ba078e6be8b9bf93e7d62ef406b
 lib/libsysenv_system.so|23264918218eff8b88b18603cce96e021ce50f93
 lib64/libsysenv_system.so|92b261121259794d53aefed8dabed2eb6f25038e
 
@@ -2638,7 +2638,7 @@ lib64/libvcodec_cap.so|71d3741396fa7d73ed4d042c56deba860e3476f5
 lib64/libvcodec_capenc.so|01b8c4b442d0928c99529f0b76e38782e866980b
 
 # MTK-IMS - from V12.5.16.0.RKLMIXM (patched)
--priv-app/ImsService/ImsService.apk|60bdb7e5c0310ef948f6c19154d1e8c5d56a118a
+-priv-app/ImsService/ImsService.apk|b4a96e5f8ecdf782e66f7d848ce28d4b3b1083ff
 
 # Media (OMX) - from Project Kasumi v1 build
 vendor/bin/hw/android.hardware.media.omx@1.0-service|0d53f4462ce63112821512b84994a6acab1e4cf6
