@@ -172,6 +172,7 @@ vendor/lib64/wechat.beanpod.so
 # Power
 vendor/lib/hw/power.mt6785.so
 vendor/lib64/hw/power.mt6785.so
+vendor/lib64/android.hardware.power-service-mediatek.so
 
 # Radio
 vendor/bin/hw/mtkfusionrild
