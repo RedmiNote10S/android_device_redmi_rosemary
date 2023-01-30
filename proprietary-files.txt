@@ -2616,7 +2616,6 @@ etc/init/init.vtservice.rc|abcbc3ffc316b8f1cedffa949aac3b46670d64bc
 -framework/mediatek-telecom-common.jar|a5185c5ba5301e26f9f0d676534395ec16f80588
 -framework/mediatek-telephony-base.jar|bfeaf330bee041f90257f361224c53a22d971d31
 -framework/mediatek-telephony-common.jar|839682affb1bd0d62ae9998f0b111219a6d994af
--framework/mediatek-wfo-legacy.jar|13422faf21c52bf5f0c30e8c7e654e97f73a3f43
 lib/libcomutils.so|b1eb6f3f832bfa2eaf246d3a682a0908e62cdca1
 lib/libimsma.so|b0078f5f44cec67584c7fdd42ba475546e1db6b8
 lib/libimsma_adapt.so|07b39f19ac4d599cd90553ac918fd67ace3a0a37
