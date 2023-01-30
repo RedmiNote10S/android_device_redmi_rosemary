@@ -96,6 +96,11 @@ vendor/lib64/libion_ulit.so
 vendor/lib64/libpixelflinger.so
 vendor/lib64/libpq_prot.so
 
+# Display configs
+vendor/etc/dsi_panel_k7_38_0c_0a_fhdp_video_mi.xml
+vendor/etc/dsi_panel_k7_44_06_0b_fhdp_video_mi.xml
+vendor/etc/dsi_panel_k7_44_0e_0b_fhdp_video_mi.xml
+
 # DRM
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
