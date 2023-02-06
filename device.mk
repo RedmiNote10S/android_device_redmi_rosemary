@@ -88,6 +88,7 @@ PRODUCT_COPY_FILES += \
 
 # SoundTrigger
 PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.0-impl \
     android.hardware.soundtrigger@2.3-impl
 
 # CAS
