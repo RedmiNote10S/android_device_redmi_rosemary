@@ -30,6 +30,7 @@ TARGET_SUPPORTS_CALL_RECORDING := true
 TARGET_USES_AOSP_RECOVERY := true
 
 # Kasumi's GCam GO
+GCGOP_VENDOR_DIR ?= vendor/gcgop
 $(call inherit-product-if-exists, $(GCGOP_VENDOR_DIR)/config.mk)
 
 # Bootanimation
