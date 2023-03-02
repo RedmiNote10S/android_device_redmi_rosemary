@@ -129,6 +129,12 @@ vendor/lib64/hw/gatekeeper.beanpod.so
 vendor/lib64/libTEECommon.so
 vendor/lib64/libimsg_log.so
 
+# HotwordEnrollment
+-product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
+-product/priv-app/HotwordEnrollmentXGoogleCORTEXM4/HotwordEnrollmentXGoogleCORTEXM4.apk
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+
 # Keymaster
 vendor/bin/hw/android.hardware.gnss@2.1-service-mediatek
 vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod
