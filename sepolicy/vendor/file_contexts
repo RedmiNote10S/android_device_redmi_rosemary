@@ -27,6 +27,7 @@
 /sys/devices/platform/mt_charger/power_supply/usb/pd_authentication                  u:object_r:sysfs_batteryinfo:s0
 /sys/devices/platform/mt_charger/power_supply/usb/typec_cc_orientation                   u:object_r:sysfs_batteryinfo:s0
 /sys/devices/platform/maxim_ds28e16/power_supply/batt_verify/authentic               u:object_r:sysfs_batteryinfo:s0
+/sys/devices/platform/battery/power_supply/bms/fastcharge_mode                       u:object_r:vendor_sysfs_battery_supply:s0
 
 # Sensors devices
 /dev/elliptic0 u:object_r:sensor_device:s0
