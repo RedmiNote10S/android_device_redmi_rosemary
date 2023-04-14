@@ -232,6 +232,11 @@ PRODUCT_PACKAGES += \
     libstagefright_softomx_plugin \
     vendor.mediatek.hardware.mtkcodecservice@1.1.vendor
 
+# NGA
+PRODUCT_PACKAGES += \
+    NgaResources \
+    nga
+
 # Other MTK Interfaces
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.dfps@1.0.vendor \
