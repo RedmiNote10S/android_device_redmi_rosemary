@@ -9578,17 +9578,6 @@
         type="default,supl"
     />
 
-    <apn carrier="Avea gprs wap"
-        mcc="286"
-        mnc="03"
-        apn="wap"
-        password="wap"
-        proxy="213.161.151.201"
-        port="8080"
-        type="default,supl"
-        authtype="0"
-    />
-
     <apn carrier="AVEA MMS"
         mcc="286"
         mnc="03"
